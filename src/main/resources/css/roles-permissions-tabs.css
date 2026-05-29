@@ -1,0 +1,41 @@
+/* Corrección visual: evitar franja oscura heredada en las pestañas del panel de roles/permisos. */
+.roles-permissions-properties-tabs .tab-header-area,
+.roles-permissions-properties-tabs .tab-header-background {
+    -fx-background-color: #F5F8FB;
+}
+
+.roles-permissions-properties-tabs .tab {
+    -fx-background-color: linear-gradient(to bottom, #FFFFFF, #E8EEF5);
+    -fx-border-color: #B7C2D0;
+    -fx-border-width: 1 1 0 1;
+}
+
+.roles-permissions-properties-tabs .tab:selected {
+    -fx-background-color: #FFFFFF;
+}
+
+.roles-permissions-properties-tabs .tab-label {
+    -fx-text-fill: #12385F;
+    -fx-font-weight: bold;
+}
+
+/* Corrección visual: aplicar también al tab pane de estructura del módulo matricial. */
+.roles-permissions-structure-tabs .tab-header-area,
+.roles-permissions-structure-tabs .tab-header-background {
+    -fx-background-color: #F5F8FB;
+}
+
+.roles-permissions-structure-tabs .tab {
+    -fx-background-color: linear-gradient(to bottom, #FFFFFF, #E8EEF5);
+    -fx-border-color: #B7C2D0;
+    -fx-border-width: 1 1 0 1;
+}
+
+.roles-permissions-structure-tabs .tab:selected {
+    -fx-background-color: #FFFFFF;
+}
+
+.roles-permissions-structure-tabs .tab-label {
+    -fx-text-fill: #12385F;
+    -fx-font-weight: bold;
+}

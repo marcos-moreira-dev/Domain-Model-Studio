@@ -1,0 +1,537 @@
+/* =========================================================
+   BPMN básico y UML de comportamiento
+   ========================================================= */
+.behavior-root {
+    -fx-background-color: -dms-surface;
+}
+
+.behavior-header {
+    -fx-background-color: linear-gradient(to bottom, -dms-diagram-header-top, -dms-diagram-header-bottom);
+    -fx-border-color: -dms-border-soft;
+    -fx-border-width: 0 0 1 0;
+}
+
+.behavior-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-diagram-title;
+}
+
+.behavior-subtitle {
+    -fx-font-size: 12px;
+    -fx-text-fill: -dms-diagram-subtitle;
+}
+
+.behavior-split {
+    -fx-background-color: transparent;
+}
+
+.behavior-section {
+    -fx-padding: 10;
+    -fx-background-color: #ffffff;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-width: 0 1 0 0;
+}
+
+.behavior-section-title {
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-diagram-title;
+}
+
+.behavior-node-list,
+.behavior-edge-table {
+    -fx-background-color: #ffffff;
+    -fx-border-color: -dms-border-soft;
+}
+
+.behavior-properties {
+    -fx-background-color: -dms-bg-panel-soft;
+}
+
+.behavior-properties-scroll {
+    -fx-background-color: -dms-bg-panel-soft;
+    -fx-border-color: transparent;
+}
+
+.behavior-form-label {
+    -fx-text-fill: -dms-text-muted;
+    -fx-font-size: 11px;
+}
+
+.behavior-button {
+    -fx-font-size: 12px;
+    -fx-padding: 5 10 5 10;
+}
+
+.behavior-diagram-panel {
+    -fx-background-color: derive(-fx-control-inner-background, 2%);
+}
+
+.behavior-diagram-scroll {
+    -fx-background-color: transparent;
+    -fx-border-color: derive(-fx-base, -12%);
+    -fx-border-radius: 0;
+}
+
+.behavior-diagram-canvas {
+    -fx-background-color: #ffffff;
+}
+
+.behavior-node-card {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, -dms-node-fill-soft);
+    -fx-border-color: -dms-node-border;
+    -fx-border-width: 1.2;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.07), 5, 0.08, 0, 1);
+}
+
+.behavior-node-selected {
+    -fx-border-color: -dms-node-selected-border;
+    -fx-border-width: 2.2;
+}
+
+.behavior-node-title {
+    -fx-font-size: 12.5px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-text;
+    -fx-alignment: center;
+}
+
+.behavior-node-kind {
+    -fx-font-size: 10px;
+    -fx-text-fill: -dms-text-muted;
+}
+
+.behavior-symbol-circle,
+.behavior-symbol-diamond,
+.behavior-symbol-rect {
+    -fx-fill: -dms-behavior-symbol-fill;
+    -fx-stroke: -dms-behavior-symbol-border;
+    -fx-stroke-width: 1.2;
+}
+
+.behavior-arrow {
+    -fx-stroke: -dms-connector;
+    -fx-stroke-width: 1.4;
+}
+
+.behavior-arrow-head {
+    -fx-fill: -dms-connector;
+    -fx-stroke: -dms-connector;
+}
+
+.behavior-arrow-label {
+    -fx-background-color: rgba(255,255,255,0.92);
+    -fx-padding: 2 5 2 5;
+    -fx-font-size: 10px;
+    -fx-text-fill: -dms-text-muted;
+    -fx-border-color: -dms-node-border-soft;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+.behavior-empty {
+    -fx-text-fill: -dms-text-muted;
+    -fx-font-size: 13px;
+}
+
+/* =========================================================
+   Canvas común de comportamiento
+   ========================================================= */
+.behavior-diagram-canvas {
+    -fx-background-color: -dms-bg-workspace;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+.behavior-canvas-node {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, -dms-node-fill-soft);
+    -fx-border-color: -dms-node-border;
+    -fx-border-width: 1.2;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.08), 7, 0.12, 0, 2);
+}
+
+.behavior-canvas-node-start-event,
+.behavior-canvas-node-end-event,
+.behavior-canvas-node-initial-state,
+.behavior-canvas-node-final-state {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, -dms-node-fill-accent);
+}
+
+.behavior-canvas-node-decision {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, -dms-node-fill-warning);
+}
+
+.behavior-canvas-node-actor,
+.behavior-canvas-node-use-case,
+.behavior-canvas-node-system-boundary {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, -dms-node-fill-accent);
+}
+
+.behavior-canvas-node-selected {
+    -fx-border-color: -dms-node-selected-border;
+    -fx-border-width: 2.2;
+}
+
+.behavior-canvas-node-title {
+    -fx-font-size: 12.5px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-text;
+    -fx-alignment: center;
+}
+
+.behavior-canvas-node-kind,
+.behavior-canvas-node-detail {
+    -fx-font-size: 10px;
+    -fx-text-fill: -dms-text-muted;
+    -fx-alignment: center;
+}
+
+.behavior-canvas-symbol-circle,
+.behavior-canvas-symbol-diamond,
+.behavior-canvas-symbol-rect,
+.behavior-canvas-symbol-actor,
+.behavior-canvas-symbol-use-case {
+    -fx-fill: -dms-behavior-symbol-fill;
+    -fx-stroke: -dms-behavior-symbol-border;
+    -fx-stroke-width: 1.2;
+}
+
+.behavior-canvas-connector {
+    -fx-stroke: -dms-connector;
+    -fx-stroke-width: 1.5;
+    -fx-fill: transparent;
+}
+
+.behavior-canvas-connector-include,
+.behavior-canvas-connector-extend,
+.behavior-canvas-connector-return-message {
+    -fx-stroke-dash-array: 7 5;
+}
+
+.behavior-canvas-connector-selected {
+    -fx-stroke: -dms-accent;
+    -fx-stroke-width: 2.2;
+}
+
+.behavior-canvas-arrow-head {
+    -fx-fill: -dms-connector;
+    -fx-stroke: -dms-connector;
+}
+
+.behavior-canvas-arrow-head-selected {
+    -fx-fill: -dms-accent;
+    -fx-stroke: -dms-accent;
+}
+
+.behavior-canvas-connector-label {
+    -fx-background-color: rgba(255,255,255,0.94);
+    -fx-padding: 2 5 2 5;
+    -fx-font-size: 10px;
+    -fx-text-fill: -dms-text-muted;
+    -fx-border-color: -dms-node-border-soft;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+.behavior-canvas-arrow-head.diagram-connector-arrow-hollow {
+    -fx-fill: -dms-bg-workspace;
+}
+
+/* =========================================================
+   Shape kits UML/BPMN — símbolos teóricos mínimos
+   ========================================================= */
+.behavior-canvas-symbol-actor-line,
+.behavior-canvas-symbol-final-state-outer {
+    -fx-stroke: -dms-behavior-symbol-border;
+    -fx-stroke-width: 1.4;
+    -fx-fill: transparent;
+}
+
+.behavior-canvas-symbol-initial-state,
+.behavior-canvas-symbol-final-state-inner,
+.behavior-canvas-symbol-fork-join {
+    -fx-fill: -dms-behavior-symbol-border;
+    -fx-stroke: -dms-behavior-symbol-border;
+    -fx-stroke-width: 1.2;
+}
+
+.behavior-canvas-symbol-system-boundary,
+.behavior-canvas-symbol-document,
+.behavior-canvas-symbol-lane,
+.behavior-canvas-symbol-lane-band {
+    -fx-fill: -dms-behavior-symbol-fill;
+    -fx-stroke: -dms-behavior-symbol-border;
+    -fx-stroke-width: 1.2;
+}
+
+.behavior-canvas-symbol-lane-band {
+    -fx-fill: derive(-dms-behavior-symbol-fill, -8%);
+}
+
+.behavior-canvas-symbol-end-event {
+    -fx-stroke-width: 2.4;
+}
+
+/* =========================================================
+   Tanda 09 — Procesos de negocio
+   ========================================================= */
+.behavior-canvas-node-bpmn-lane,
+.behavior-canvas-node-operational-lane {
+    -fx-background-color: linear-gradient(to bottom, #fffdf6, #f3ead7);
+    -fx-border-color: derive(-dms-node-border-soft, -12%);
+    -fx-border-style: segments(8, 5);
+}
+
+.behavior-canvas-node-bpmn-start-event,
+.behavior-canvas-node-bpmn-end-event,
+.behavior-canvas-node-operational-start-event,
+.behavior-canvas-node-operational-end-event {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #f6f1e7);
+}
+
+.behavior-canvas-node-bpmn-decision,
+.behavior-canvas-node-operational-decision {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, -dms-node-fill-warning);
+}
+
+.behavior-canvas-node-operational-activity {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #f8f1df);
+}
+
+.behavior-canvas-node-order-hint {
+    -fx-font-size: 9px;
+    -fx-text-fill: -dms-text-muted;
+    -fx-background-color: rgba(255,255,255,0.78);
+    -fx-border-color: -dms-node-border-soft;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-padding: 1 6 1 6;
+}
+
+.behavior-canvas-symbol-operational-step,
+.behavior-canvas-symbol-operational-decision,
+.behavior-canvas-symbol-operational-document,
+.behavior-canvas-symbol-responsible-band,
+.behavior-canvas-symbol-responsible-label-band {
+    -fx-fill: -dms-behavior-symbol-fill;
+    -fx-stroke: -dms-behavior-symbol-border;
+    -fx-stroke-width: 1.2;
+}
+
+.behavior-canvas-symbol-operational-step-band,
+.behavior-canvas-symbol-responsible-label-band {
+    -fx-fill: derive(-dms-behavior-symbol-fill, -10%);
+}
+
+.behavior-canvas-connector-bpmn-flow,
+.behavior-canvas-connector-operational-flow {
+    -fx-stroke-width: 1.8;
+}
+
+/* =========================================================
+   Tanda 12 — UML de comportamiento
+   ========================================================= */
+.behavior-canvas-node-uml-use-case-actor,
+.behavior-canvas-node-uml-use-case-use-case {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #eef4fb);
+}
+
+.behavior-canvas-node-uml-use-case-system-boundary {
+    -fx-background-color: linear-gradient(to bottom, rgba(255,255,255,0.94), #f7f3e8);
+    -fx-border-color: derive(-dms-node-border-soft, -8%);
+    -fx-border-style: segments(9, 5);
+    -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.05), 5, 0.08, 0, 1);
+}
+
+.behavior-canvas-node-uml-activity-initial-state,
+.behavior-canvas-node-uml-activity-final-state,
+.behavior-canvas-node-uml-state-initial-state,
+.behavior-canvas-node-uml-state-final-state {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #f4f0e8);
+}
+
+.behavior-canvas-node-uml-activity-action,
+.behavior-canvas-node-uml-state-state {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #f7f1e2);
+}
+
+.behavior-canvas-node-uml-activity-decision {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, -dms-node-fill-warning);
+}
+
+.behavior-canvas-node-uml-activity-fork,
+.behavior-canvas-node-uml-activity-join {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #f1f1ee);
+}
+
+.behavior-canvas-symbol-uml-action,
+.behavior-canvas-symbol-uml-state,
+.behavior-canvas-symbol-uml-note {
+    -fx-fill: -dms-behavior-symbol-fill;
+    -fx-stroke: -dms-behavior-symbol-border;
+    -fx-stroke-width: 1.2;
+}
+
+.behavior-canvas-symbol-uml-note-fold {
+    -fx-stroke: -dms-behavior-symbol-border;
+    -fx-stroke-width: 1.0;
+    -fx-fill: transparent;
+}
+
+.behavior-canvas-connector-uml-use-case-include,
+.behavior-canvas-connector-uml-use-case-extend {
+    -fx-stroke-dash-array: 7 5;
+}
+
+.behavior-canvas-connector-uml-use-case-generalization {
+    -fx-stroke-width: 1.7;
+}
+
+.behavior-canvas-connector-uml-activity-flow,
+.behavior-canvas-connector-uml-state-transition {
+    -fx-stroke-width: 1.7;
+}
+
+/* =========================================================
+   Tanda 7 — lienzo primitivo universitario para UML/BPMN
+   ========================================================= */
+.behavior-canvas-primitive-node {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-effect: none;
+    -fx-padding: 0;
+}
+
+.behavior-canvas-primitive-node-selected {
+    -fx-border-color: -dms-accent;
+    -fx-border-width: 1.4;
+    -fx-border-style: segments(5, 4);
+    -fx-background-color: rgba(37, 99, 235, 0.025);
+}
+
+.behavior-canvas-primitive-content {
+    -fx-background-color: transparent;
+}
+
+.behavior-canvas-primitive-title {
+    -fx-font-size: 11.5px;
+    -fx-font-weight: 700;
+    -fx-text-fill: -dms-text;
+    -fx-background-color: transparent;
+    -fx-padding: 1 4 1 4;
+}
+
+.behavior-canvas-primitive-title-use-case,
+.behavior-canvas-primitive-title-action,
+.behavior-canvas-primitive-title-state,
+.behavior-canvas-primitive-title-task {
+    -fx-font-size: 11px;
+}
+
+.behavior-canvas-primitive-title-decision {
+    -fx-font-size: 10.2px;
+    -fx-font-weight: 600;
+    -fx-text-alignment: center;
+}
+
+.behavior-canvas-primitive-title-actor {
+    -fx-font-size: 11px;
+    -fx-font-weight: 600;
+}
+
+.behavior-canvas-primitive-title-initial-state,
+.behavior-canvas-primitive-title-final-state,
+.behavior-canvas-primitive-title-start-event,
+.behavior-canvas-primitive-title-end-event,
+.behavior-canvas-primitive-title-fork,
+.behavior-canvas-primitive-title-join {
+    -fx-opacity: 0;
+}
+
+.behavior-canvas-symbol-use-case,
+.behavior-canvas-symbol-uml-action,
+.behavior-canvas-symbol-uml-state,
+.behavior-canvas-symbol-task,
+.behavior-canvas-symbol-system-boundary,
+.behavior-canvas-symbol-diamond {
+    -fx-fill: #FFFFFF;
+    -fx-stroke: #1F2937;
+    -fx-stroke-width: 1.35;
+}
+
+.behavior-canvas-symbol-actor,
+.behavior-canvas-symbol-actor-line {
+    -fx-fill: transparent;
+    -fx-stroke: #1F2937;
+    -fx-stroke-width: 1.55;
+}
+
+.behavior-canvas-symbol-actor {
+    -fx-fill: #FFFFFF;
+}
+
+.behavior-canvas-symbol-initial-state,
+.behavior-canvas-symbol-final-state-inner,
+.behavior-canvas-symbol-fork-join {
+    -fx-fill: #111827;
+    -fx-stroke: #111827;
+    -fx-stroke-width: 1.1;
+}
+
+.behavior-canvas-symbol-final-state-outer {
+    -fx-fill: transparent;
+    -fx-stroke: #111827;
+    -fx-stroke-width: 1.6;
+}
+
+.behavior-canvas-symbol-start-event {
+    -fx-fill: #FFFFFF;
+    -fx-stroke: #111827;
+    -fx-stroke-width: 1.4;
+}
+
+.behavior-canvas-symbol-end-event {
+    -fx-fill: #FFFFFF;
+    -fx-stroke: #111827;
+    -fx-stroke-width: 2.2;
+}
+
+.behavior-canvas-symbol-lane,
+.behavior-canvas-symbol-lane-band {
+    -fx-fill: transparent;
+    -fx-stroke: #1F2937;
+    -fx-stroke-width: 1.2;
+}
+
+.behavior-canvas-connector-label {
+    -fx-font-size: 10.5px;
+    -fx-text-fill: #111827;
+    -fx-background-color: rgba(255,255,255,0.97);
+    -fx-border-color: rgba(31, 41, 55, 0.32);
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+
+/* UML Casos de uso: el límite del sistema es un marco conceptual, no una tarjeta opaca.
+   Debe permitir ver las asociaciones entre actores y casos de uso dentro del límite. */
+.behavior-canvas-primitive-node-system-boundary .behavior-canvas-symbol-system-boundary {
+    -fx-fill: transparent;
+    -fx-stroke: #1F2937;
+    -fx-stroke-width: 1.35;
+}
+
+/* MDR-4 — Legibilidad del SideDock de comportamiento. */
+.behavior-panel-help,
+.behavior-structure-item-meta {
+    -fx-text-fill: -dms-text-muted;
+}
+
+.behavior-structure-panel .label {
+    -fx-opacity: 1.0;
+}

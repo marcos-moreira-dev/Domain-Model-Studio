@@ -1,0 +1,158 @@
+/* =========================================================
+   Árbol del expediente en SideDock
+   ========================================================= */
+.logical-business-expedient-tree,
+.logical-business-tree {
+    -fx-background-color: #ffffff;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-width: 1;
+}
+
+.logical-business-expedient-tree .tree-cell,
+.logical-business-tree .tree-cell {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: -dms-text;
+    -fx-padding: 3 4 3 4;
+}
+
+.logical-business-expedient-tree .tree-cell:selected,
+.logical-business-tree .tree-cell:selected {
+    -fx-background-color: -dms-accent-soft;
+    -fx-text-fill: #12385f;
+}
+
+.logical-business-tree-actions {
+    -fx-padding: 2 0 5 0;
+}
+
+.logical-business-tree-row {
+    -fx-alignment: center-left;
+}
+
+.logical-business-tree-label {
+    -fx-text-fill: -dms-text;
+}
+
+.logical-business-tree-help-button {
+    -fx-background-color: linear-gradient(to bottom, #e6f2ff, #9fc4e8);
+    -fx-border-color: #417aaa;
+    -fx-border-width: 1;
+    -fx-padding: 0 4 0 4;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0e4c7b;
+}
+
+.logical-business-tree-help-button:hover {
+    -fx-background-color: #d4eaff;
+}
+
+.logical-business-tree-marker {
+    -fx-min-width: 16;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.logical-business-marker-complete { -fx-text-fill: #2e6f42; }
+.logical-business-marker-warning { -fx-text-fill: #9a6d00; }
+.logical-business-marker-blocking { -fx-text-fill: #a23a3a; }
+.logical-business-marker-empty { -fx-text-fill: #7f8b96; }
+.logical-business-marker-trace { -fx-text-fill: #2f668f; }
+.logical-business-marker-derivable { -fx-text-fill: #65499a; }
+
+/* =========================================================
+   Paneles laterales existentes del módulo
+   ========================================================= */
+.logical-business-side-panel {
+    -fx-background-color: -dms-bg-panel-soft;
+    -fx-padding: 10;
+}
+
+.logical-business-panel-title,
+.logical-business-panel-subtitle {
+    -fx-font-weight: bold;
+    -fx-text-fill: #12385f;
+}
+
+.logical-business-panel-subtitle {
+    -fx-font-size: 12px;
+}
+
+.logical-business-text,
+.logical-business-meta,
+.logical-business-document-text {
+    -fx-text-fill: -dms-text;
+}
+
+.logical-business-meta {
+    -fx-font-size: 11px;
+    -fx-text-fill: -dms-text-muted;
+}
+
+.logical-business-card,
+.logical-business-inspector-card {
+    -fx-background-color: #ffffff;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-width: 1;
+    -fx-padding: 8;
+}
+
+.logical-business-list-button,
+.logical-business-side-button {
+    -fx-background-color: #f8fafc;
+    -fx-border-color: #aebdca;
+    -fx-border-width: 1;
+    -fx-padding: 6 8 6 8;
+    -fx-text-fill: #17344f;
+}
+
+.logical-business-list-button:hover,
+.logical-business-side-button:hover {
+    -fx-background-color: #eaf2fb;
+}
+
+.logical-business-side-button.selected {
+    -fx-background-color: #dfeefa;
+    -fx-border-color: #6b94bd;
+    -fx-font-weight: bold;
+}
+
+.logical-business-item-button { -fx-border-color: #8aa8c2; }
+.logical-business-entity-button { -fx-border-color: #7fa98b; }
+
+/* =========================================================
+   Inspectores laterales: validación, trazas internas y ayuda/glosario
+   ========================================================= */
+.logical-business-inspector-summary {
+    -fx-border-color: #9fb4ca;
+    -fx-background-color: #f7fafd;
+}
+
+.logical-business-inspector-info {
+    -fx-border-color: #b7c9db;
+    -fx-background-color: #f7fbff;
+}
+
+.logical-business-inspector-warning {
+    -fx-border-color: #d7b56d;
+    -fx-background-color: #fffaf0;
+}
+
+.logical-business-inspector-blocking {
+    -fx-border-color: #c77f7f;
+    -fx-background-color: #fff6f6;
+}
+
+/* Ayuda contextual de cierre documental: clases visibles para guardarraíles y estilos base. */
+
+.logical-business-help-block {
+    -fx-background-color: #ffffff;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-width: 1;
+    -fx-padding: 8 9 8 9;
+}
+.logical-business-help-closing {
+    -fx-border-color: #b7c6d9;
+    -fx-border-width: 1 0 0 0;
+    -fx-padding: 8 0 0 0;
+}

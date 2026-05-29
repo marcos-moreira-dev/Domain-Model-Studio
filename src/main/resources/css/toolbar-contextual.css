@@ -1,0 +1,98 @@
+/*
+ * Domain Model Studio — Toolbar contextual
+ *
+ * Este archivo forma parte de la Tanda 05 de modularización CSS.
+ * Mantiene la estética desktop sobria del proyecto y conserva el orden
+ * de cascada original mediante app-light.css.
+ */
+
+.toolbar-stack {
+    -fx-background-color: #d7dce2;
+}
+
+.global-toolbar {
+    -fx-border-width: 0 0 1 0;
+}
+
+.diagram-toolbar-area {
+    -fx-background-color: linear-gradient(to bottom, #e6ebf1, #d2d9e2);
+}
+
+.diagram-toolbar-scroll {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+    -fx-border-color: #aeb7c2;
+}
+
+.diagram-toolbar-primary-scroll {
+    -fx-border-width: 0 0 1 0;
+}
+
+.diagram-toolbar-secondary-scroll {
+    -fx-border-width: 0 0 1 0;
+}
+
+.diagram-toolbar-primary,
+.diagram-toolbar-secondary {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+}
+
+.diagram-toolbar-secondary {
+    -fx-spacing: 6;
+}
+
+.diagram-toolbar-empty {
+    -fx-padding: 0;
+}
+
+.diagram-toolbar-primary .toolbar-group-label,
+.diagram-toolbar-secondary .toolbar-group-label {
+    -fx-text-fill: #4f5965;
+}
+
+/* IMP-01: controles compuestos de toolbar contextual. */
+.toolbar-combo-action {
+    -fx-alignment: center-left;
+    -fx-spacing: 6;
+}
+
+.toolbar-combo {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #aeb9c6;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-padding: 0 2 0 2;
+}
+
+.wireframe-template-toolbar-combo {
+    -fx-min-width: 150px;
+    -fx-pref-width: 180px;
+}
+
+/* T02 — evita que el viewport de toolbar recorte botones o deje franja residual estrecha. */
+.diagram-toolbar-area {
+    -fx-padding: 2 0 3 0;
+}
+
+.diagram-toolbar-scroll,
+.diagram-toolbar-primary-scroll,
+.diagram-toolbar-secondary-scroll {
+    -fx-min-height: 36px;
+    -fx-pref-height: 39px;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.diagram-toolbar-primary,
+.diagram-toolbar-secondary {
+    -fx-min-height: 34px;
+    -fx-pref-height: 36px;
+    -fx-padding: 4 8 4 8;
+}
+
+.diagram-toolbar-scroll > .viewport,
+.diagram-toolbar-primary-scroll > .viewport,
+.diagram-toolbar-secondary-scroll > .viewport {
+    -fx-background-color: transparent;
+}

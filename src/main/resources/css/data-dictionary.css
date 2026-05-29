@@ -1,0 +1,264 @@
+/* =========================================================
+   Diccionario de datos — documento estructurado
+   ---------------------------------------------------------
+   El diccionario se presenta como documento técnico editable:
+   índice lateral, vista de entrega, tabla de campos e inspector.
+   No es canvas ni ERD físico.
+   ========================================================= */
+
+.data-dictionary-root,
+.data-dictionary-host {
+    -fx-background-color: -app-workspace-bg;
+}
+
+.data-dictionary-section,
+.data-dictionary-properties,
+.data-dictionary-table-panel {
+    -fx-background-color: -dms-bg-panel-soft;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-width: 1;
+}
+
+.data-dictionary-section-title {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-diagram-title;
+}
+
+.data-dictionary-helper,
+.data-dictionary-subtitle,
+.data-dictionary-form-label,
+.data-dictionary-document-note,
+.data-dictionary-empty-message {
+    -fx-font-size: 11px;
+    -fx-text-fill: -dms-text-muted;
+    -fx-font-smoothing-type: gray;
+}
+
+.data-dictionary-form-label {
+    -fx-font-weight: bold;
+}
+
+.data-dictionary-empty-message {
+    -fx-font-style: italic;
+}
+
+.data-dictionary-button {
+    -fx-background-color: #ffffff;
+    -fx-border-color: -dms-node-border;
+    -fx-border-width: 1;
+    -fx-padding: 5 10 5 10;
+}
+
+.data-dictionary-button:hover {
+    -fx-background-color: #111827;
+    -fx-text-fill: #ffffff;
+}
+
+.data-dictionary-button:hover .text {
+    -fx-fill: #ffffff;
+}
+
+/* Índice lateral */
+.data-dictionary-entity-list {
+    -fx-background-color: #ffffff;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-width: 1;
+}
+
+.data-dictionary-entity-list .list-cell {
+    -fx-background-color: #ffffff;
+    -fx-border-color: transparent transparent #e5edf5 transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 7 8 7 8;
+}
+
+.data-dictionary-entity-list .list-cell:selected {
+    -fx-background-color: #e8f1fb;
+    -fx-border-color: -dms-accent-border;
+    -fx-border-width: 0 0 0 3;
+}
+
+.data-dictionary-entity-cell-title {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #102a43;
+}
+
+.data-dictionary-entity-cell-technical,
+.data-dictionary-entity-cell-details {
+    -fx-font-size: 10.5px;
+    -fx-text-fill: #52616f;
+}
+
+.data-dictionary-output-badges {
+    -fx-padding: 0 0 2 0;
+}
+
+.data-dictionary-badge,
+.data-dictionary-document-chip {
+    -fx-background-color: #e8f1fb;
+    -fx-border-color: #aac1d8;
+    -fx-border-width: 1;
+    -fx-padding: 4 9 4 9;
+    -fx-text-fill: #143a5a;
+    -fx-font-size: 11px;
+}
+
+/* Vista central */
+.data-dictionary-output-tabs {
+    -fx-background-color: transparent;
+}
+
+.data-dictionary-output-tabs .tab-header-area .tab-header-background {
+    -fx-background-color: transparent;
+}
+
+.data-dictionary-output-tabs .tab {
+    -fx-background-color: #f8fafc;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-width: 1 1 0 1;
+}
+
+.data-dictionary-output-tabs .tab:selected {
+    -fx-background-color: #ffffff;
+    -fx-border-color: -dms-accent-border;
+}
+
+.data-dictionary-document-scroll {
+    -fx-background-color: transparent;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-width: 1;
+}
+
+.data-dictionary-document-preview {
+    -fx-background-color: #f8fbff;
+    -fx-padding: 22;
+}
+
+.data-dictionary-document-cover,
+.data-dictionary-document-card,
+.data-dictionary-logo-placeholder,
+.data-dictionary-field-preview,
+.data-dictionary-entity-overview-row,
+.data-dictionary-summary-metric {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cbd5e1;
+    -fx-border-width: 1;
+}
+
+.data-dictionary-document-cover,
+.data-dictionary-document-card {
+    -fx-padding: 16;
+    -fx-effect: dropshadow(gaussian, rgba(40, 68, 94, 0.08), 8, 0.15, 0, 1);
+}
+
+.data-dictionary-document-title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0f2f4d;
+}
+
+.data-dictionary-document-lead {
+    -fx-text-fill: #334155;
+    -fx-font-size: 12px;
+}
+
+.data-dictionary-document-card-title,
+.data-dictionary-field-preview-title,
+.data-dictionary-entity-overview-name {
+    -fx-font-weight: bold;
+    -fx-text-fill: #111827;
+}
+
+.data-dictionary-document-card-title {
+    -fx-font-size: 15.5px;
+    -fx-padding: 0 0 5 0;
+}
+
+.data-dictionary-document-key {
+    -fx-font-weight: bold;
+    -fx-text-fill: #475569;
+}
+
+.data-dictionary-document-value,
+.data-dictionary-document-text {
+    -fx-text-fill: #111827;
+}
+
+.data-dictionary-document-meta,
+.data-dictionary-summary-metrics {
+    -fx-padding: 4 0 10 0;
+    -fx-hgap: 10;
+    -fx-vgap: 10;
+}
+
+.data-dictionary-summary-metric {
+    -fx-padding: 9 12 9 12;
+    -fx-min-width: 92;
+}
+
+.data-dictionary-summary-metric-value {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0f2f4d;
+}
+
+.data-dictionary-summary-metric-label {
+    -fx-font-size: 10.5px;
+    -fx-text-fill: #52616f;
+}
+
+.data-dictionary-entity-overview,
+.data-dictionary-field-list-preview {
+    -fx-padding: 4 0 0 0;
+}
+
+.data-dictionary-entity-overview-row,
+.data-dictionary-field-preview {
+    -fx-padding: 8 10 8 10;
+}
+
+.data-dictionary-field-preview {
+    -fx-background-color: #fbfdff;
+}
+
+.data-dictionary-field-preview-selected,
+.data-dictionary-document-card-selected {
+    -fx-background-color: #edf6ff;
+    -fx-border-color: -dms-accent-border;
+    -fx-border-width: 2;
+}
+
+.data-dictionary-logo-placeholder {
+    -fx-border-color: #7c5b9d;
+    -fx-border-style: dashed;
+}
+
+.data-dictionary-logo-image {
+    -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.14), 8, 0.22, 0, 2);
+}
+
+/* Tablas e inspector */
+.data-dictionary-field-table {
+    -fx-background-color: #ffffff;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-width: 1;
+}
+
+.data-dictionary-field-table .column-header-background {
+    -fx-background-color: #edf3f9;
+}
+
+.data-dictionary-properties-scroll {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.data-dictionary-properties .check-box:disabled {
+    -fx-opacity: 1.0;
+}
+
+.data-dictionary-properties .check-box:disabled .text {
+    -fx-fill: -dms-text-muted;
+}

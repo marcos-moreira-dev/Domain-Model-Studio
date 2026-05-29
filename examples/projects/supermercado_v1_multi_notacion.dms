@@ -1,0 +1,315 @@
+{
+  "schemaVersion": "0.1.0",
+  "project": {
+    "id": "supermercado_v1",
+    "title": "Modelo conceptual - Supermercado",
+    "description": "Proyecto editable de ejemplo para probar modelo semántico, layout por notación y estilos.",
+    "version": "1.0.0",
+    "status": "draft"
+  },
+  "source": {
+    "type": "markdown",
+    "path": "examples/markdown/supermercado_multi_notacion.md",
+    "importedAt": "2026-05-10T04:00:00Z",
+    "contentHash": "pending"
+  },
+  "notations": {
+    "active": "CHEN",
+    "default": "CHEN",
+    "available": [
+      "CHEN",
+      "CROWS_FOOT"
+    ]
+  },
+  "views": [
+    {
+      "id": "chen_full",
+      "name": "Chen completo",
+      "notation": "CHEN",
+      "showAttributes": true,
+      "showCardinalities": true,
+      "layoutRef": "CHEN"
+    },
+    {
+      "id": "crows_foot_logical",
+      "name": "Crow's Foot lógico",
+      "notation": "CROWS_FOOT",
+      "showAttributes": true,
+      "showCardinalities": true,
+      "layoutRef": "CROWS_FOOT"
+    }
+  ],
+  "model": {
+    "entities": [
+      {
+        "id": "producto",
+        "name": "Producto",
+        "module": "inventario",
+        "kind": "STRONG_ENTITY",
+        "description": "Artículo vendido o administrado por el supermercado.",
+        "attributes": [
+          {
+            "id": "producto_id",
+            "name": "producto_id",
+            "kind": "KEY"
+          },
+          {
+            "id": "nombre",
+            "name": "nombre",
+            "kind": "NORMAL"
+          },
+          {
+            "id": "codigo_barras",
+            "name": "codigo_barras",
+            "kind": "UNIQUE"
+          },
+          {
+            "id": "precio_actual",
+            "name": "precio_actual",
+            "kind": "NORMAL"
+          },
+          {
+            "id": "stock_actual",
+            "name": "stock_actual",
+            "kind": "DERIVED"
+          }
+        ]
+      },
+      {
+        "id": "categoria",
+        "name": "Categoría",
+        "module": "inventario",
+        "kind": "STRONG_ENTITY",
+        "attributes": [
+          {
+            "id": "categoria_id",
+            "name": "categoria_id",
+            "kind": "KEY"
+          },
+          {
+            "id": "nombre",
+            "name": "nombre",
+            "kind": "UNIQUE"
+          }
+        ]
+      },
+      {
+        "id": "venta",
+        "name": "Venta",
+        "module": "ventas",
+        "kind": "STRONG_ENTITY",
+        "attributes": [
+          {
+            "id": "venta_id",
+            "name": "venta_id",
+            "kind": "KEY"
+          },
+          {
+            "id": "fecha_hora",
+            "name": "fecha_hora",
+            "kind": "NORMAL"
+          },
+          {
+            "id": "total",
+            "name": "total",
+            "kind": "DERIVED"
+          }
+        ]
+      },
+      {
+        "id": "detalle_venta",
+        "name": "DetalleVenta",
+        "module": "ventas",
+        "kind": "WEAK_ENTITY",
+        "attributes": [
+          {
+            "id": "detalle_venta_id",
+            "name": "detalle_venta_id",
+            "kind": "PARTIAL_KEY"
+          },
+          {
+            "id": "cantidad",
+            "name": "cantidad",
+            "kind": "NORMAL"
+          },
+          {
+            "id": "subtotal_linea",
+            "name": "subtotal_linea",
+            "kind": "DERIVED"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "id": "clasifica",
+        "name": "Clasifica",
+        "from": "categoria",
+        "to": "producto",
+        "fromCardinality": "1",
+        "toCardinality": "0..M",
+        "identifying": false
+      },
+      {
+        "id": "contiene",
+        "name": "Contiene",
+        "from": "venta",
+        "to": "detalle_venta",
+        "fromCardinality": "1",
+        "toCardinality": "1..M",
+        "identifying": true
+      }
+    ],
+    "rules": [
+      "Una venta debe tener al menos un detalle.",
+      "DetalleVenta no existe sin Venta."
+    ]
+  },
+  "layouts": {
+    "CHEN": {
+      "canvas": {
+        "width": 2200,
+        "height": 1400,
+        "gridSize": 20
+      },
+      "nodes": {
+        "producto": {
+          "x": 520,
+          "y": 300,
+          "width": 150,
+          "height": 60
+        },
+        "categoria": {
+          "x": 140,
+          "y": 300,
+          "width": 150,
+          "height": 60
+        },
+        "rel_clasifica": {
+          "x": 330,
+          "y": 300,
+          "width": 120,
+          "height": 70
+        },
+        "venta": {
+          "x": 520,
+          "y": 680,
+          "width": 150,
+          "height": 60
+        },
+        "detalle_venta": {
+          "x": 920,
+          "y": 680,
+          "width": 170,
+          "height": 60
+        },
+        "rel_contiene": {
+          "x": 730,
+          "y": 680,
+          "width": 120,
+          "height": 70
+        }
+      },
+      "connectors": {
+        "con_categoria_clasifica": {
+          "source": "categoria",
+          "target": "rel_clasifica",
+          "sourceAnchor": "RIGHT",
+          "targetAnchor": "LEFT",
+          "bendPoints": []
+        },
+        "con_clasifica_producto": {
+          "source": "rel_clasifica",
+          "target": "producto",
+          "sourceAnchor": "RIGHT",
+          "targetAnchor": "LEFT",
+          "bendPoints": []
+        },
+        "con_venta_contiene": {
+          "source": "venta",
+          "target": "rel_contiene",
+          "sourceAnchor": "RIGHT",
+          "targetAnchor": "LEFT",
+          "bendPoints": []
+        },
+        "con_contiene_detalle": {
+          "source": "rel_contiene",
+          "target": "detalle_venta",
+          "sourceAnchor": "RIGHT",
+          "targetAnchor": "LEFT",
+          "bendPoints": []
+        }
+      }
+    },
+    "CROWS_FOOT": {
+      "canvas": {
+        "width": 1800,
+        "height": 1200,
+        "gridSize": 20
+      },
+      "nodes": {},
+      "connectors": {}
+    }
+  },
+  "styles": {
+    "theme": "classic-light",
+    "defaultElementStyles": {
+      "ENTITY": {
+        "fill": "#FFFFFF",
+        "stroke": "#333333",
+        "text": "#222222",
+        "fontFamily": "Segoe UI",
+        "fontSize": 12
+      },
+      "ATTRIBUTE": {
+        "fill": "#FFFFFF",
+        "stroke": "#666666",
+        "text": "#222222",
+        "fontFamily": "Segoe UI",
+        "fontSize": 11
+      },
+      "RELATIONSHIP": {
+        "fill": "#FFFFFF",
+        "stroke": "#333333",
+        "text": "#222222",
+        "fontFamily": "Segoe UI",
+        "fontSize": 12
+      },
+      "CONNECTOR": {
+        "stroke": "#333333",
+        "strokeWidth": 1.0
+      }
+    },
+    "overrides": {
+      "producto": {
+        "fill": "#FFF7D6"
+      },
+      "venta": {
+        "fill": "#EAF4FF"
+      }
+    }
+  },
+  "exportProfiles": {
+    "svg": {
+      "background": "white",
+      "includeMetadata": true,
+      "margin": 40
+    },
+    "png": {
+      "scale": 2.0,
+      "background": "white",
+      "margin": 40
+    }
+  },
+  "metadata": {
+    "createdAt": "2026-05-10T04:00:00Z",
+    "updatedAt": "2026-05-10T04:00:00Z",
+    "createdBy": "@programalobien",
+    "migrationRef": "V1__initial_schema",
+    "meetingRef": "levantamiento_reunion_01",
+    "notes": [
+      "Ejemplo de Tanda 4 para documentar persistencia .dms.",
+      "Crow's Foot queda previsto como vista futura, con layout separado."
+    ]
+  }
+}

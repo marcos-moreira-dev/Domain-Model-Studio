@@ -1,0 +1,116 @@
+/* =========================================================
+   Ficha central del resultado
+   ========================================================= */
+.logical-business-ficha {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d2d8df;
+    -fx-border-width: 1 0 0 0;
+    -fx-padding: 18 20 20 20;
+}
+
+.logical-business-section-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #143a61;
+    -fx-font-smoothing-type: gray;
+}
+
+.logical-business-document-text {
+    -fx-text-fill: -dms-text;
+    -fx-font-size: 12px;
+    -fx-line-spacing: 2px;
+}
+
+.logical-business-empty-notice {
+    -fx-text-fill: -dms-text-muted;
+    -fx-font-style: italic;
+}
+
+/* Campos y listas de la ficha administrativa */
+.logical-business-field {
+    -fx-background-color: #f8fafc;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-width: 1;
+    -fx-padding: 9 10 10 10;
+}
+
+.logical-business-field-label {
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #50647a;
+}
+
+.logical-business-list-row {
+    -fx-text-fill: -dms-text;
+    -fx-font-size: 12px;
+}
+
+.logical-business-reference-list {
+    -fx-background-color: #f5f9ff;
+    -fx-border-color: #bfd0e4;
+}
+
+/* Métricas sobrias del resumen documental */
+.logical-business-metric-row {
+    -fx-padding: 2 0 4 0;
+}
+
+.logical-business-metric {
+    -fx-background-color: #f7f9fb;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-width: 1;
+    -fx-padding: 8 10 8 10;
+    -fx-min-width: 92;
+}
+
+.logical-business-metric-value {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #12385f;
+}
+
+.logical-business-metric-label {
+    -fx-font-size: 11px;
+    -fx-text-fill: -dms-text-muted;
+}
+
+/* Formulario central editable del expediente lógico */
+.logical-business-form-row {
+    -fx-padding: 2 0 6 0;
+}
+
+.logical-business-input,
+.logical-business-input-area {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #9fb1c3;
+    -fx-border-width: 1;
+    -fx-text-fill: -dms-text;
+}
+
+.logical-business-input:focused,
+.logical-business-input-area:focused {
+    -fx-border-color: #2d75aa;
+}
+
+.logical-business-apply-button {
+    -fx-background-color: linear-gradient(to bottom, #f7fbff, #d7e6f4);
+    -fx-border-color: #7b9bb8;
+    -fx-border-width: 1;
+    -fx-padding: 6 12 6 12;
+    -fx-font-weight: bold;
+    -fx-text-fill: #12385f;
+}
+
+.logical-business-apply-button:hover {
+    -fx-background-color: #e7f2fb;
+}
+
+.logical-business-reference-link {
+    -fx-text-fill: #064f8f;
+    -fx-underline: false;
+    -fx-padding: 2 0 2 0;
+}
+
+.logical-business-reference-link:hover {
+    -fx-underline: true;
+}

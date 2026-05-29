@@ -1,0 +1,36 @@
+/*
+ * Domain Model Studio — Paleta semántica de diagramas
+ *
+ * Colores sólidos y sobrios para evitar mini-paletas inconexas por editor.
+ * Regla: 80% tokens globales, 20% color semántico por familia de nodo.
+ */
+
+.root {
+    -dms-diagram-header-top: #f7f9fc;
+    -dms-diagram-header-bottom: #edf2f8;
+    -dms-diagram-panel-bg: -dms-bg-panel-soft;
+    -dms-diagram-board-bg: #edf2f7;
+    -dms-diagram-title: #203654;
+    -dms-diagram-subtitle: #5a6878;
+    -dms-diagram-muted: -dms-diagram-subtitle;
+
+    -dms-module-fill: #ffffff;
+    -dms-module-fill-child: #f3f7fa;
+    -dms-module-border: #8fa7c3;
+
+    -dms-uml-class-fill: #ffffff;
+    -dms-uml-package-fill: #eef4fb;
+    -dms-uml-border: #9fb6d1;
+
+    -dms-behavior-node-fill: #ffffff;
+    -dms-behavior-symbol-fill: #eef4ff;
+    -dms-behavior-symbol-border: #3c6fb6;
+
+    -dms-architecture-node-fill: #ffffff;
+    -dms-architecture-node-fill-soft: #f8fafc;
+    -dms-architecture-border: #94a3b8;
+
+    -dms-wireframe-component-fill: #f8fafc;
+    -dms-wireframe-muted-fill: #e2e8f0;
+    -dms-wireframe-alert-fill: #fff7ed;
+}

@@ -1,0 +1,69 @@
+/*
+ * Domain Model Studio — app-light.css
+ *
+ * Hoja ensambladora de estilos.
+ *
+ * El CSS se divide por áreas para mejorar trazabilidad humana.
+ * Mantener estos imports en orden: la cascada respeta la jerarquía visual
+ * del producto y evita cambios bruscos.
+ */
+
+@import url("tokens.css"); /* Tokens visuales base */
+@import url("diagram-palette.css"); /* Paleta semántica compartida para diagramas */
+@import url("shell-menu-toolbar-base.css"); /* Shell, menú y toolbar base */
+@import url("panels-sidebar.css"); /* Paneles laterales y árbol */
+@import url("canvas-base.css"); /* Área de trabajo y placeholders base */
+@import url("inspector-base.css"); /* Inspector base */
+@import url("statusbar.css"); /* Barra de estado */
+@import url("desktop-controls.css"); /* Scrollbars y tabs de escritorio */
+@import url("diagram-conceptual.css"); /* Modelo conceptual Chen y pata de gallo */
+@import url("welcome-classic.css"); /* Bienvenida clásica */
+@import url("inspector-contextual.css"); /* Inspector contextual */
+@import url("identity-foundation.css"); /* Identidad base de shell */
+@import url("identity-canvas.css"); /* Identidad de canvas y selección */
+@import url("identity-inspector.css"); /* Identidad del inspector */
+@import url("identity-conceptual-details.css"); /* Detalles de notación conceptual */
+@import url("identity-welcome-status.css"); /* Estado, bienvenida clásica y tooltips */
+@import url("manual.css"); /* Manual integrado */
+@import url("click-message-dialog.css"); /* Diálogo reutilizable para mensajes por clic */
+@import url("module-operational-help.css"); /* Ayuda operativa por módulo */
+@import url("notation-and-selection.css"); /* Selector de notación y selección */
+@import url("inspector-appearance.css"); /* Apariencia editable en inspector */
+@import url("welcome-projects.css"); /* Bienvenida con proyectos y diálogos */
+@import url("welcome-editor.css"); /* Viewport, iconografía PNG y footer visual */
+@import url("toolbar-viewport.css"); /* Toolbar estable e inicio simple */
+@import url("welcome-start-layout.css"); /* Inicio tipo IDE: layout y títulos */
+@import url("welcome-start-actions.css"); /* Inicio tipo IDE: acciones */
+@import url("welcome-start-cards.css"); /* Inicio tipo IDE: tarjetas y vacíos */
+@import url("editor-tabs.css"); /* Pestañas de proyectos abiertas */
+@import url("diagram-interaction.css"); /* Interacciones visuales de relaciones */
+@import url("interactive-canvas-base-details.css"); /* Base del lienzo común reutilizable */
+@import url("interactive-canvas.css"); /* Lienzo común reutilizable */
+@import url("diagram-surface.css"); /* Superficie zoomable canónica */
+@import url("diagram-drawing.css"); /* Primitivas de dibujo compartidas */
+@import url("workbench.css"); /* Workbench común: header, slots y paneles */
+@import url("placeholder.css"); /* Vista de planificación */
+@import url("toolbar-contextual.css"); /* Toolbar contextual */
+@import url("data-dictionary.css"); /* Diccionario de datos */
+@import url("logical-business.css"); /* Levantamiento lógico */
+@import url("module-map.css"); /* Mapa de módulos */
+@import url("uml-class.css"); /* UML Clases */
+@import url("administrative-editors.css"); /* Editores administrativos especializados */
+@import url("roles-permissions.css"); /* Roles y permisos */
+@import url("roles-permissions-tabs.css"); /* Pestañas de roles y permisos */
+@import url("screen-flow.css"); /* Flujo de pantallas */
+@import url("wireframe.css"); /* Wireframes administrativos */
+
+@import url("behavior-diagram.css"); /* BPMN básico y UML comportamiento */
+@import url("sequence-diagram.css"); /* UML Secuencia especializado */
+@import url("architecture-diagram.css"); /* C4 y despliegue técnico */
+@import url("free-graph.css"); /* Grafo libre */
+@import url("logical-business-graph.css"); /* Grafo lógico del negocio */
+
+/*
+ * Contratos de smoke heredados: las clases .welcome-panel, .welcome-title
+ * y .welcome-note viven ahora en archivos importados, no en esta hoja.
+ */
+@import url("diagram-academic-primitives.css"); /* Contrato visual académico primitivo */
+@import url("diagram-academic-primitives-shapes.css"); /* Primitivas académicas: símbolos y conectores */
+@import url("interactive-canvas-selection-overrides.css"); /* Selección transversal final */

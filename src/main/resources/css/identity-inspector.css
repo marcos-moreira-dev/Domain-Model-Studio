@@ -1,0 +1,53 @@
+/*
+ * Domain Model Studio — inspector, campos y acciones contextuales
+ */
+
+.inspector-scroll,
+.inspector-scroll > .viewport,
+.inspector-content {
+    -fx-background-color: -dms-bg-panel;
+}
+
+.inspector-section {
+    -fx-background-color: -dms-bg-panel-soft;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-width: 1;
+}
+
+.inspector-section-title {
+    -fx-text-fill: -dms-text;
+}
+
+.inspector-message-box,
+.welcome-note {
+    -fx-background-color: #f1f4f8;
+    -fx-border-color: #c9d5e2;
+}
+
+.inspector-selection-title {
+    -fx-text-fill: #25384d;
+}
+
+.inspector-field,
+.combo-box-base {
+    -fx-background-color: #ffffff;
+    -fx-border-color: -dms-border-dark;
+    -fx-border-width: 1;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+.combo-box-base:hover,
+.inspector-field:hover {
+    -fx-border-color: #9fb6d2;
+}
+
+.inspector-action-button {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #e4e6e9);
+    -fx-border-color: -dms-border-dark;
+}
+
+.inspector-action-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, -dms-accent-soft);
+    -fx-border-color: -dms-accent-border;
+}

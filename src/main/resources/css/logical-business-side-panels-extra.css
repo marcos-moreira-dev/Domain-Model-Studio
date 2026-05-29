@@ -1,0 +1,123 @@
+/* =========================================================
+   Ayuda contextual y metadatos laterales
+   ========================================================= */
+.logical-business-compact-meta {
+    -fx-font-size: 11px;
+    -fx-text-fill: #50647a;
+    -fx-font-weight: bold;
+}
+
+.logical-business-help-scroll {
+    -fx-background-color: -dms-bg-panel-soft;
+    -fx-background: -dms-bg-panel-soft;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+}
+
+.logical-business-help-scroll .viewport {
+    -fx-background-color: -dms-bg-panel-soft;
+}
+
+.logical-business-help-content {
+    -fx-background-color: -dms-bg-panel-soft;
+}
+
+.logical-business-help-block {
+    -fx-background-color: #ffffff;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-width: 1;
+    -fx-padding: 8 9 8 9;
+}
+
+.logical-business-help-closing {
+    -fx-background-color: #f7fbff;
+    -fx-border-color: #b9c8d8;
+}
+
+/* =========================================================
+   CRUD documental controlado del SideDock
+   ========================================================= */
+.logical-business-crud-actions {
+    -fx-padding: 0 0 6 0;
+}
+
+.logical-business-side-action:disabled {
+    -fx-opacity: 0.55;
+}
+
+/* =========================================================
+   Glosario obligatorio del Levantamiento lógico
+   ========================================================= */
+.logical-business-glossary-section {
+    -fx-background-color: #ffffff;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-width: 1;
+    -fx-padding: 8 9 8 9;
+}
+
+.logical-business-glossary-entry {
+    -fx-padding: 3 0 4 0;
+    -fx-border-color: transparent transparent #edf1f5 transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.logical-business-help-boundary {
+    -fx-background-color: #f8fbff;
+    -fx-border-color: #b9c8d8;
+}
+
+.logical-business-help-ai {
+    -fx-background-color: #fbf9ff;
+    -fx-border-color: #c7bddf;
+}
+
+.logical-business-help-warning {
+    -fx-background-color: #fffaf0;
+    -fx-border-color: #d8bf84;
+}
+
+/* =========================================================
+   Familias de elementos lógicos
+   ========================================================= */
+.logical-business-element-family {
+    -fx-background-color: #ffffff;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-width: 1;
+    -fx-padding: 8 9 8 9;
+}
+
+.logical-business-family-flow { -fx-border-color: #8aa8c2; }
+.logical-business-family-rules { -fx-border-color: #b8a05f; }
+.logical-business-family-language { -fx-border-color: #9ab5a3; }
+.logical-business-family-states { -fx-border-color: #b3a4c7; }
+.logical-business-family-candidates { -fx-border-color: #7fa98b; }
+.logical-business-family-risks { -fx-border-color: #c79277; }
+.logical-business-question-button { -fx-border-color: #c79277; }
+
+/* =========================================================
+   Entidades, atributos y relaciones candidatas visibles
+   ========================================================= */
+.logical-business-candidate-summary,
+.logical-business-candidate-card {
+    -fx-background-color: #ffffff;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-width: 1;
+    -fx-padding: 8 9 8 9;
+}
+
+.logical-business-entity-candidate-card {
+    -fx-border-color: #7fa98b;
+}
+
+.logical-business-candidate-card.selected {
+    -fx-background-color: #f4fbf6;
+    -fx-border-color: #4f8f61;
+}
+
+.logical-business-attribute-button {
+    -fx-border-color: #8db1d0;
+}
+
+.logical-business-relationship-button {
+    -fx-border-color: #aa94bf;
+}

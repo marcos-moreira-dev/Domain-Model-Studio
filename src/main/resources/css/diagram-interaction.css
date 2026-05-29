@@ -1,0 +1,20 @@
+/*
+ * Domain Model Studio — Interacciones visuales de relaciones
+ *
+ * Este archivo forma parte de la Tanda 05 de modularización CSS.
+ * Mantiene la estética desktop sobria del proyecto y conserva el orden
+ * de cascada original mediante app-light.css.
+ */
+
+/* P28: etiquetas de relación Crow's Foot movibles sin perder su vínculo visual con la línea. */
+.crowsfoot-relationship-label:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.98);
+    -fx-border-color: #6f9bc7;
+}
+
+.crowsfoot-relationship-label-selected {
+    -fx-background-color: rgba(255, 255, 255, 0.98);
+    -fx-border-color: #2f6db3;
+    -fx-border-width: 1.4;
+    -fx-font-weight: bold;
+}

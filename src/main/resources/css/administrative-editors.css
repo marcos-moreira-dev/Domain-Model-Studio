@@ -1,0 +1,48 @@
+/* =========================================================
+   Editores administrativos especializados
+   =========================================================
+   Base visual compartida para diagramas funcionales que se editan
+   mediante tablas y formularios, sin exponer jerga técnica interna.
+*/
+
+.specialized-editor {
+    -fx-background-color: -dms-bg-panel-soft;
+}
+
+.specialized-editor-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-text;
+    -fx-font-smoothing-type: gray;
+}
+
+.specialized-editor-subtitle {
+    -fx-font-size: 12px;
+    -fx-text-fill: -dms-text-muted;
+    -fx-font-smoothing-type: gray;
+}
+
+.specialized-editor-tabs {
+    -fx-background-color: transparent;
+}
+
+.specialized-editor-form {
+    -fx-background-color: -dms-bg-panel;
+    -fx-border-color: -dms-border;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+.specialized-editor .table-view {
+    -fx-background-color: -dms-bg-panel;
+    -fx-border-color: -dms-border;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+.specialized-editor .text-field,
+.specialized-editor .text-area,
+.specialized-editor .combo-box,
+.specialized-editor .spinner {
+    -fx-font-size: 12px;
+}

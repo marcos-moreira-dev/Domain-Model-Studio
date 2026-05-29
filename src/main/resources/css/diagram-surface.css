@@ -1,0 +1,40 @@
+/*
+ * Domain Model Studio — diagram-surface.css
+ * Superficie zoomable canónica para diagramas visuales.
+ */
+
+.diagram-surface-scroll-pane {
+    -fx-background-color: -dms-bg-workspace;
+    -fx-background: -dms-bg-workspace;
+    -fx-border-color: transparent;
+}
+
+.diagram-surface-zoom-container {
+    -fx-background-color: -dms-bg-workspace;
+}
+
+.diagram-surface-workspace {
+    -fx-background-color: transparent;
+}
+
+.diagram-surface-background-layer,
+.diagram-surface-connector-layer,
+.diagram-surface-node-layer,
+.diagram-surface-overlay-layer,
+.diagram-surface-live-preview-layer {
+    -fx-background-color: transparent;
+}
+
+.diagram-surface-fill {
+    -fx-fill: -dms-bg-workspace;
+}
+
+.diagram-surface-grid-line {
+    -fx-stroke: rgba(148, 163, 184, 0.18);
+    -fx-stroke-width: 1;
+}
+
+.diagram-surface-grid-major-line {
+    -fx-stroke: rgba(100, 116, 139, 0.28);
+    -fx-stroke-width: 1.1;
+}

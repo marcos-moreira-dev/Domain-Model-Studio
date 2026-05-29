@@ -1,0 +1,92 @@
+/*
+ * Domain Model Studio — identidad base de shell
+ */
+
+.root {
+    -fx-accent: -dms-accent;
+    -fx-focus-color: -dms-accent-border;
+    -fx-faint-focus-color: rgba(47, 109, 179, 0.16);
+}
+
+.app-root {
+    -fx-background-color: linear-gradient(to bottom, #f3f4f5, -dms-bg-app);
+}
+
+.app-menu-bar {
+    -fx-background-color: linear-gradient(to bottom, #f7f7f7, #e5e5e5);
+    -fx-border-color: -dms-border-dark;
+}
+
+.main-toolbar {
+    -fx-background-color: linear-gradient(to bottom, #f7f7f7, #e1e3e5);
+    -fx-border-color: -dms-border-dark;
+    -fx-padding: 5 8 5 8;
+}
+
+.toolbar-group-label {
+    -fx-text-fill: -dms-text-muted;
+    -fx-font-size: 10.5px;
+    -fx-padding: 0 0 0 7;
+}
+
+.toolbar-button,
+.button {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #e7e9ec);
+    -fx-border-color: -dms-border-dark;
+    -fx-background-radius: 1.5;
+    -fx-border-radius: 1.5;
+    -fx-effect: innershadow(gaussian, rgba(255, 255, 255, 0.65), 1, 0.1, 0, 1);
+}
+
+.toolbar-button:hover,
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, -dms-accent-soft);
+    -fx-border-color: -dms-accent-border;
+}
+
+.toolbar-button:focused,
+.button:focused,
+.inspector-field:focused,
+.combo-box-base:focused {
+    -fx-border-color: -dms-accent-border;
+    -fx-effect: dropshadow(gaussian, rgba(47, 109, 179, 0.20), 3, 0.18, 0, 0);
+}
+
+.panel-header {
+    -fx-background-color: linear-gradient(to bottom, #f2f3f4, #dedfe1);
+    -fx-border-color: -dms-border-dark;
+    -fx-padding: 6 8 6 8;
+}
+
+.panel-header-title {
+    -fx-text-fill: -dms-text;
+}
+
+.panel-header-button,
+.panel-restore-tab-button {
+    -fx-background-color: linear-gradient(to bottom, #fbfbfb, #e2e4e6);
+    -fx-border-color: -dms-border-dark;
+}
+
+.side-panel,
+.inspector-panel {
+    -fx-background-color: -dms-bg-panel;
+}
+
+.workspace-panel,
+.work-area-frame {
+    -fx-background-color: -dms-bg-workspace;
+}
+
+.workspace-header {
+    -fx-background-color: linear-gradient(to bottom, #fbfbfb, #e9ecef);
+    -fx-border-color: -dms-border-dark;
+}
+
+.workspace-title {
+    -fx-text-fill: -dms-text;
+}
+
+.workspace-subtitle {
+    -fx-text-fill: -dms-text-muted;
+}

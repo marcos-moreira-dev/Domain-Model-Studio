@@ -1,0 +1,59 @@
+/* =========================================================
+   Levantamiento lógico — base documental del workspace
+   ========================================================= */
+.logical-business-document-scroll {
+    -fx-background-color: #ffffff;
+    -fx-background: #ffffff;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+}
+
+.logical-business-document-scroll .viewport {
+    -fx-background-color: #ffffff;
+}
+
+.logical-business-document-content {
+    -fx-background-color: #ffffff;
+}
+
+.logical-business-expedient-header {
+    -fx-background-color: linear-gradient(to bottom, #0d629b, #06406d 78%, #092a45 100%);
+    -fx-border-color: #092a45;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 16 20 15 20;
+}
+
+.logical-business-expedient-header .logical-business-document-title {
+    -fx-text-fill: #ffffff;
+}
+
+.logical-business-expedient-header .logical-business-document-text {
+    -fx-text-fill: #eef6ff;
+}
+
+.logical-business-document-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #12385f;
+    -fx-font-smoothing-type: gray;
+}
+
+.logical-business-chip-row {
+    -fx-padding: 2 0 0 0;
+}
+
+.logical-business-chip {
+    -fx-background-color: #eef3f9;
+    -fx-border-color: #b9c5d2;
+    -fx-border-width: 1;
+    -fx-padding: 3 8 3 8;
+    -fx-text-fill: #274761;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.logical-business-expedient-header .logical-business-chip {
+    -fx-background-color: #e6f1fb;
+    -fx-border-color: #b7d2ea;
+    -fx-text-fill: #113f68;
+}

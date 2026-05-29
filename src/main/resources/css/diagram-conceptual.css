@@ -1,0 +1,222 @@
+/*
+ * Domain Model Studio — Modelo conceptual Chen y pata de gallo
+ *
+ * Este archivo forma parte de la Tanda 05 de modularización CSS.
+ * Mantiene la estética desktop sobria del proyecto y conserva el orden
+ * de cascada original mediante app-light.css.
+ */
+
+.chen-entity {
+    -fx-fill: #fff6dd;
+    -fx-stroke: #4f4f4f;
+    -fx-stroke-width: 1.25;
+}
+
+.chen-entity-weak-outline {
+    -fx-fill: transparent;
+    -fx-stroke: #4f4f4f;
+    -fx-stroke-width: 1.0;
+}
+
+.chen-attribute {
+    -fx-fill: #eef5ff;
+    -fx-stroke: #4f4f4f;
+    -fx-stroke-width: 1.05;
+}
+
+.chen-attribute-derived {
+    -fx-stroke-dash-array: 6 4;
+}
+
+.chen-attribute-multivalued-outline {
+    -fx-fill: transparent;
+    -fx-stroke: #4f4f4f;
+    -fx-stroke-width: 1.0;
+}
+
+.chen-attribute-primary-key {
+    -fx-underline: true;
+    -fx-font-weight: bold;
+}
+
+.chen-attribute-partial-key {
+    -fx-underline: true;
+    -fx-font-style: italic;
+}
+
+.chen-relationship {
+    -fx-fill: #edf6eb;
+    -fx-stroke: #4f4f4f;
+    -fx-stroke-width: 1.15;
+}
+
+.chen-relationship-identifying-outline {
+    -fx-fill: transparent;
+    -fx-stroke: #4f4f4f;
+    -fx-stroke-width: 1.0;
+}
+
+.chen-connector {
+    -fx-stroke: #4a4a4a;
+    -fx-stroke-width: 1.15;
+}
+
+.chen-cardinality {
+    -fx-text-fill: -dms-text;
+    -fx-background-color: rgba(255, 255, 255, 0.92);
+    -fx-border-color: #c8c8c8;
+    -fx-border-width: 1;
+    -fx-padding: 1 4 1 4;
+}
+
+/* -------------------------------------------------------------------------
+ * 11. Selección y movimiento: Tandas de implementación 10 y 11
+ * ------------------------------------------------------------------------- */
+.chen-draggable-node {
+    -fx-cursor: hand;
+}
+
+.chen-selected-node .chen-entity,
+.chen-selected-node .chen-attribute,
+.chen-selected-node .chen-relationship {
+    -fx-stroke: #2f6db3;
+    -fx-stroke-width: 2.4;
+}
+
+.chen-selected-node .diagram-label {
+    -fx-text-fill: #1f4f85;
+    -fx-font-weight: bold;
+}
+
+.model-tree .tree-cell:selected {
+    -fx-background-color: #d9e9fb;
+    -fx-text-fill: #1f4f85;
+}
+
+/* Tandas 12-13: inspector editable y guardado .dms */
+.inspector-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #b8b8b8;
+    -fx-border-width: 1;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 3 5 3 5;
+    -fx-font-size: 12px;
+}
+
+.inspector-field:focused {
+    -fx-border-color: #2f6db3;
+}
+
+.inspector-action-button {
+    -fx-background-color: #e7e7e7;
+    -fx-border-color: #a8a8a8;
+    -fx-border-width: 1;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 4 10 4 10;
+    -fx-text-fill: #222222;
+}
+
+.inspector-action-button:hover {
+    -fx-background-color: #dcdcdc;
+}
+
+/* Tandas 16-17: exportación PNG y líneas editables con puntos intermedios */
+.chen-connector-segment {
+    -fx-cursor: crosshair;
+}
+
+.chen-selected-connector-segment {
+    -fx-stroke: #2f6db3;
+    -fx-stroke-width: 2.2;
+}
+
+.chen-bend-point-handle {
+    -fx-fill: #ffffff;
+    -fx-stroke: #2f6db3;
+    -fx-stroke-width: 1.8;
+    -fx-cursor: hand;
+}
+
+.chen-bend-point-handle:hover {
+    -fx-fill: #d9e9fb;
+}
+
+.chen-selected-bend-point-handle {
+    -fx-fill: #d9e9fb;
+    -fx-stroke: #1f4f8c;
+    -fx-stroke-width: 2.6;
+}
+
+.chen-endpoint-handle {
+    -fx-fill: #fef9e7;
+    -fx-stroke: #b26a00;
+    -fx-stroke-width: 2.0;
+    -fx-cursor: hand;
+}
+
+.chen-endpoint-handle:hover {
+    -fx-fill: #fff0bf;
+}
+
+/* -------------------------------------------------------------------------
+ * 12. Multi-notación y Crow's Foot básico: Tandas de implementación 20 y 21
+ * ------------------------------------------------------------------------- */
+.crowsfoot-entity-box {
+    -fx-fill: #ffffff;
+    -fx-stroke: #4f4f4f;
+    -fx-stroke-width: 1.1;
+}
+
+.crowsfoot-entity-header {
+    -fx-fill: #e9edf2;
+    -fx-stroke: #4f4f4f;
+    -fx-stroke-width: 1.0;
+}
+
+.crowsfoot-entity-title {
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #222222;
+}
+
+.crowsfoot-attribute,
+.crowsfoot-attribute-pk {
+    -fx-font-family: "Consolas", "Segoe UI";
+    -fx-font-size: 11px;
+    -fx-text-fill: #2a2a2a;
+}
+
+.crowsfoot-attribute-pk {
+    -fx-font-weight: bold;
+}
+
+.crowsfoot-connector,
+.crowsfoot-marker {
+    -fx-stroke: #3f3f3f;
+    -fx-stroke-width: 1.25;
+}
+
+.crowsfoot-marker-circle {
+    -fx-fill: #ffffff;
+    -fx-stroke: #3f3f3f;
+    -fx-stroke-width: 1.15;
+}
+
+.crowsfoot-relationship-label {
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 11px;
+    -fx-text-fill: #303030;
+    -fx-background-color: rgba(255, 255, 255, 0.90);
+    -fx-border-color: #d4d4d4;
+    -fx-border-width: 1;
+}
+
+.chen-selected-node .crowsfoot-entity-box {
+    -fx-stroke: #2f6db3;
+    -fx-stroke-width: 2.3;
+}
+
+/* -------------------------------------------------------------------------

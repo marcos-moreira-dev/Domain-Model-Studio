@@ -1,0 +1,168 @@
+/*
+ * Grafo libre — editor visual.
+ * Estilos propios del workspace de nodos y relaciones libres.
+ */
+
+.free-graph-editor-root {
+    -fx-background-color: -dms-bg-workspace;
+}
+
+.free-graph-editor-split {
+    -fx-background-color: -dms-bg-workspace;
+}
+
+.free-graph-diagram-center {
+    -fx-background-color: -dms-bg-canvas;
+}
+
+.free-graph-canvas-tool-bar {
+    -fx-background-color: -dms-panel-bg;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-width: 0 0 1 0;
+    -fx-alignment: center-left;
+}
+
+.free-graph-canvas-tool-button {
+    -fx-padding: 4 12 4 12;
+}
+
+.free-graph-canvas-tool-button:selected {
+    -fx-background-color: -dms-accent;
+    -fx-text-fill: white;
+}
+
+.free-graph-canvas-tool-hint {
+    -fx-text-fill: -dms-text-muted;
+    -fx-font-size: 11px;
+}
+
+.free-graph-node-body {
+    -fx-fill: white;
+    -fx-stroke: -dms-node-border;
+    -fx-stroke-width: 1.35;
+}
+
+.free-graph-node-selected {
+    -fx-fill: -dms-accent;
+    -fx-stroke: derive(-dms-accent, -18%);
+    -fx-stroke-width: 2.2;
+}
+
+.free-graph-node-title {
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-text;
+    -fx-font-size: 12px;
+}
+
+.free-graph-node-subtitle {
+    -fx-text-fill: -dms-text-muted;
+    -fx-font-size: 10.5px;
+}
+
+.free-graph-node-text-selected {
+    -fx-text-fill: white;
+}
+
+.free-graph-connector-line {
+    -fx-stroke-width: 1.8;
+}
+
+.free-graph-structure .list-cell:selected .free-graph-structure-item-title,
+.free-graph-structure .list-cell:selected .free-graph-structure-item-meta {
+    -fx-text-fill: white;
+}
+
+.free-graph-structure-hint,
+.free-graph-structure-item-meta,
+.free-graph-field-label {
+    -fx-text-fill: -dms-text-muted;
+}
+
+.free-graph-structure-item-title,
+.free-graph-section-title {
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-text;
+}
+
+.free-graph-action-button {
+    -fx-padding: 4 10 4 10;
+}
+
+/* Tanda 2 — estructura del Grafo libre legible y sin cabecera oscura heredada. */
+.free-graph-structure-tabs {
+    -fx-background-color: -dms-bg-card;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-width: 1;
+}
+
+.free-graph-structure-tabs .tab-header-area .tab-header-background {
+    -fx-background-color: -dms-bg-card;
+}
+
+.free-graph-structure-tabs .tab {
+    -fx-background-color: -dms-panel-bg;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-width: 0 1 1 0;
+    -fx-padding: 3 10 3 10;
+}
+
+.free-graph-structure-tabs .tab:selected {
+    -fx-background-color: white;
+    -fx-border-color: -dms-accent-border;
+}
+
+.free-graph-structure-tabs .tab-label {
+    -fx-text-fill: -dms-text;
+    -fx-font-weight: 600;
+}
+
+.free-graph-structure-list {
+    -fx-background-color: white;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-width: 1 0 0 0;
+}
+
+.free-graph-structure-list .list-cell {
+    -fx-padding: 6 8 6 8;
+    -fx-background-color: transparent;
+}
+
+.free-graph-structure-list .list-cell:selected {
+    -fx-background-color: -dms-accent;
+}
+
+.free-graph-structure-item {
+    -fx-spacing: 3;
+}
+
+.free-graph-structure-edge-route {
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-text;
+}
+
+.free-graph-structure-edge-label {
+    -fx-text-fill: -dms-text;
+}
+
+.free-graph-structure-edge-label-empty {
+    -fx-text-fill: -dms-text-muted;
+    -fx-font-style: italic;
+}
+
+.free-graph-structure-edge-meta {
+    -fx-text-fill: -dms-text-muted;
+    -fx-font-size: 10.5px;
+}
+
+.free-graph-structure-empty {
+    -fx-text-fill: -dms-text-muted;
+    -fx-font-style: italic;
+    -fx-padding: 12;
+}
+
+.free-graph-structure .list-cell:selected .free-graph-structure-edge-route,
+.free-graph-structure .list-cell:selected .free-graph-structure-edge-label,
+.free-graph-structure .list-cell:selected .free-graph-structure-edge-label-empty,
+.free-graph-structure .list-cell:selected .free-graph-structure-edge-meta {
+    -fx-text-fill: white;
+}

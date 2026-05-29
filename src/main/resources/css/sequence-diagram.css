@@ -1,0 +1,308 @@
+/* =========================================================
+   UML Secuencia especializado
+   ========================================================= */
+.sequence-diagram-canvas {
+    -fx-background-color: -dms-bg-workspace;
+}
+
+.sequence-participant-header {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, -dms-node-fill-accent);
+    -fx-border-color: -dms-node-border;
+    -fx-border-width: 1.25;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.08), 6, 0.10, 0, 1);
+}
+
+.sequence-participant-selected,
+.sequence-note-selected,
+.sequence-activation-selected {
+    -fx-border-color: -dms-node-selected-border;
+    -fx-border-width: 2.2;
+}
+
+.sequence-participant-title {
+    -fx-font-size: 12.5px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-text;
+    -fx-alignment: center;
+}
+
+.sequence-lifeline {
+    -fx-stroke: -dms-border-dark;
+    -fx-stroke-width: 1.2;
+    -fx-stroke-dash-array: 8 8;
+}
+
+.sequence-lifeline-selected {
+    -fx-stroke: -dms-accent;
+    -fx-stroke-width: 1.8;
+}
+
+.sequence-message-line {
+    -fx-stroke: -dms-connector;
+    -fx-stroke-width: 1.6;
+}
+
+.sequence-message-return {
+    -fx-stroke-dash-array: 7 5;
+}
+
+.sequence-message-line-selected {
+    -fx-stroke: -dms-accent;
+    -fx-stroke-width: 2.2;
+}
+
+.sequence-message-arrow {
+    -fx-fill: -dms-connector;
+    -fx-stroke: -dms-connector;
+}
+
+.sequence-message-arrow-selected {
+    -fx-fill: -dms-accent;
+    -fx-stroke: -dms-accent;
+}
+
+.sequence-message-label {
+    -fx-background-color: rgba(255,255,255,0.96);
+    -fx-padding: 2 6 2 6;
+    -fx-font-size: 10.5px;
+    -fx-text-fill: -dms-text-muted;
+    -fx-border-color: -dms-node-border-soft;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+.sequence-note-box {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, -dms-node-fill-soft);
+    -fx-border-color: -dms-node-border;
+    -fx-border-width: 1.1;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+.sequence-note-title {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-text;
+}
+
+.sequence-note-detail {
+    -fx-font-size: 10px;
+    -fx-text-fill: -dms-text-muted;
+}
+
+.sequence-activation-box {
+    -fx-fill: #ffffff;
+    -fx-stroke: -dms-node-border;
+    -fx-stroke-width: 1.2;
+    -fx-arc-width: 0;
+    -fx-arc-height: 0;
+}
+
+/* Mensajes temporales especializados. */
+.sequence-message-self {
+    -fx-stroke-dash-array: 10 0;
+    -fx-fill: transparent;
+}
+
+.sequence-self-message-group .sequence-message-label {
+    -fx-background-color: rgba(255,255,255,0.98);
+}
+
+.sequence-message-arrow-open {
+    -fx-fill: #ffffff;
+    -fx-stroke: -dms-connector;
+    -fx-stroke-width: 1.4;
+}
+
+.sequence-message-arrow-selected.sequence-message-arrow-open {
+    -fx-fill: #ffffff;
+    -fx-stroke: -dms-accent;
+}
+
+/* Fragmentos UML básicos: alt / opt / loop. */
+.sequence-fragment-box {
+    -fx-background-color: rgba(255,255,255,0.20);
+    -fx-border-color: -dms-node-border;
+    -fx-border-width: 1.2;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-border-style: segments(10, 6);
+}
+
+.sequence-fragment-selected {
+    -fx-border-color: -dms-node-selected-border;
+    -fx-border-width: 2.0;
+}
+
+.sequence-fragment-tag {
+    -fx-background-color: -dms-node-fill-accent;
+    -fx-border-color: -dms-node-border;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-padding: 2 8 2 8;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-text;
+}
+
+.sequence-fragment-title {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-text;
+}
+
+.sequence-fragment-detail {
+    -fx-font-size: 10px;
+    -fx-text-fill: -dms-text-muted;
+}
+
+/* =========================================================
+   Tanda 7 — UML Secuencia más legible y sobrio
+   ========================================================= */
+.sequence-participant-header {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #1F2937;
+    -fx-border-width: 1.2;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-effect: none;
+}
+
+.sequence-participant-title,
+.sequence-fragment-title,
+.sequence-note-title,
+.sequence-note-detail,
+.sequence-fragment-detail {
+    -fx-text-fill: #111827;
+}
+
+.sequence-lifeline {
+    -fx-stroke: #374151;
+    -fx-stroke-width: 1.15;
+    -fx-stroke-dash-array: 7 7;
+}
+
+.sequence-message-line {
+    -fx-stroke: #1F2937;
+    -fx-fill: transparent;
+}
+
+.sequence-message-arrow {
+    -fx-stroke: #1F2937;
+    -fx-fill: #1F2937;
+}
+
+.sequence-message-label {
+    -fx-font-size: 11px;
+    -fx-text-fill: #111827;
+    -fx-background-color: rgba(255,255,255,0.98);
+    -fx-border-color: rgba(31, 41, 55, 0.28);
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+.sequence-activation-box {
+    -fx-fill: #FFFFFF;
+    -fx-stroke: #1F2937;
+    -fx-stroke-width: 1.15;
+    -fx-arc-width: 0;
+    -fx-arc-height: 0;
+}
+
+.sequence-fragment-box {
+    -fx-background-color: rgba(255,255,255,0.10);
+    -fx-border-color: #1F2937;
+    -fx-border-width: 1.1;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-effect: none;
+}
+
+.sequence-note-box {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #1F2937;
+    -fx-border-width: 1.1;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-effect: none;
+}
+
+.sequence-fragment-tag {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #1F2937;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-text-fill: #111827;
+}
+
+/* Tanda 16 — mensaje asíncrono UML Secuencia: flecha abierta y línea continua. */
+.sequence-message-async {
+    -fx-stroke-dash-array: 10 0;
+}
+
+/* Tanda 29 — operandos y guardas en fragmentos combinados UML Secuencia. */
+.sequence-fragment-operand-separator {
+    -fx-stroke: #1F2937;
+    -fx-stroke-width: 1.0;
+    -fx-stroke-dash-array: 6 4;
+}
+
+.sequence-fragment-operand {
+    -fx-font-size: 10px;
+    -fx-text-fill: #111827;
+    -fx-background-color: rgba(255,255,255,0.92);
+    -fx-padding: 1 4 1 4;
+}
+
+/* Tanda 29E — selección azul fuerte y legible en UML Secuencia. */
+.sequence-participant-header.sequence-participant-selected,
+.canvas-node-view-selected .sequence-participant-header {
+    -fx-border-color: #2563EB;
+    -fx-border-width: 2.6;
+    -fx-background-color: linear-gradient(to bottom, #FFFFFF, #EFF6FF);
+}
+
+.sequence-lifeline-selected,
+.canvas-node-view-selected .sequence-lifeline {
+    -fx-stroke: #2563EB;
+    -fx-stroke-width: 2.1;
+}
+
+.sequence-activation-box.sequence-activation-selected,
+.canvas-node-view-selected .sequence-activation-box {
+    -fx-stroke: #2563EB;
+    -fx-stroke-width: 2.6;
+    -fx-fill: rgba(239, 246, 255, 0.82);
+}
+
+.sequence-note-box.sequence-note-selected,
+.canvas-node-view-selected .sequence-note-box {
+    -fx-border-color: #2563EB;
+    -fx-border-width: 2.4;
+    -fx-background-color: #EFF6FF;
+}
+
+.sequence-fragment-box.sequence-fragment-selected,
+.canvas-node-view-selected .sequence-fragment-box {
+    -fx-border-color: #2563EB;
+    -fx-border-width: 2.6;
+    -fx-border-style: segments(10, 6);
+    -fx-background-color: rgba(239, 246, 255, 0.18);
+}
+
+.sequence-message-line-selected {
+    -fx-stroke: #2563EB;
+    -fx-stroke-width: 2.6;
+}
+
+.sequence-message-arrow-selected {
+    -fx-fill: #2563EB;
+    -fx-stroke: #2563EB;
+}
+
+.sequence-message-arrow-selected.sequence-message-arrow-open {
+    -fx-fill: #FFFFFF;
+    -fx-stroke: #2563EB;
+}

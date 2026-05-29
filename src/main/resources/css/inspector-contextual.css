@@ -1,0 +1,65 @@
+/*
+ * Domain Model Studio — Inspector contextual
+ *
+ * Este archivo forma parte de la Tanda 05 de modularización CSS.
+ * Mantiene la estética desktop sobria del proyecto y conserva el orden
+ * de cascada original mediante app-light.css.
+ */
+
+.inspector-scroll {
+    -fx-background: -dms-bg-panel;
+    -fx-background-color: -dms-bg-panel;
+    -fx-border-color: transparent;
+}
+
+.inspector-scroll > .viewport {
+    -fx-background-color: -dms-bg-panel;
+}
+
+.inspector-content {
+    -fx-background-color: -dms-bg-panel;
+}
+
+.inspector-message-box {
+    -fx-background-color: #f0f4f8;
+    -fx-border-color: #c8d4e2;
+    -fx-border-width: 1;
+    -fx-padding: 9 10 9 10;
+}
+
+.inspector-selection-title {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #25384d;
+}
+
+.inspector-selection-summary {
+    -fx-font-size: 12px;
+    -fx-text-fill: #4d5b68;
+    -fx-line-spacing: 1;
+}
+
+.inspector-section {
+    -fx-background-color: #fbfbfb;
+    -fx-border-color: #d2d2d2;
+    -fx-border-width: 1;
+    -fx-padding: 8 8 9 8;
+}
+
+.inspector-section-title {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #252525;
+    -fx-padding: 0 0 2 0;
+}
+
+.inspector-combo {
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+.inspector-actions-box {
+    -fx-padding: 2 0 0 0;
+}
+
+/* -------------------------------------------------------------------------

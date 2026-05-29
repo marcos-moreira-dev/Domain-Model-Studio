@@ -1,0 +1,184 @@
+/*
+ * Domain Model Studio — Bienvenida clásica
+ *
+ * Este archivo forma parte de la Tanda 05 de modularización CSS.
+ * Mantiene la estética desktop sobria del proyecto y conserva el orden
+ * de cascada original mediante app-light.css.
+ */
+
+.welcome-panel {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #f5f7fa);
+    -fx-border-color: #b9c3cf;
+    -fx-border-width: 1;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.13), 10, 0.18, 0, 3);
+}
+
+.welcome-eyebrow {
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #4e6380;
+    -fx-padding: 0 0 1 0;
+}
+
+.welcome-title {
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1d1d1d;
+}
+
+.welcome-text {
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 13px;
+    -fx-text-fill: #333333;
+    -fx-line-spacing: 2;
+}
+
+.welcome-actions {
+    -fx-padding: 4 0 6 0;
+}
+
+.welcome-primary-button,
+.welcome-secondary-button {
+    -fx-background-radius: 1;
+    -fx-border-radius: 1;
+    -fx-border-width: 1;
+    -fx-padding: 7 14 7 14;
+    -fx-font-size: 12px;
+}
+
+.welcome-primary-button {
+    -fx-background-color: linear-gradient(to bottom, #3b78bd, #285f9d);
+    -fx-border-color: #1f4f85;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+}
+
+.welcome-primary-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #4b89cd, #2f6db3);
+}
+
+.welcome-secondary-button {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #e8edf3);
+    -fx-border-color: #aeb8c4;
+    -fx-text-fill: #222222;
+}
+
+.welcome-secondary-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #dce9f8);
+    -fx-border-color: #7fa7d3;
+}
+
+.welcome-steps,
+.welcome-preview-box {
+    -fx-background-color: rgba(255, 255, 255, 0.72);
+    -fx-border-color: #d5dce5;
+    -fx-border-width: 1;
+    -fx-padding: 14 16 14 16;
+}
+
+.welcome-section-title {
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #222222;
+}
+
+.welcome-step-row {
+    -fx-padding: 2 0 2 0;
+}
+
+.welcome-step-number {
+    -fx-background-color: #dce9f8;
+    -fx-border-color: #a9c7e8;
+    -fx-border-width: 1;
+    -fx-text-fill: #1f4f85;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-min-width: 23;
+    -fx-min-height: 23;
+    -fx-pref-width: 23;
+    -fx-pref-height: 23;
+}
+
+.welcome-step-text {
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 12px;
+    -fx-text-fill: #3f3f3f;
+    -fx-line-spacing: 1;
+}
+
+.welcome-note {
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 12px;
+    -fx-text-fill: #4f5b66;
+    -fx-background-color: #f0f4f8;
+    -fx-border-color: #d0d8e2;
+    -fx-border-width: 1;
+    -fx-padding: 8 10 8 10;
+}
+
+.welcome-preview {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cad3de;
+    -fx-border-width: 1;
+}
+
+.welcome-preview-entity {
+    -fx-fill: #fff4d6;
+    -fx-stroke: #5a5a5a;
+    -fx-stroke-width: 1.1;
+}
+
+.welcome-preview-attribute {
+    -fx-fill: #eaf3ff;
+    -fx-stroke: #5a5a5a;
+    -fx-stroke-width: 1.0;
+}
+
+.welcome-preview-relationship {
+    -fx-fill: #eaf6e8;
+    -fx-stroke: #5a5a5a;
+    -fx-stroke-width: 1.0;
+}
+
+.welcome-preview-connector {
+    -fx-stroke: #4a4a4a;
+    -fx-stroke-width: 1.1;
+}
+
+.welcome-preview-label {
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 12px;
+    -fx-fill: #222222;
+}
+
+.welcome-preview-cardinality {
+    -fx-background-color: rgba(255, 255, 255, 0.92);
+    -fx-border-color: #c8c8c8;
+    -fx-border-width: 1;
+    -fx-padding: 1 4 1 4;
+    -fx-font-size: 11px;
+    -fx-text-fill: #222222;
+}
+
+.welcome-preview-help {
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 12px;
+    -fx-text-fill: #5c5c5c;
+}
+
+/* Pulido de Megafase 4: paneles y bienvenida */
+.workspace-title {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+.workspace-subtitle {
+    -fx-text-fill: #4f5b66;
+}
+.toolbar-button {
+    -fx-padding: 4 10 4 10;
+}

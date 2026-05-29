@@ -1,0 +1,61 @@
+/*
+ * Selección transversal de relaciones.
+ *
+ * Se importa al final para que el resaltado azul gane sobre estilos específicos
+ * de UML, C4, BPMN, mapas, flujo de pantallas o grafo libre.
+ */
+.diagram-surface-workspace .diagram-connector-selected,
+.diagram-surface-workspace .interactive-canvas-connector-selected,
+.diagram-surface-workspace .module-map-canvas-connector-selected,
+.diagram-surface-workspace .screen-flow-canvas-connector-selected,
+.diagram-surface-workspace .behavior-canvas-connector-selected,
+.diagram-surface-workspace .architecture-canvas-connector-selected,
+.diagram-surface-workspace .uml-class-canvas-connector-selected,
+.diagram-surface-workspace .free-graph-canvas-connector-selected {
+    -fx-stroke: -dms-accent;
+    -fx-stroke-width: 3.0;
+    -fx-fill: transparent;
+}
+
+.diagram-surface-workspace .diagram-connector-arrow.diagram-connector-selected,
+.diagram-surface-workspace .interactive-canvas-arrow-head-selected,
+.diagram-surface-workspace .module-map-canvas-arrow-head-selected,
+.diagram-surface-workspace .screen-flow-canvas-arrow-head-selected,
+.diagram-surface-workspace .behavior-canvas-arrow-head-selected,
+.diagram-surface-workspace .architecture-canvas-arrow-head-selected,
+.diagram-surface-workspace .uml-class-canvas-arrow-head-selected,
+.diagram-surface-workspace .free-graph-canvas-arrow-head-selected {
+    -fx-stroke: -dms-accent;
+    -fx-stroke-width: 2.0;
+}
+
+.diagram-surface-workspace .diagram-connector-arrow-hollow.diagram-connector-selected,
+.diagram-surface-workspace .uml-class-canvas-arrow-head-selected.diagram-connector-arrow-hollow,
+.diagram-surface-workspace .behavior-canvas-arrow-head-selected.diagram-connector-arrow-hollow,
+.diagram-surface-workspace .architecture-canvas-arrow-head-selected.diagram-connector-arrow-hollow {
+    -fx-fill: -dms-bg-workspace;
+}
+
+.diagram-surface-workspace .interactive-canvas-bend-point-handle-selected {
+    -fx-fill: #ffffff;
+    -fx-stroke: -dms-accent;
+    -fx-stroke-width: 2.2;
+}
+
+.diagram-surface-workspace .interactive-canvas-bend-point-handle-selected {
+    -fx-fill: #ffffff;
+    -fx-stroke: -dms-accent;
+    -fx-stroke-width: 2.6;
+    -fx-effect: dropshadow(gaussian, rgba(37, 99, 235, 0.42), 8, 0.18, 0, 0);
+}
+
+.diagram-surface-workspace .interactive-canvas-connector-live-preview {
+    -fx-stroke: -dms-accent;
+    -fx-stroke-width: 3.0;
+    -fx-opacity: 0.95;
+    -fx-fill: transparent;
+}
+
+.diagram-surface-workspace .interactive-canvas-connector-drag-original {
+    -fx-opacity: 0.18;
+}

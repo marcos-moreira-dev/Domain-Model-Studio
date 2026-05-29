@@ -1,0 +1,146 @@
+/*
+ * Domain Model Studio — Bienvenida con proyectos y diálogos
+ *
+ * Este archivo forma parte de la Tanda 05 de modularización CSS.
+ * Mantiene la estética desktop sobria del proyecto y conserva el orden
+ * de cascada original mediante app-light.css.
+ */
+
+.welcome-panel {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #f3f6fa);
+    -fx-border-color: #9fb0c2;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.18), 12, 0.16, 0, 3);
+}
+
+.welcome-current-type,
+.welcome-section-card,
+.welcome-project-card,
+.welcome-recent-box,
+.welcome-steps,
+.welcome-preview-box {
+    -fx-background-color: rgba(255, 255, 255, 0.90);
+    -fx-border-color: #c9d2dc;
+    -fx-border-width: 1;
+    -fx-padding: 13 15 13 15;
+}
+
+.welcome-project-card {
+    -fx-background-color: linear-gradient(to bottom, #fbfdff, #eef5fc);
+    -fx-border-color: #a9c0da;
+}
+
+.welcome-card-title {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1f3550;
+}
+
+.welcome-card-text,
+.welcome-action-description {
+    -fx-font-size: 12px;
+    -fx-text-fill: #4d5763;
+    -fx-line-spacing: 1;
+}
+
+.welcome-action-row {
+    -fx-padding: 3 0 3 0;
+}
+
+.welcome-info-title {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #35485e;
+}
+
+.welcome-badge {
+    -fx-background-color: #e5eef8;
+    -fx-border-color: #adc6e2;
+    -fx-border-width: 1;
+    -fx-text-fill: #214f82;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-padding: 2 7 2 7;
+}
+
+.welcome-primary-button {
+    -fx-background-color: linear-gradient(to bottom, #3c78ba, #2b5f9d);
+    -fx-border-color: #1f4f85;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.welcome-secondary-button {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #e9edf2);
+    -fx-border-color: #a9b4c0;
+    -fx-text-fill: #222222;
+}
+
+/* -------------------------------------------------------------------------
+ * P-14: tipos de proyecto preparados
+ * ------------------------------------------------------------------------- */
+.welcome-future-types {
+    -fx-background-color: rgba(244, 247, 251, 0.82);
+    -fx-border-color: #d2dae4;
+    -fx-border-width: 1;
+    -fx-padding: 10 12 10 12;
+}
+
+.welcome-future-type-row {
+    -fx-padding: 2 0 2 0;
+}
+
+.welcome-future-type-name {
+    -fx-font-size: 12px;
+    -fx-text-fill: #52606f;
+}
+
+.welcome-future-type-state {
+    -fx-background-color: #eef1f5;
+    -fx-border-color: #c9d2dc;
+    -fx-border-width: 1;
+    -fx-text-fill: #66717f;
+    -fx-font-size: 10px;
+    -fx-padding: 1 6 1 6;
+}
+
+.new-project-dialog .dialog-description {
+    -fx-font-size: 12px;
+    -fx-text-fill: #4d5763;
+}
+
+.new-project-dialog .dialog-section-title {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #35485e;
+    -fx-padding: 8 0 0 0;
+}
+
+.new-project-dialog .dialog-muted-text {
+    -fx-font-size: 12px;
+    -fx-text-fill: #66717f;
+}
+
+/* P-16: iconografía del editor */
+.toolbar-icon {
+    -fx-text-fill: #2f3a4a;
+    -fx-font-size: 15px;
+    -fx-alignment: center;
+    -fx-padding: 0;
+}
+
+.toolbar-button:hover .toolbar-icon,
+.notation-toggle:hover .toolbar-icon {
+    -fx-text-fill: -dms-accent;
+}
+
+.toolbar-button:disabled .toolbar-icon,
+.notation-toggle:disabled .toolbar-icon {
+    -fx-opacity: 0.65;
+}
+
+.notation-toggle:selected .toolbar-icon {
+    -fx-text-fill: white;
+}
+
+/* -------------------------------------------------------------------------

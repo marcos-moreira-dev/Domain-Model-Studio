@@ -1,0 +1,124 @@
+/*
+ * Domain Model Studio — Viewport, iconografía PNG y footer visual
+ *
+ * Este archivo forma parte de la Tanda 05 de modularización CSS.
+ * Mantiene la estética desktop sobria del proyecto y conserva el orden
+ * de cascada original mediante app-light.css.
+ */
+
+.workspace-host {
+    -fx-background-color: -dms-bg-workspace;
+}
+
+.welcome-scroll {
+    -fx-background-color: linear-gradient(to bottom, #d7dce2, #c6ccd3);
+    -fx-background: linear-gradient(to bottom, #d7dce2, #c6ccd3);
+    -fx-border-color: transparent;
+}
+
+.welcome-scroll > .viewport {
+    -fx-background-color: linear-gradient(to bottom, #d7dce2, #c6ccd3);
+}
+
+.welcome-page {
+    -fx-background-color: linear-gradient(to bottom, #d7dce2, #c6ccd3);
+    -fx-spacing: 16;
+}
+
+.welcome-hero {
+    -fx-background-color: linear-gradient(to bottom, #eef2f7, #dfe6ee);
+    -fx-border-color: #aeb8c4;
+    -fx-border-width: 1;
+    -fx-padding: 18 20 18 20;
+}
+
+.welcome-grid-row {
+    -fx-fill-height: true;
+}
+
+.toolbar-icon {
+    -fx-opacity: 0.96;
+}
+
+.toolbar-button:hover .toolbar-icon,
+.notation-toggle:hover .toolbar-icon {
+    -fx-opacity: 1.0;
+}
+
+.toolbar-button:disabled .toolbar-icon,
+.notation-toggle:disabled .toolbar-icon {
+    -fx-opacity: 0.48;
+}
+
+/* -------------------------------------------------------------------------
+ * P-19: viewport estable, toolbar desplazable e inicio más amplio
+ * ------------------------------------------------------------------------- */
+.main-toolbar-scroll {
+    -fx-background-color: linear-gradient(to bottom, #efefef, #dddddd);
+    -fx-background: linear-gradient(to bottom, #efefef, #dddddd);
+    -fx-border-color: -dms-border-dark;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 0;
+}
+
+.main-toolbar-scroll > .viewport {
+    -fx-background-color: transparent;
+}
+
+.main-toolbar-scroll .scroll-bar:horizontal,
+.main-toolbar-scroll .scroll-bar:vertical {
+    -fx-opacity: 0;
+    -fx-max-height: 0;
+    -fx-pref-height: 0;
+    -fx-min-height: 0;
+    -fx-max-width: 0;
+    -fx-pref-width: 0;
+    -fx-min-width: 0;
+}
+
+.workspace-header-close {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: #5f6670;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-padding: 0;
+}
+
+.workspace-header-close:hover {
+    -fx-background-color: #dfe6ef;
+    -fx-border-color: #b7c2ce;
+}
+
+.diagram-infinite-workspace {
+    -fx-background-color: #d3d8de;
+}
+
+.workspace-fill {
+    -fx-stroke: transparent;
+    -fx-stroke-width: 0;
+}
+
+.welcome-visual-footer {
+    -fx-background-color: transparent;
+    -fx-padding: 6 0 0 0;
+}
+
+.welcome-wave-back {
+    -fx-fill: rgba(120, 130, 142, 0.18);
+}
+
+.welcome-wave-middle {
+    -fx-fill: rgba(95, 106, 118, 0.16);
+}
+
+.welcome-wave-front {
+    -fx-fill: rgba(70, 80, 92, 0.12);
+}
+
+/* P-20: evita advertencias de Modena con flechas de scrollbar al usar tokens de fondo. */
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-background-color: #707070;
+    -fx-effect: none;
+}

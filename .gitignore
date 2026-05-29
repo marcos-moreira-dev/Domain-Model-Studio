@@ -1,0 +1,75 @@
+# Build outputs
+/target/
+**/target/
+/out/
+**/out/
+/build/
+**/build/
+/dist/
+**/dist/
+/app-image/
+**/app-image/
+/installer/
+**/installer/
+*.class
+*.jar
+*.war
+*.ear
+*.msi
+*.exe
+
+# Maven / Gradle caches and wrappers generated locally
+/.mvn/wrapper/maven-wrapper.jar
+.gradle/
+**/.gradle/
+
+# IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.project
+.classpath
+.settings/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+
+# Logs and temporary files
+*.log
+logs/
+**/logs/
+tmp/
+**/tmp/
+temp/
+**/temp/
+*.tmp
+*.bak
+*.orig
+
+# Runtime/user-local data
+*.dms.autosave
+*.autosave
+*.local
+.env
+.env.*
+!.env.example
+
+# Test reports / coverage
+/surefire-reports/
+**/surefire-reports/
+/jacoco.exec
+**/jacoco.exec
+/coverage/
+**/coverage/
+
+# Packaged archives generated during handoff
+*.zip
+*.7z
+*.rar

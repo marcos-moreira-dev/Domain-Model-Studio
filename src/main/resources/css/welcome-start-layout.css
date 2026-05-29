@@ -1,0 +1,77 @@
+/*
+ * Domain Model Studio — pantalla de inicio: layout y títulos
+ */
+
+.welcome-start-root {
+    -fx-background-color: linear-gradient(to bottom, #f8fbff, #e6edf6 42%, #d6e0eb);
+    -fx-background: linear-gradient(to bottom, #f8fbff, #e6edf6 42%, #d6e0eb);
+}
+
+.welcome-start-page {
+    -fx-background-color: transparent;
+}
+
+.welcome-start-actions {
+    -fx-padding: 16 34 40 0;
+    -fx-border-color: rgba(115, 135, 160, 0.28);
+    -fx-border-width: 0 1 0 0;
+}
+
+.welcome-start-center {
+    -fx-border-color: rgba(115, 135, 160, 0.18);
+    -fx-border-width: 0 1 0 0;
+}
+
+.welcome-start-recent {
+    -fx-padding: 16 0 40 34;
+}
+
+.welcome-start-section-title {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-diagram-title;
+    -fx-padding: 0 0 10 0;
+    -fx-border-color: rgba(115, 135, 160, 0.28);
+    -fx-border-width: 0 0 1 0;
+    -fx-font-smoothing-type: gray;
+}
+
+.welcome-start-eyebrow {
+    -fx-font-size: 20px;
+    -fx-text-fill: #213a5c;
+    -fx-font-smoothing-type: gray;
+}
+
+.welcome-start-title {
+    -fx-font-size: 44px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0d315f;
+    -fx-font-smoothing-type: gray;
+}
+
+.welcome-start-subtitle {
+    -fx-font-size: 18px;
+    -fx-text-fill: #405471;
+    -fx-padding: 0 0 20 0;
+    -fx-opacity: 1.0;
+    -fx-font-smoothing-type: gray;
+}
+
+.welcome-visual-footer {
+    -fx-min-height: 190px;
+    -fx-pref-height: 190px;
+    -fx-max-height: 190px;
+    -fx-opacity: 0.52;
+}
+
+.welcome-wave-back {
+    -fx-fill: rgba(110, 145, 185, 0.14);
+}
+
+.welcome-wave-middle {
+    -fx-fill: rgba(80, 125, 175, 0.11);
+}
+
+.welcome-wave-front {
+    -fx-fill: rgba(40, 95, 160, 0.10);
+}

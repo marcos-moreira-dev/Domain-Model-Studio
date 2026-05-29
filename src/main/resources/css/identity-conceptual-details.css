@@ -1,0 +1,21 @@
+/*
+ * Domain Model Studio — detalles visuales de notación conceptual
+ */
+
+.crowsfoot-entity-box {
+    -fx-fill: #ffffff;
+    -fx-stroke: #4a4a4a;
+}
+
+.crowsfoot-entity-header {
+    -fx-fill: #eef1f5;
+    -fx-stroke: #4a4a4a;
+}
+
+.crowsfoot-relationship-label,
+.chen-cardinality,
+.cardinality-placeholder,
+.welcome-preview-cardinality {
+    -fx-background-color: -dms-label-bg;
+    -fx-border-color: #c8c8c2;
+}
