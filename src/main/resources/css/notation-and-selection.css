@@ -1,0 +1,81 @@
+/*
+ * Domain Model Studio — Selector de notación y selección
+ *
+ * Este archivo forma parte de la Tanda 05 de modularización CSS.
+ * Mantiene la estética desktop sobria del proyecto y conserva el orden
+ * de cascada original mediante app-light.css.
+ */
+
+.toolbar-notation-button {
+    -fx-font-weight: bold;
+}
+
+.toolbar-notation-button-active {
+    -fx-background-color: linear-gradient(to bottom, #dcecff, #b8d4f2);
+    -fx-border-color: #4f83bd;
+    -fx-text-fill: #123b63;
+}
+
+.toolbar-notation-button-active:hover {
+    -fx-background-color: linear-gradient(to bottom, #e8f3ff, #c6dcf4);
+    -fx-border-color: #3f75aa;
+}
+
+/* P-4: selección múltiple en el área de trabajo. */
+.diagram-selection-area {
+    -fx-fill: rgba(47, 109, 179, 0.12);
+    -fx-stroke: #2f6db3;
+    -fx-stroke-width: 1.2;
+    -fx-stroke-dash-array: 6 4;
+}
+
+/* -------------------------------------------------------------------------
+ * P-6. Selector visible de notación
+ * ------------------------------------------------------------------------- */
+.notation-selector {
+    -fx-alignment: center-left;
+    -fx-spacing: 0;
+    -fx-padding: 0 2 0 2;
+}
+
+.notation-selector-label {
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #37485c;
+    -fx-padding: 0 7 0 0;
+}
+
+.notation-toggle {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #e7e7e1);
+    -fx-border-color: #a9a9a2;
+    -fx-border-width: 1;
+    -fx-text-fill: #25303d;
+    -fx-font-weight: bold;
+}
+
+.notation-toggle-left {
+    -fx-background-radius: 4 0 0 4;
+    -fx-border-radius: 4 0 0 4;
+}
+
+.notation-toggle-right {
+    -fx-background-radius: 0 4 4 0;
+    -fx-border-radius: 0 4 4 0;
+}
+
+.notation-toggle:hover {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #dfeaf7);
+    -fx-border-color: #6d96c6;
+}
+
+.notation-toggle:selected {
+    -fx-background-color: linear-gradient(to bottom, #dcecff, #aecaec);
+    -fx-border-color: #2f6db3;
+    -fx-text-fill: #123b63;
+}
+
+.notation-toggle:disabled {
+    -fx-opacity: 0.55;
+}
+
+/* P-8/P-9: controles visuales de apariencia y fondos editables */

@@ -1,0 +1,26 @@
+/*
+ * Domain Model Studio — Inspector base
+ *
+ * Este archivo forma parte de la Tanda 05 de modularización CSS.
+ * Mantiene la estética desktop sobria del proyecto y conserva el orden
+ * de cascada original mediante app-light.css.
+ */
+
+.inspector-grid {
+    -fx-background-color: #fbfbfb;
+    -fx-border-color: #dddddd;
+    -fx-border-width: 0 0 1 0;
+}
+
+.inspector-key {
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+.inspector-value {
+    -fx-text-fill: #333333;
+}
+
+.separator .line {
+    -fx-border-color: #c7c7c7;
+}

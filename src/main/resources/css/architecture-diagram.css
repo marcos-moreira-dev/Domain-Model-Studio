@@ -1,0 +1,501 @@
+/* =========================================================
+   Editores de arquitectura: C4 y despliegue técnico
+   ========================================================= */
+
+.architecture-root {
+    -fx-background-color: -dms-surface;
+}
+
+.architecture-header {
+    -fx-background-color: linear-gradient(to bottom, -dms-architecture-node-fill-soft, -dms-diagram-header-bottom);
+    -fx-border-color: transparent transparent -dms-border-soft transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.architecture-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-diagram-title;
+    -fx-font-smoothing-type: gray;
+}
+
+.architecture-subtitle {
+    -fx-font-size: 12px;
+    -fx-text-fill: -dms-diagram-subtitle;
+    -fx-font-smoothing-type: gray;
+}
+
+.architecture-split {
+    -fx-background-color: -dms-diagram-board-bg;
+}
+
+.architecture-section {
+    -fx-padding: 10;
+    -fx-background-color: -dms-architecture-node-fill-soft;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-width: 0 1 0 0;
+}
+
+.architecture-section-title {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-diagram-title;
+    -fx-font-smoothing-type: gray;
+}
+
+.architecture-node-list,
+.architecture-edge-table {
+    -fx-background-color: white;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+.architecture-properties {
+    -fx-background-color: -dms-architecture-node-fill-soft;
+}
+
+.architecture-properties-scroll {
+    -fx-background: -dms-architecture-node-fill-soft;
+    -fx-background-color: -dms-architecture-node-fill-soft;
+}
+
+.architecture-field-label {
+    -fx-font-size: 11px;
+    -fx-text-fill: -dms-text-muted;
+    -fx-font-weight: bold;
+}
+
+.architecture-action-button {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #e7edf5);
+    -fx-border-color: -dms-node-border;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-text-fill: #25364f;
+    -fx-font-weight: bold;
+    -fx-padding: 5 10 5 10;
+}
+
+.architecture-action-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, -dms-accent-soft);
+}
+
+/* =========================================================
+   Salida visual exportable: C4 y despliegue
+   ========================================================= */
+
+.architecture-diagram-panel {
+    -fx-padding: 14;
+    -fx-background-color: -dms-diagram-board-bg;
+}
+
+.architecture-diagram-scroll {
+    -fx-background: -dms-diagram-board-bg;
+    -fx-background-color: -dms-diagram-board-bg;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+.architecture-diagram-canvas {
+    -fx-background-color: #ffffff;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+.architecture-empty {
+    -fx-font-size: 13px;
+    -fx-text-fill: -dms-text-muted;
+    -fx-font-smoothing-type: gray;
+}
+
+.architecture-node-card {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, -dms-architecture-node-fill-soft);
+    -fx-border-color: -dms-architecture-border;
+    -fx-border-width: 1.2;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.08), 5, 0.10, 0, 1);
+}
+
+.architecture-node-selected {
+    -fx-border-color: -dms-node-selected-border;
+    -fx-border-width: 2;
+}
+
+.architecture-node-title {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-text;
+    -fx-font-smoothing-type: gray;
+}
+
+.architecture-node-meta {
+    -fx-font-size: 10.5px;
+    -fx-text-fill: -dms-connector;
+    -fx-font-weight: bold;
+    -fx-font-smoothing-type: gray;
+}
+
+.architecture-node-description {
+    -fx-font-size: 11px;
+    -fx-text-fill: -dms-text-muted;
+    -fx-wrap-text: true;
+    -fx-font-smoothing-type: gray;
+}
+
+.architecture-arrow {
+    -fx-stroke: -dms-connector;
+    -fx-stroke-width: 1.8;
+}
+
+.architecture-arrow-head {
+    -fx-fill: -dms-connector;
+    -fx-stroke: -dms-connector;
+}
+
+.architecture-arrow-label {
+    -fx-background-color: rgba(255, 255, 255, 0.92);
+    -fx-border-color: -dms-node-border-soft;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-padding: 2 5 2 5;
+    -fx-font-size: 10px;
+    -fx-text-fill: -dms-text-muted;
+    -fx-font-smoothing-type: gray;
+}
+
+/* =========================================================
+   Canvas común editable para C4 y despliegue técnico
+   ========================================================= */
+
+.architecture-diagram-canvas {
+    -fx-background-color: #ffffff;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+.architecture-canvas-node {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, -dms-architecture-node-fill-soft);
+    -fx-border-color: -dms-architecture-border;
+    -fx-border-width: 1.2;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.08), 5, 0.10, 0, 1);
+}
+
+.architecture-canvas-node-selected {
+    -fx-border-color: -dms-node-selected-border;
+    -fx-border-width: 2;
+}
+
+.architecture-canvas-node-person,
+.architecture-canvas-node-client {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #eef6f1);
+}
+
+.architecture-canvas-node-database {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #edf2f8);
+}
+
+.architecture-canvas-node-boundary,
+.architecture-canvas-node-environment,
+.architecture-canvas-node-network {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #f4f6f8);
+    -fx-border-style: segments(7, 4);
+}
+
+.architecture-canvas-node-title {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-text;
+    -fx-font-smoothing-type: gray;
+}
+
+.architecture-canvas-node-kind {
+    -fx-font-size: 10.5px;
+    -fx-text-fill: -dms-connector;
+    -fx-font-weight: bold;
+    -fx-font-smoothing-type: gray;
+}
+
+.architecture-canvas-node-detail {
+    -fx-font-size: 11px;
+    -fx-text-fill: -dms-text-muted;
+    -fx-font-smoothing-type: gray;
+}
+
+.architecture-canvas-connector {
+    -fx-stroke: -dms-connector;
+    -fx-stroke-width: 1.8;
+    -fx-fill: transparent;
+}
+
+.architecture-canvas-connector-selected {
+    -fx-stroke: -dms-node-selected-border;
+    -fx-stroke-width: 2.4;
+}
+
+.architecture-canvas-arrow-head {
+    -fx-fill: -dms-connector;
+    -fx-stroke: -dms-connector;
+}
+
+.architecture-canvas-arrow-head-selected {
+    -fx-fill: -dms-node-selected-border;
+    -fx-stroke: -dms-node-selected-border;
+}
+
+.architecture-canvas-connector-label {
+    -fx-background-color: rgba(255, 255, 255, 0.92);
+    -fx-border-color: -dms-node-border-soft;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-padding: 2 5 2 5;
+    -fx-font-size: 10px;
+    -fx-text-fill: -dms-text-muted;
+    -fx-font-smoothing-type: gray;
+}
+
+.architecture-canvas-symbol-person,
+.architecture-canvas-symbol-rect,
+.architecture-canvas-symbol-database,
+.architecture-canvas-symbol-boundary {
+    -fx-fill: -dms-architecture-border;
+    -fx-stroke: -dms-architecture-border;
+    -fx-stroke-width: 1;
+}
+
+/* Diferenciación mínima C4 vs despliegue técnico. */
+.architecture-canvas-node-c4 {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, -dms-architecture-node-fill-soft);
+}
+
+.architecture-canvas-node-actor {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #eef6f1);
+}
+
+.architecture-canvas-node-deployment {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #f1f4f8);
+    -fx-border-style: solid;
+}
+
+.architecture-canvas-zone {
+    -fx-fill: transparent;
+    -fx-stroke: -dms-architecture-border;
+    -fx-stroke-width: 1.35;
+    -fx-stroke-dash-array: 9 6;
+    -fx-arc-width: 0;
+    -fx-arc-height: 0;
+}
+
+.architecture-canvas-zone-selected {
+    -fx-stroke: -dms-node-selected-border;
+    -fx-stroke-width: 2.2;
+}
+
+
+.architecture-canvas-zone-title-handle {
+    -fx-fill: rgba(255, 255, 255, 0.96);
+    -fx-stroke: rgba(51, 65, 85, 0.78);
+    -fx-stroke-width: 1.0;
+    -fx-arc-width: 0;
+    -fx-arc-height: 0;
+}
+
+.architecture-canvas-zone-title-handle-selected {
+    -fx-fill: rgba(255, 255, 255, 1.0);
+    -fx-stroke: -dms-node-selected-border;
+    -fx-stroke-width: 1.5;
+}
+
+.architecture-canvas-zone-move-glyph {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: rgba(51, 65, 85, 0.90);
+    -fx-background-color: transparent;
+}
+
+.architecture-canvas-zone-title {
+    -fx-font-size: 12.5px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-diagram-title;
+}
+
+.architecture-canvas-zone-detail {
+    -fx-font-size: 10px;
+    -fx-text-fill: -dms-text-muted;
+}
+
+.architecture-canvas-connector-deployment {
+    -fx-stroke-dash-array: 8 4;
+}
+
+.architecture-canvas-connector-data {
+    -fx-stroke-dash-array: 3 4;
+}
+
+/* =========================================================
+   Shape kit C4/despliegue — símbolos mínimos
+   ========================================================= */
+.architecture-canvas-symbol-person-line,
+.architecture-canvas-symbol-server-line {
+    -fx-stroke: -dms-architecture-border;
+    -fx-stroke-width: 1.35;
+    -fx-fill: transparent;
+}
+
+.architecture-canvas-symbol-database-body {
+    -fx-fill: -dms-architecture-border;
+    -fx-stroke: -dms-architecture-border;
+    -fx-stroke-width: 1;
+}
+
+.architecture-canvas-symbol-database-bottom {
+    -fx-fill: transparent;
+    -fx-stroke: derive(-dms-architecture-border, 18%);
+    -fx-stroke-width: 1;
+}
+
+.architecture-canvas-symbol-system,
+.architecture-canvas-symbol-container,
+.architecture-canvas-symbol-server {
+    -fx-fill: -dms-architecture-border;
+    -fx-stroke: -dms-architecture-border;
+    -fx-stroke-width: 1;
+}
+
+/* =========================================================
+   Tanda 10 — Identidad C4 y despliegue técnico
+   ========================================================= */
+.architecture-canvas-node-system-central {
+    -fx-border-width: 1.7;
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #f0f6f1);
+}
+
+.architecture-canvas-node-external {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #f7f4ed);
+    -fx-border-style: segments(6, 4);
+}
+
+.architecture-canvas-node-api {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #eef5f7);
+}
+
+.architecture-canvas-node-data-store {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #edf2f8);
+}
+
+.architecture-canvas-node-container-role {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #f2f6ef);
+}
+
+.architecture-canvas-node-environment-role,
+.architecture-canvas-node-network-role {
+    -fx-border-style: segments(9, 6);
+}
+
+.architecture-canvas-node-server-role,
+.architecture-canvas-node-artifact-role,
+.architecture-canvas-node-client-role {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #f1f4f8);
+}
+
+.architecture-canvas-zone-environment {
+    -fx-fill: transparent;
+    -fx-stroke-dash-array: 12 6;
+}
+
+.architecture-canvas-zone-network {
+    -fx-fill: transparent;
+    -fx-stroke-dash-array: 6 5;
+}
+
+.architecture-canvas-symbol-client-screen,
+.architecture-canvas-symbol-application,
+.architecture-canvas-symbol-api,
+.architecture-canvas-symbol-external-system,
+.architecture-canvas-symbol-service,
+.architecture-canvas-symbol-service-small,
+.architecture-canvas-symbol-environment,
+.architecture-canvas-symbol-environment-inner,
+.architecture-canvas-symbol-network-node,
+.architecture-canvas-symbol-artifact,
+.architecture-canvas-symbol-server-led {
+    -fx-fill: -dms-architecture-border;
+    -fx-stroke: -dms-architecture-border;
+    -fx-stroke-width: 1;
+}
+
+.architecture-canvas-symbol-client-line,
+.architecture-canvas-symbol-external-line,
+.architecture-canvas-symbol-application-line,
+.architecture-canvas-symbol-api-line,
+.architecture-canvas-symbol-network-line,
+.architecture-canvas-symbol-artifact-line {
+    -fx-stroke: -dms-architecture-border;
+    -fx-stroke-width: 1.25;
+    -fx-fill: transparent;
+}
+
+.architecture-canvas-symbol-application-dot {
+    -fx-fill: #ffffff;
+    -fx-stroke: -dms-architecture-border;
+    -fx-stroke-width: 0.7;
+}
+
+.architecture-canvas-connector-calls {
+    -fx-stroke-width: 2.0;
+}
+
+.architecture-canvas-connector-reads-writes {
+    -fx-stroke-dash-array: 3 4;
+}
+
+.architecture-canvas-connector-deploys-to,
+.architecture-canvas-connector-hosts,
+.architecture-canvas-connector-connects-to {
+    -fx-stroke-dash-array: 8 4;
+}
+
+/* =========================================================
+   Tanda 7 — C4/despliegue sobrio: cajas válidas, sin ornamento excesivo
+   ========================================================= */
+.architecture-canvas-node {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #334155;
+    -fx-border-width: 1.15;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-effect: none;
+}
+
+.architecture-canvas-node-selected {
+    -fx-border-color: -dms-accent;
+    -fx-border-width: 2.0;
+    -fx-effect: none;
+}
+
+.architecture-canvas-node-title,
+.architecture-canvas-node-kind,
+.architecture-canvas-node-detail,
+.architecture-canvas-zone-title,
+.architecture-canvas-zone-detail {
+    -fx-text-fill: #111827;
+}
+
+.architecture-canvas-zone {
+    -fx-fill: transparent;
+    -fx-stroke: rgba(51, 65, 85, 0.75);
+    -fx-stroke-width: 1.2;
+}
+
+.architecture-canvas-connector-label {
+    -fx-text-fill: #111827;
+    -fx-background-color: rgba(255,255,255,0.97);
+    -fx-border-color: rgba(31, 41, 55, 0.28);
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}

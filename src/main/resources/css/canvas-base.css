@@ -1,0 +1,92 @@
+/*
+ * Domain Model Studio — Área de trabajo y placeholders base
+ *
+ * Este archivo forma parte de la Tanda 05 de modularización CSS.
+ * Mantiene la estética desktop sobria del proyecto y conserva el orden
+ * de cascada original mediante app-light.css.
+ */
+
+.workspace-header {
+    -fx-background-color: linear-gradient(to bottom, #fbfbfb, #ededed);
+    -fx-border-color: -dms-border-dark;
+    -fx-border-width: 0 0 1 0;
+}
+
+.workspace-title {
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-text;
+}
+
+.workspace-subtitle,
+.inspector-note {
+    -fx-text-fill: -dms-text-muted;
+}
+
+.canvas-scroll-pane {
+    -fx-background: -dms-bg-workspace;
+    -fx-background-color: -dms-bg-workspace;
+    -fx-border-color: transparent;
+}
+
+.canvas-scroll-pane > .viewport {
+    -fx-background-color: -dms-bg-workspace;
+}
+
+.diagram-canvas {
+    -fx-background-color: -dms-bg-canvas;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+}
+
+.diagram-infinite-workspace {
+    -fx-background-color: linear-gradient(to bottom, #f6f8fa, #e6eaee);
+}
+
+.workspace-grid-line {
+    -fx-stroke: rgba(92, 104, 116, 0.16);
+    -fx-stroke-width: 1;
+}
+
+.workspace-grid-major-line {
+    -fx-stroke: rgba(77, 91, 106, 0.25);
+    -fx-stroke-width: 1.15;
+}
+
+/* Placeholder Chen: sobrio, académico y legible. */
+.entity-placeholder {
+    -fx-fill: #fff6dd;
+    -fx-stroke: #6c6c6c;
+    -fx-stroke-width: 1.25;
+}
+
+.attribute-placeholder {
+    -fx-fill: #eef5ff;
+    -fx-stroke: #6c6c6c;
+    -fx-stroke-width: 1.1;
+}
+
+.relationship-placeholder {
+    -fx-fill: #edf6eb;
+    -fx-stroke: #6c6c6c;
+    -fx-stroke-width: 1.15;
+}
+
+.connector-placeholder {
+    -fx-stroke: #4a4a4a;
+    -fx-stroke-width: 1.15;
+}
+
+.diagram-label {
+    -fx-text-fill: -dms-text;
+    -fx-font-size: 12px;
+}
+
+.cardinality-placeholder {
+    -fx-text-fill: -dms-text;
+    -fx-background-color: rgba(255, 255, 255, 0.88);
+    -fx-border-color: #d0d0d0;
+    -fx-border-width: 1;
+    -fx-padding: 1 4 1 4;
+}
+
+/* -------------------------------------------------------------------------

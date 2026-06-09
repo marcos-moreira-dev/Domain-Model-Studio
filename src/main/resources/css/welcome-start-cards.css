@@ -1,0 +1,76 @@
+/*
+ * Domain Model Studio — pantalla de inicio: tabs internos, tarjetas y vacíos
+ */
+
+.welcome-start-tabs {
+    -fx-padding: 6 0 0 0;
+    -fx-border-color: rgba(115, 135, 160, 0.25);
+    -fx-border-width: 0 0 1 0;
+}
+
+.welcome-start-tab {
+    -fx-font-size: 14px;
+    -fx-text-fill: #334762;
+    -fx-padding: 0 0 11 0;
+}
+
+.welcome-start-tab-active {
+    -fx-font-weight: bold;
+    -fx-text-fill: #1463b8;
+    -fx-border-color: #1463b8;
+    -fx-border-width: 0 0 3 0;
+}
+
+.welcome-start-card {
+    -fx-background-color: rgba(255, 255, 255, 0.66);
+    -fx-border-color: rgba(116, 136, 160, 0.30);
+    -fx-border-width: 1;
+    -fx-padding: 28 28 28 28;
+    -fx-effect: dropshadow(gaussian, rgba(70, 85, 105, 0.10), 18, 0.10, 0, 4);
+}
+
+.welcome-start-card-row {
+    -fx-padding: 0;
+}
+
+.welcome-start-card-icon {
+    -fx-background-color: rgba(218, 231, 247, 0.70);
+    -fx-min-width: 44px;
+    -fx-pref-width: 44px;
+    -fx-max-width: 44px;
+    -fx-min-height: 44px;
+    -fx-pref-height: 44px;
+    -fx-alignment: center;
+    -fx-font-size: 18px;
+    -fx-text-fill: #155a9f;
+}
+
+.welcome-start-card-title {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-diagram-title;
+    -fx-font-smoothing-type: gray;
+}
+
+.welcome-start-card-detail,
+.welcome-start-tip,
+.welcome-start-empty-text {
+    -fx-font-size: 13.5px;
+    -fx-text-fill: #344a66;
+    -fx-opacity: 1.0;
+    -fx-line-spacing: 2.5;
+    -fx-font-smoothing-type: gray;
+}
+
+.welcome-start-tip {
+    -fx-padding: 2 0 0 20;
+}
+
+.welcome-start-empty {
+    -fx-padding: 70 24 0 24;
+}
+
+.welcome-start-empty-icon {
+    -fx-font-size: 66px;
+    -fx-text-fill: rgba(90, 112, 140, 0.42);
+}

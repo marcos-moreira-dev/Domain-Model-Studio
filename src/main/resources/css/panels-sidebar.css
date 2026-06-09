@@ -1,0 +1,161 @@
+/*
+ * Domain Model Studio — Paneles laterales y árbol
+ *
+ * Este archivo forma parte de la Tanda 05 de modularización CSS.
+ * Mantiene la estética desktop sobria del proyecto y conserva el orden
+ * de cascada original mediante app-light.css.
+ */
+
+/* -------------------------------------------------------------------------
+ * 3. Paneles estructurales
+ * ------------------------------------------------------------------------- */
+.side-panel,
+.inspector-panel,
+.workspace-panel {
+    -fx-background-color: -dms-bg-panel;
+}
+
+.side-panel {
+    -fx-border-color: -dms-border;
+    -fx-border-width: 0 1 0 0;
+}
+
+.inspector-panel {
+    -fx-border-color: -dms-border;
+    -fx-border-width: 0 0 0 1;
+}
+
+.workspace-panel {
+    -fx-background-color: -dms-bg-workspace;
+}
+
+.panel-header {
+    -fx-background-color: linear-gradient(to bottom, #eeeeee, #dcdcdc);
+    -fx-border-color: -dms-border-dark;
+    -fx-border-width: 0 0 1 0;
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-text;
+    -fx-padding: 6 8 6 8;
+    -fx-min-height: 28;
+}
+
+
+.panel-header-title {
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-text;
+    -fx-padding: 1 0 0 0;
+}
+
+.panel-header-button {
+    -fx-background-color: linear-gradient(to bottom, #fbfbfb, #e3e3e3);
+    -fx-border-color: #a9a9a9;
+    -fx-border-width: 1;
+    -fx-background-radius: 1;
+    -fx-border-radius: 1;
+    -fx-padding: 2 8 2 8;
+    -fx-font-size: 11px;
+    -fx-text-fill: #333333;
+}
+
+.panel-header-icon-button {
+    -fx-min-width: 24;
+    -fx-pref-width: 24;
+    -fx-max-width: 24;
+    -fx-min-height: 22;
+    -fx-pref-height: 22;
+    -fx-max-height: 22;
+    -fx-padding: 0;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+.panel-header-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #dce9f8);
+    -fx-border-color: #7fa7d3;
+}
+
+.work-area-frame {
+    -fx-background-color: -dms-bg-workspace;
+}
+
+.panel-restore-button {
+    -fx-background-color: linear-gradient(to bottom, #f6f6f6, #dedede);
+    -fx-border-color: #a8a8a8;
+    -fx-border-width: 0 1 0 1;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 6 10 6 10;
+    -fx-min-width: 92;
+    -fx-pref-width: 92;
+    -fx-text-fill: #333333;
+}
+
+.panel-restore-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #dce9f8);
+    -fx-border-color: #7fa7d3;
+}
+
+
+.panel-restore-tab {
+    -fx-background-color: linear-gradient(to right, #d7d9dc, #eff1f2);
+    -fx-border-color: #9fa5aa;
+    -fx-border-width: 0 1 0 1;
+    -fx-padding: 4 0 4 0;
+}
+
+.panel-restore-tab-left {
+    -fx-border-width: 0 1 0 0;
+}
+
+.panel-restore-tab-right {
+    -fx-border-width: 0 0 0 1;
+}
+
+.panel-restore-tab-button {
+    -fx-background-color: linear-gradient(to bottom, #fbfbf8, #e2e2dc);
+    -fx-border-color: #9f9f99;
+    -fx-border-width: 1;
+    -fx-background-radius: 1.5;
+    -fx-border-radius: 1.5;
+    -fx-padding: 2 8 2 8;
+    -fx-font-size: 11px;
+    -fx-text-fill: #333333;
+    -fx-effect: none;
+}
+
+.panel-restore-tab-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, -dms-accent-soft);
+    -fx-border-color: -dms-accent-border;
+}
+
+/* -------------------------------------------------------------------------
+ * 4. Sidebar / árbol del modelo
+ * ------------------------------------------------------------------------- */
+.model-tree {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d0d0d0;
+    -fx-border-width: 1 0 0 0;
+}
+
+.tree-view,
+.tree-cell {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: -dms-text;
+}
+
+.tree-cell {
+    -fx-padding: 3 6 3 4;
+}
+
+.tree-cell:filled:selected,
+.tree-cell:filled:selected:focused {
+    -fx-background-color: #c9def5;
+    -fx-text-fill: #111111;
+}
+
+.tree-cell:filled:hover {
+    -fx-background-color: #eef5fc;
+}
+
+/* -------------------------------------------------------------------------

@@ -1,0 +1,105 @@
+/*
+ * Domain Model Studio — pestañas de proyectos abiertas
+ */
+
+.editor-tab-bar {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 0 0 0 16;
+    -fx-alignment: bottom-left;
+    -fx-spacing: 2;
+    -fx-min-height: 40;
+    -fx-pref-height: 40;
+    -fx-max-height: 40;
+}
+
+.editor-tab-scroll {
+    -fx-background-color: #E6EDF5;
+    -fx-background: #E6EDF5;
+    -fx-border-color: #B8C5D4;
+    -fx-border-width: 1 0 1 0;
+    -fx-padding: 0;
+    -fx-min-height: 42;
+    -fx-pref-height: 42;
+    -fx-max-height: 42;
+}
+
+.editor-tab-scroll .scroll-bar:horizontal,
+.editor-tab-scroll .scroll-bar:vertical {
+    -fx-opacity: 0;
+    -fx-max-height: 0;
+    -fx-pref-height: 0;
+    -fx-min-height: 0;
+    -fx-max-width: 0;
+    -fx-pref-width: 0;
+    -fx-min-width: 0;
+}
+
+.editor-tab-scroll > .viewport {
+    -fx-background-color: #EEF3F8;
+}
+
+.editor-tab-active,
+.editor-tab-inactive {
+    -fx-border-width: 1 1 0 1;
+    -fx-padding: 7 12 6 12;
+    -fx-min-width: 150;
+    -fx-pref-height: 36;
+    -fx-min-height: 36;
+    -fx-max-height: 36;
+    -fx-max-width: 360;
+    -fx-alignment: center-left;
+}
+
+.editor-tab-active {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #F8FBFF);
+    -fx-border-color: #8FA8C4;
+}
+
+.editor-tab-inactive {
+    -fx-background-color: linear-gradient(to bottom, #EAF1F8, #D7E2ED);
+    -fx-border-color: #B7C2CF;
+}
+
+.editor-tab-inactive:hover {
+    -fx-background-color: linear-gradient(to bottom, #f5f8fc, #e2ebf5);
+}
+
+.editor-tab-icon {
+    -fx-text-fill: #1f5fa8;
+    -fx-font-size: 13px;
+}
+
+.editor-tab-label {
+    -fx-text-fill: #1f3550;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-text-overrun: ellipsis;
+}
+
+.editor-tab-close,
+.editor-tab-close-button {
+    -fx-text-fill: #607086;
+    -fx-font-size: 14px;
+    -fx-padding: 0 2 0 6;
+}
+
+.editor-tab-close-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+}
+
+.editor-tab-close-button:hover {
+    -fx-text-fill: -dms-text;
+}
+
+.editor-tab-dragging {
+    -fx-opacity: 0.82;
+}
+
+.editor-tab-drop-target {
+    -fx-border-color: #1f5fa8;
+    -fx-border-width: 2 2 0 2;
+}

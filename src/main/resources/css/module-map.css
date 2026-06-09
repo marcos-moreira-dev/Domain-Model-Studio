@@ -1,0 +1,360 @@
+/* =========================================================
+   Mapa de módulos
+   ========================================================= */
+
+.module-map-root {
+    -fx-background-color: -dms-bg-workspace;
+}
+
+.module-map-header {
+    -fx-background-color: linear-gradient(to bottom, -dms-diagram-header-top, -dms-diagram-header-bottom);
+    -fx-border-color: -dms-border-soft;
+    -fx-border-width: 0 0 1 0;
+}
+
+.module-map-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-diagram-title;
+    -fx-font-smoothing-type: gray;
+}
+
+.module-map-subtitle {
+    -fx-font-size: 12px;
+    -fx-text-fill: -dms-diagram-subtitle;
+    -fx-font-smoothing-type: gray;
+}
+
+.module-map-split {
+    -fx-background-color: transparent;
+}
+
+.module-map-section {
+    -fx-padding: 10;
+    -fx-background-color: -dms-bg-panel-soft;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-width: 0 1 0 0;
+}
+
+.module-map-section-title {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-diagram-title;
+}
+
+.module-map-module-list,
+.module-map-dependency-table {
+    -fx-background-color: #ffffff;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-radius: 0;
+}
+
+.module-map-properties-scroll {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+
+.module-map-properties {
+    -fx-background-color: -dms-bg-panel-soft;
+}
+
+.module-map-field-label {
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-text-muted;
+}
+
+.module-map-action-button {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #e8eef5);
+    -fx-border-color: -dms-node-border;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-text-fill: #12385f;
+    -fx-font-weight: bold;
+    -fx-padding: 5 10 5 10;
+}
+
+.module-map-action-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, -dms-accent-soft);
+    -fx-border-color: -dms-module-border;
+}
+
+.module-map-diagram-panel {
+    -fx-background-color: -dms-diagram-board-bg;
+}
+
+.module-map-diagram-scroll {
+    -fx-background-color: #ffffff;
+    -fx-background: #ffffff;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-radius: 0;
+}
+
+.module-map-diagram-canvas {
+    -fx-background-color: #ffffff;
+}
+
+.module-map-node-root,
+.module-map-node-child {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, -dms-diagram-header-bottom);
+    -fx-border-color: -dms-module-border;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-effect: dropshadow(gaussian, rgba(15, 47, 82, 0.10), 5, 0.12, 0, 1);
+}
+
+.module-map-node-child {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, -dms-module-fill-child);
+    -fx-border-color: -dms-node-border;
+}
+
+.module-map-node-selected {
+    -fx-border-color: -dms-node-selected-border;
+    -fx-border-width: 2;
+}
+
+.module-map-node-title {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-diagram-title;
+}
+
+.module-map-node-meta {
+    -fx-font-size: 10px;
+    -fx-text-fill: -dms-text-muted;
+}
+
+.module-map-node-responsibility {
+    -fx-font-size: 10px;
+    -fx-text-fill: -dms-text;
+}
+
+.module-map-arrow {
+    -fx-stroke: -dms-connector;
+    -fx-stroke-width: 1.4;
+}
+
+.module-map-arrow-head {
+    -fx-fill: -dms-connector;
+}
+
+.module-map-arrow-label {
+    -fx-background-color: rgba(255, 255, 255, 0.88);
+    -fx-border-color: -dms-node-border-soft;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-padding: 2 5 2 5;
+    -fx-font-size: 9px;
+    -fx-text-fill: -dms-text-muted;
+}
+
+.module-map-empty {
+    -fx-font-size: 13px;
+    -fx-text-fill: -dms-text-muted;
+}
+
+/* Mapa de módulos sobre el lienzo común reutilizable. */
+.module-map-diagram-canvas {
+    -fx-background-color: #ffffff;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+.module-map-canvas-node {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, -dms-diagram-header-bottom);
+    -fx-border-color: -dms-module-border;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-effect: dropshadow(gaussian, rgba(15, 47, 82, 0.10), 5, 0.12, 0, 1);
+}
+
+.module-map-canvas-node-module-child {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, -dms-module-fill-child);
+    -fx-border-color: -dms-node-border;
+}
+
+.module-map-canvas-node-selected {
+    -fx-border-color: -dms-node-selected-border;
+    -fx-border-width: 2;
+}
+
+.module-map-canvas-node-title {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-diagram-title;
+}
+
+.module-map-canvas-node-meta {
+    -fx-font-size: 10px;
+    -fx-text-fill: -dms-text-muted;
+}
+
+.module-map-canvas-node-detail {
+    -fx-font-size: 10px;
+    -fx-text-fill: -dms-text;
+}
+
+.module-map-canvas-connector {
+    -fx-stroke: -dms-connector;
+    -fx-stroke-width: 1.45;
+    -fx-fill: transparent;
+}
+
+.module-map-canvas-connector-module-containment {
+    -fx-stroke-dash-array: 6 4;
+}
+
+.module-map-canvas-connector-selected {
+    -fx-stroke: -dms-node-selected-border;
+    -fx-stroke-width: 2.1;
+}
+
+.module-map-canvas-arrow-head {
+    -fx-fill: -dms-connector;
+}
+
+.module-map-canvas-arrow-head-selected {
+    -fx-fill: -dms-node-selected-border;
+}
+
+.module-map-canvas-connector-label {
+    -fx-background-color: rgba(255, 255, 255, 0.90);
+    -fx-border-color: -dms-node-border-soft;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-padding: 2 5 2 5;
+    -fx-font-size: 9px;
+    -fx-text-fill: -dms-text-muted;
+}
+
+/* Mapa de módulos sobre área de trabajo común. */
+.module-map-diagram-center {
+    -fx-background-color: -dms-bg-workspace;
+}
+
+.module-map-structure-panel,
+.module-map-properties {
+    -fx-background-color: -dms-bg-panel-soft;
+}
+
+.diagram-workbench-panel-content {
+    -fx-background-color: -dms-bg-panel-soft;
+}
+
+.module-map-panel-help {
+    -fx-font-size: 11px;
+    -fx-text-fill: -dms-text-muted;
+}
+
+.module-map-module-list .list-cell {
+    -fx-padding: 7 8 7 8;
+    -fx-background-color: transparent;
+}
+
+.module-map-module-list .list-cell:selected {
+    -fx-background-color: rgba(75, 127, 181, 0.16);
+}
+
+.module-map-structure-item-root,
+.module-map-structure-item-child {
+    -fx-padding: 2 0 2 0;
+}
+
+.module-map-structure-item-child {
+    -fx-padding: 2 0 2 14;
+}
+
+.module-map-structure-item-title {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-diagram-title;
+}
+
+.module-map-structure-item-meta {
+    -fx-font-size: 10px;
+    -fx-text-fill: -dms-text-muted;
+}
+
+.module-map-diagram-node {
+    -fx-effect: dropshadow(gaussian, rgba(15, 47, 82, 0.11), 6, 0.12, 0, 1.5);
+}
+
+.module-map-diagram-node-module-root {
+    -fx-fill: linear-gradient(to bottom, #FFFFFF, #E8EEF5);
+    -fx-stroke: -dms-module-border;
+}
+
+.module-map-diagram-node-module-child {
+    -fx-fill: linear-gradient(to bottom, #FFFFFF, -dms-module-fill-child);
+    -fx-stroke: -dms-node-border;
+}
+
+.module-map-node-visual-group .diagram-node-title {
+    -fx-font-size: 12.5px;
+}
+
+.module-map-node-visual-group .diagram-node-subtitle {
+    -fx-font-size: 10.5px;
+}
+
+.module-map-diagram-connector-module-containment {
+    -fx-stroke-dash-array: 7 5;
+}
+
+.module-map-diagram-connector-dependency {
+    -fx-stroke-width: 1.65;
+}
+
+.module-map-connector-visual-group .diagram-connector-label {
+    -fx-font-size: 9.5px;
+}
+
+.module-map-export-surface {
+    -fx-background-color: #FFFFFF;
+}
+
+/* Tanda 14: módulos raíz como agrupadores funcionales, no simples tarjetas. */
+.module-map-root-container-group .diagram-node-subtitle {
+    -fx-fill: -dms-text-muted;
+    -fx-font-size: 10.5px;
+}
+
+.module-map-root-container-group .diagram-package-tab,
+.module-map-diagram-node-module-root {
+    -fx-fill: linear-gradient(to bottom, #FFFFFF, #F2F5EA);
+    -fx-stroke: -dms-module-border;
+    -fx-stroke-dash-array: 8 5;
+}
+
+.module-map-root-container-group .admin-canvas-symbol-module {
+    -fx-fill: rgba(75, 127, 181, 0.16);
+    -fx-stroke: -dms-module-border;
+}
+
+/* =========================================================
+   Tanda 7 — mapa de módulos administrativo sobrio
+   ========================================================= */
+.module-map-diagram-node {
+    -fx-effect: none;
+}
+
+.module-map-diagram-node-module-root,
+.module-map-diagram-node-module-child,
+.module-map-root-container-group .diagram-package-tab {
+    -fx-fill: #FFFFFF;
+    -fx-stroke: #334155;
+    -fx-stroke-width: 1.2;
+}
+
+.module-map-diagram-node-module-root,
+.module-map-root-container-group .diagram-package-tab {
+    -fx-stroke-dash-array: 8 5;
+}
+
+.module-map-node-visual-group .diagram-node-title,
+.module-map-node-visual-group .diagram-node-subtitle,
+.module-map-connector-visual-group .diagram-connector-label {
+    -fx-fill: #111827;
+    -fx-text-fill: #111827;
+}

@@ -1,0 +1,23 @@
+/*
+ * Domain Model Studio — Barra de estado
+ * Mantiene estética desktop y permite desplazamiento horizontal cuando el
+ * mensaje o resumen del proyecto es demasiado largo para la ventana.
+ */
+.status-bar-scroll {
+    -fx-background-color: linear-gradient(to bottom, #ededed, #dcdcdc);
+    -fx-border-color: -dms-border-dark;
+    -fx-border-width: 1 0 0 0;
+    -fx-padding: 0;
+}
+
+.status-bar-scroll > .viewport {
+    -fx-background-color: transparent;
+}
+
+.status-bar {
+    -fx-background-color: transparent;
+}
+
+.status-label {
+    -fx-text-fill: #333333;
+}

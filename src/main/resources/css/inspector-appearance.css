@@ -1,0 +1,39 @@
+/*
+ * Domain Model Studio — Apariencia editable en inspector
+ *
+ * Este archivo forma parte de la Tanda 05 de modularización CSS.
+ * Mantiene la estética desktop sobria del proyecto y conserva el orden
+ * de cascada original mediante app-light.css.
+ */
+
+.workspace-fill {
+    -fx-fill: #EEF2F6;
+}
+
+.inspector-color-row {
+    -fx-alignment: center-left;
+}
+
+.inspector-color-picker {
+    -fx-pref-width: 42px;
+    -fx-min-width: 42px;
+    -fx-max-width: 42px;
+}
+
+.inspector-color-field {
+    -fx-pref-width: 95px;
+}
+
+.inspector-secondary-button {
+    -fx-background-color: linear-gradient(#FFFFFF, #E8EDF5);
+    -fx-border-color: #9FB0C7;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-padding: 5px 8px;
+    -fx-text-fill: #21324A;
+}
+
+.inspector-secondary-button:hover {
+    -fx-background-color: linear-gradient(#FFFFFF, #DCE8F8);
+    -fx-border-color: #6F91BC;
+}

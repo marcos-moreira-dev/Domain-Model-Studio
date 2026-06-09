@@ -1,0 +1,101 @@
+/*
+ * Domain Model Studio — diagram-drawing.css
+ * Primitivas visuales transversales para nodos, conectores, labels y selección.
+ */
+
+.diagram-node {
+    -fx-fill: -dms-module-fill;
+    -fx-stroke: -dms-module-border;
+    -fx-stroke-width: 1.2;
+    -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.10), 8, 0.15, 0, 2);
+}
+
+.diagram-node-selected,
+.diagram-selection-halo {
+    -fx-fill: transparent;
+    -fx-stroke: -dms-accent;
+    -fx-stroke-width: 2.0;
+}
+
+.diagram-node-title {
+    -fx-font-size: 12px;
+    -fx-font-weight: 700;
+    -fx-text-fill: -dms-diagram-title;
+}
+
+.diagram-node-subtitle {
+    -fx-font-size: 11px;
+    -fx-font-weight: 500;
+    -fx-text-fill: -dms-diagram-muted;
+}
+
+.diagram-node-meta {
+    -fx-font-size: 10.5px;
+    -fx-text-fill: -dms-diagram-muted;
+}
+
+.diagram-text-critical {
+    -fx-font-weight: 700;
+}
+
+.diagram-text-muted {
+    -fx-text-fill: -dms-diagram-muted;
+}
+
+.diagram-connector {
+    -fx-stroke: -dms-architecture-border;
+    -fx-stroke-width: 1.6;
+    -fx-fill: transparent;
+}
+
+.diagram-connector-selected {
+    -fx-stroke: -dms-accent;
+    -fx-stroke-width: 2.2;
+}
+
+.diagram-connector-arrow {
+    -fx-fill: -dms-architecture-border;
+    -fx-stroke: -dms-architecture-border;
+    -fx-stroke-width: 1.1;
+}
+
+.diagram-connector-arrow-hollow {
+    -fx-fill: -dms-bg-workspace;
+}
+
+.diagram-connector-label {
+    -fx-background-color: rgba(248, 250, 252, 0.92);
+    -fx-background-radius: 6;
+    -fx-border-color: rgba(148, 163, 184, 0.45);
+    -fx-border-radius: 6;
+    -fx-padding: 2 6;
+    -fx-font-size: 10.5px;
+    -fx-text-fill: -dms-diagram-muted;
+}
+
+.diagram-handle {
+    -fx-fill: -dms-bg-card;
+    -fx-stroke: -dms-accent;
+    -fx-stroke-width: 1.4;
+}
+
+/* Shape kits administrativos/wireframe: clases disponibles para uso gradual. */
+.admin-canvas-symbol-module,
+.admin-canvas-symbol-screen,
+.admin-canvas-symbol-matrix,
+.wireframe-symbol-screen,
+.wireframe-symbol-table,
+.wireframe-symbol-field,
+.wireframe-symbol-button {
+    -fx-fill: -dms-node-fill-soft;
+    -fx-stroke: -dms-node-border;
+    -fx-stroke-width: 1.2;
+}
+
+.admin-canvas-symbol-screen-line,
+.admin-canvas-symbol-matrix-line,
+.wireframe-symbol-line {
+    -fx-stroke: -dms-node-border;
+    -fx-stroke-width: 1;
+    -fx-fill: transparent;
+}

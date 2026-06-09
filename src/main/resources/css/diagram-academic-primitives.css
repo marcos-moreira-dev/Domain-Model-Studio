@@ -1,0 +1,100 @@
+.behavior-diagram-canvas,
+.architecture-diagram-canvas,
+.module-map-diagram-canvas,
+.screen-flow-diagram-canvas,
+.wireframe-diagram-canvas,
+.wireframe-canvas-pane {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-effect: none;
+}
+
+.behavior-node-card,
+.behavior-canvas-node,
+.architecture-node-card,
+.architecture-canvas-node,
+.module-map-canvas-node,
+.module-map-diagram-node,
+.screen-flow-diagram-node,
+.screen-flow-node-navigation-card,
+.free-graph-node-body,
+.uml-class-canvas-node,
+.uml-class-canvas-module,
+.wireframe-canvas-node,
+.sequence-participant-card,
+.sequence-message-card {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #334155;
+    -fx-border-width: 1.15;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-effect: none;
+}
+
+.behavior-canvas-node-bpmn-lane,
+.behavior-canvas-node-operational-lane,
+.behavior-canvas-node-uml-use-case-system-boundary,
+.architecture-canvas-node-boundary,
+.architecture-canvas-node-environment,
+.architecture-canvas-node-network,
+.architecture-canvas-node-external,
+.architecture-canvas-node-environment-role,
+.architecture-canvas-node-network-role,
+.uml-class-canvas-module-backend,
+.uml-class-canvas-module-frontend,
+.uml-class-canvas-module-shared,
+.uml-class-canvas-module-library,
+.module-map-canvas-node-module-child,
+.module-map-diagram-node-module-child,
+.screen-flow-diagram-node-screen-login,
+.screen-flow-diagram-node-screen-dashboard,
+.screen-flow-diagram-node-screen-report {
+    -fx-background-color: #FFFFFF;
+    -fx-effect: none;
+}
+
+.behavior-canvas-node-bpmn-lane,
+.behavior-canvas-node-operational-lane,
+.behavior-canvas-node-uml-use-case-system-boundary,
+.architecture-canvas-node-boundary,
+.architecture-canvas-node-environment,
+.architecture-canvas-node-network,
+.architecture-canvas-node-external {
+    -fx-border-style: segments(7, 4);
+}
+
+.behavior-node-selected,
+.behavior-canvas-node-selected,
+.architecture-node-selected,
+.architecture-canvas-node-selected,
+.module-map-canvas-node-selected,
+.free-graph-node-selected,
+.screen-flow-node-selected,
+.uml-class-canvas-node-selected,
+.uml-class-canvas-module-selected,
+.wireframe-canvas-node-selected {
+    -fx-border-color: -dms-accent;
+    -fx-border-width: 2;
+    -fx-effect: none;
+}
+
+.behavior-arrow-label,
+.behavior-canvas-connector-label,
+.architecture-arrow-label,
+.architecture-canvas-connector-label,
+.module-map-canvas-connector-label,
+.screen-flow-connector-label,
+.free-graph-connector-label,
+.uml-class-canvas-connector-label,
+.sequence-message-label,
+.wireframe-canvas-small-label,
+.behavior-canvas-node-order-hint {
+    -fx-background-color: rgba(255,255,255,0.96);
+    -fx-border-color: rgba(31,41,55,0.30);
+    -fx-border-width: 1;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-effect: none;
+}

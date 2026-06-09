@@ -1,0 +1,121 @@
+/* Grafo lógico del negocio — canvas visual semántico. */
+.logical-business-graph-diagram-center {
+    -fx-background-color: -dms-bg-canvas;
+}
+.logical-business-graph-node-body {
+    -fx-fill: white;
+    -fx-stroke: -dms-node-border;
+    -fx-stroke-width: 1.35;
+}
+.logical-business-graph-node-selected {
+    -fx-fill: -dms-accent;
+    -fx-stroke: derive(-dms-accent, -18%);
+    -fx-stroke-width: 2.25;
+}
+.logical-business-graph-node-title {
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-text;
+    -fx-font-size: 12px;
+}
+.logical-business-graph-node-subtitle {
+    -fx-text-fill: -dms-text-muted;
+    -fx-font-size: 10.5px;
+}
+.logical-business-graph-node-badge {
+    -fx-background-color: -dms-panel-bg;
+    -fx-border-color: -dms-border-strong;
+    -fx-border-width: 1;
+    -fx-padding: 2 6 2 6;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-text;
+}
+.logical-business-graph-node-text-selected,
+.logical-business-graph-node-badge-selected {
+    -fx-text-fill: white;
+}
+.logical-business-graph-node-badge-selected {
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+}
+.logical-business-graph-connector-line {
+    -fx-stroke-width: 1.8;
+    -fx-fill: transparent;
+}
+.logical-business-graph-node-mf {
+    -fx-stroke: -dms-accent-border;
+}
+.logical-business-graph-node-fl,
+.logical-business-graph-node-cu,
+.logical-business-graph-node-acc {
+    -fx-stroke-width: 1.6;
+}
+/* SideDock operativo del Grafo lógico del negocio. */
+.logical-business-graph-structure-scroll,
+.logical-business-graph-properties-scroll,
+.logical-business-graph-legend-scroll {
+    -fx-background-color: transparent;
+}
+.logical-business-graph-panel-hint,
+.logical-business-graph-empty,
+.logical-business-graph-semantic-hint {
+    -fx-text-fill: -dms-text-muted;
+    -fx-font-size: 11px;
+}
+.logical-business-graph-list {
+    -fx-background-color: transparent;
+    -fx-border-color: -dms-border;
+    -fx-border-width: 1;
+}
+.logical-business-graph-list-item,
+.logical-business-graph-legend-item,
+.logical-business-graph-legend-card {
+    -fx-background-color: -dms-panel-bg;
+    -fx-border-color: -dms-border;
+    -fx-border-width: 1;
+    -fx-padding: 7 8 7 8;
+}
+.logical-business-graph-list-item-title,
+.logical-business-graph-legend-item-title,
+.logical-business-graph-section-title {
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-text;
+}
+.logical-business-graph-list-item-meta {
+    -fx-text-fill: -dms-accent;
+    -fx-font-size: 10.5px;
+}
+.logical-business-graph-list-item-detail,
+.logical-business-graph-legend-item-detail {
+    -fx-text-fill: -dms-text-muted;
+    -fx-font-size: 10.5px;
+}
+.logical-business-graph-property-section {
+    -fx-background-color: -dms-panel-bg;
+    -fx-border-color: -dms-border;
+    -fx-border-width: 1;
+    -fx-padding: 8;
+}
+.logical-business-graph-field-label {
+    -fx-text-fill: -dms-text-muted;
+}
+.logical-business-graph-action-button {
+    -fx-background-color: -dms-accent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.logical-business-graph-legend-box,
+.logical-business-graph-legend-panel {
+    -fx-background-color: transparent;
+}
+.logical-business-graph-search-field { -fx-background-color: white; -fx-border-color: -dms-border; -fx-border-width: 1; }
+.logical-business-graph-accordion-tab { -fx-background-color: transparent; }
+.logical-business-graph-disclosure { -fx-background-color: #ffffff; -fx-border-color: -dms-border-soft; -fx-border-width: 1; }
+.logical-business-graph-disclosure > .title { -fx-background-color: #f8fafc; -fx-border-color: transparent transparent #dce5ee transparent; -fx-border-width: 0 0 1 0; }
+.logical-business-graph-disclosure:expanded > .title { -fx-background-color: #eef5fc; }
+.logical-business-graph-disclosure-header { -fx-padding: 2 0 2 0; }
+.logical-business-graph-disclosure-title { -fx-font-weight: bold; -fx-text-fill: -dms-text; }
+.logical-business-graph-disclosure-meta { -fx-font-size: 11px; -fx-text-fill: -dms-text-muted; }
+.logical-business-graph-disclosure-body { -fx-background-color: #ffffff; -fx-padding: 8 9 8 9; }
+.logical-business-graph-navigation-button { -fx-background-color: -dms-panel-bg; -fx-border-color: -dms-border; -fx-border-width: 1; -fx-text-fill: -dms-text; -fx-alignment: center-left; }
+.logical-business-graph-navigation-button.selected { -fx-background-color: #e8f2ff; -fx-border-color: -dms-accent-border; -fx-font-weight: bold; }

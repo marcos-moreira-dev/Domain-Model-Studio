@@ -1,0 +1,589 @@
+/* =========================================================
+   UML Clases: editor por módulos, clases y relaciones
+   ========================================================= */
+
+.uml-class-root {
+    -fx-background-color: -dms-panel-bg;
+}
+
+.uml-class-header {
+    -fx-background-color: linear-gradient(to bottom, -dms-diagram-header-top, -dms-diagram-header-bottom);
+    -fx-border-color: -dms-border-soft;
+    -fx-border-width: 0 0 1 0;
+}
+
+.uml-class-title {
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-diagram-title;
+}
+
+.uml-class-subtitle {
+    -fx-font-size: 12px;
+    -fx-text-fill: -dms-diagram-subtitle;
+}
+
+.uml-class-split {
+    -fx-background-color: -dms-bg-workspace;
+}
+
+.uml-class-section {
+    -fx-padding: 10;
+    -fx-background-color: -dms-bg-panel-soft;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-width: 0 1 0 0;
+}
+
+.uml-class-section-title {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-diagram-title;
+}
+
+.uml-class-subsection-title {
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-text-muted;
+    -fx-padding: 6 0 0 0;
+}
+
+.uml-class-properties {
+    -fx-background-color: -dms-bg-panel-soft;
+}
+
+.uml-class-properties-scroll {
+    -fx-background-color: transparent;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-width: 0 0 0 1;
+}
+
+.uml-class-relation-table,
+.uml-class-root .list-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+.uml-class-form-label {
+    -fx-font-size: 11px;
+    -fx-text-fill: -dms-text-muted;
+}
+
+.uml-class-action-button {
+    -fx-font-size: 12px;
+    -fx-padding: 5 10;
+}
+
+/* =========================================================
+   UML Clases - lienzo común editable
+   ========================================================= */
+.uml-class-diagram-panel {
+    -fx-background-color: -dms-bg-canvas;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+.uml-class-diagram-canvas {
+    -fx-background-color: -dms-bg-canvas;
+}
+
+.uml-class-canvas-module,
+.uml-class-canvas-node {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: -dms-uml-border;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-effect: dropshadow(gaussian, rgba(16, 24, 40, 0.08), 8, 0.16, 0, 2);
+}
+
+.uml-class-canvas-module {
+    -fx-background-color: -dms-uml-package-fill;
+    -fx-border-style: segments(8, 4);
+}
+
+.uml-class-canvas-node-selected,
+.uml-class-canvas-connector-selected {
+    -fx-border-color: -dms-accent-border;
+    -fx-effect: dropshadow(gaussian, rgba(55, 125, 255, 0.22), 10, 0.22, 0, 0);
+}
+
+.uml-class-canvas-module-title,
+.uml-class-canvas-node-title {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-diagram-title;
+}
+
+.uml-class-canvas-stereotype,
+.uml-class-canvas-node-detail,
+.uml-class-canvas-member-header {
+    -fx-font-size: 10px;
+    -fx-text-fill: -dms-text-muted;
+}
+
+.uml-class-canvas-member-header {
+    -fx-font-weight: bold;
+    -fx-padding: 4 0 0 0;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-width: 1 0 0 0;
+}
+
+.uml-class-canvas-member-line {
+    -fx-font-size: 10px;
+    -fx-text-fill: -dms-text;
+}
+
+.uml-class-canvas-node-uml-class-interface {
+    -fx-background-color: #F8FBFF;
+}
+
+.uml-class-canvas-node-uml-class-enum {
+    -fx-background-color: #FFFCF5;
+}
+
+.uml-class-canvas-connector {
+    -fx-fill: transparent;
+    -fx-stroke: #4E5968;
+    -fx-stroke-width: 1.7;
+}
+
+.uml-class-canvas-connector-uml-relation-dependency,
+.uml-class-canvas-connector-uml-relation-implementation {
+    -fx-stroke-dash-array: 7 5;
+}
+
+.uml-class-canvas-connector-selected {
+    -fx-stroke: -dms-accent-border;
+    -fx-stroke-width: 2.2;
+}
+
+.uml-class-canvas-arrow-head {
+    -fx-fill: #4E5968;
+}
+
+.uml-class-canvas-arrow-head-selected {
+    -fx-fill: -dms-accent-border;
+}
+
+.uml-class-canvas-connector-label {
+    -fx-font-size: 10px;
+    -fx-padding: 2 5;
+    -fx-background-color: rgba(255,255,255,0.94);
+    -fx-border-color: -dms-border-soft;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-text-fill: -dms-text-muted;
+}
+
+.uml-class-canvas-arrow-head.diagram-connector-arrow-hollow {
+    -fx-fill: -dms-bg-workspace;
+}
+
+/* Tanda 11: UML Clases como mapa estructural */
+.uml-class-canvas-module {
+    -fx-background-color: rgba(246, 242, 229, 0.58);
+    -fx-border-color: rgba(138, 112, 67, 0.55);
+    -fx-border-width: 1.4;
+    -fx-border-style: segments(9, 5);
+}
+
+.uml-class-canvas-module-title {
+    -fx-background-color: rgba(246, 242, 229, 0.92);
+    -fx-background-radius: 0;
+    -fx-border-color: rgba(138, 112, 67, 0.32);
+    -fx-border-radius: 0;
+    -fx-padding: 3 8;
+}
+
+.uml-class-canvas-member-line-muted {
+    -fx-font-size: 10px;
+    -fx-font-style: italic;
+    -fx-text-fill: -dms-text-muted;
+}
+
+.uml-class-canvas-node-uml-class-class,
+.uml-class-canvas-node-uml-class-interface,
+.uml-class-canvas-node-uml-class-enum {
+    -fx-border-width: 1.2;
+}
+
+/* =========================================================
+   Tanda 7 — UML clases como notación estructural simple
+   ========================================================= */
+.uml-class-canvas-node {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #1F2937;
+    -fx-border-width: 1.25;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-effect: none;
+}
+
+.uml-class-canvas-module {
+    -fx-background-color: rgba(255, 255, 255, 0.45);
+    -fx-border-color: rgba(31, 41, 55, 0.65);
+    -fx-border-width: 1.2;
+    -fx-border-style: segments(8, 5);
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-effect: none;
+}
+
+.uml-class-canvas-node-selected {
+    -fx-border-color: -dms-accent;
+    -fx-border-width: 2.0;
+    -fx-effect: none;
+}
+
+.uml-class-canvas-module-title {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 0;
+    -fx-border-color: rgba(31, 41, 55, 0.35);
+    -fx-border-radius: 0;
+}
+
+.uml-class-canvas-node-title,
+.uml-class-canvas-member-line,
+.uml-class-canvas-member-header {
+    -fx-text-fill: #111827;
+}
+
+.uml-class-canvas-stereotype,
+.uml-class-canvas-node-detail,
+.uml-class-canvas-member-line-muted {
+    -fx-text-fill: #374151;
+}
+
+.uml-class-canvas-member-header {
+    -fx-border-color: #1F2937;
+    -fx-border-width: 1 0 0 0;
+}
+
+.uml-class-canvas-node-uml-class-interface,
+.uml-class-canvas-node-uml-class-enum {
+    -fx-background-color: #FFFFFF;
+}
+
+.uml-class-canvas-connector,
+.uml-class-canvas-arrow-head {
+    -fx-stroke: #1F2937;
+    -fx-fill: #1F2937;
+}
+
+.uml-class-canvas-connector-label {
+    -fx-text-fill: #111827;
+    -fx-background-color: rgba(255,255,255,0.97);
+    -fx-border-color: rgba(31, 41, 55, 0.32);
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+/* =========================================================
+   Tanda 10 — contenedores visuales por package/carpeta
+   ========================================================= */
+.uml-class-canvas-module {
+    -fx-background-color: rgba(249, 250, 251, 0.42);
+    -fx-border-color: rgba(31, 41, 55, 0.78);
+    -fx-border-width: 1.4;
+    -fx-border-style: segments(10, 5);
+    -fx-padding: 10 12 10 12;
+}
+
+.uml-class-canvas-module-backend {
+    -fx-background-color: rgba(239, 246, 255, 0.50);
+    -fx-border-color: rgba(29, 78, 216, 0.62);
+}
+
+.uml-class-canvas-module-frontend {
+    -fx-background-color: rgba(236, 253, 245, 0.50);
+    -fx-border-color: rgba(4, 120, 87, 0.62);
+}
+
+.uml-class-canvas-module-shared,
+.uml-class-canvas-module-library {
+    -fx-background-color: rgba(250, 245, 255, 0.50);
+    -fx-border-color: rgba(126, 34, 206, 0.58);
+}
+
+.uml-class-canvas-module-title {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-background-color: rgba(255, 255, 255, 0.96);
+    -fx-border-color: rgba(31, 41, 55, 0.38);
+    -fx-border-width: 1;
+    -fx-padding: 3 8 3 8;
+}
+
+.uml-class-canvas-module-count {
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #374151;
+}
+
+.uml-class-canvas-module-path {
+    -fx-font-size: 9px;
+    -fx-text-fill: #4B5563;
+}
+
+/* Tanda 14 — nombres largos y metadatos de origen */
+.uml-class-readonly-metadata {
+    -fx-font-size: 10px;
+    -fx-text-fill: -dms-text-muted;
+    -fx-background-color: -dms-bg-workspace;
+    -fx-border-color: -dms-border-soft;
+}
+
+/* Tanda 19 — filtros, búsqueda y navegación UML */
+.uml-class-filter-control,
+.uml-class-search-field {
+    -fx-font-size: 11px;
+}
+
+.uml-class-filter-row,
+.uml-class-navigation-row {
+    -fx-alignment: center-left;
+    -fx-spacing: 6;
+}
+
+.uml-class-small-button {
+    -fx-font-size: 10px;
+    -fx-padding: 3 6 3 6;
+}
+
+/* Tanda UML 4 — estimador de costo visual */
+.uml-class-visual-cost {
+    -fx-font-size: 10px;
+    -fx-text-fill: -dms-text-muted;
+    -fx-background-color: -dms-bg-workspace;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-padding: 6 7 6 7;
+}
+
+/* Tanda UML 5 — memoria/JVM disponible */
+.uml-class-runtime-memory {
+    -fx-font-size: 10px;
+    -fx-text-fill: -dms-text-muted;
+    -fx-background-color: -dms-bg-panel-soft;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-padding: 6 7 6 7;
+}
+
+/* Tanda UML 9 — configuración del editor externo de código */
+.uml-class-code-editor-panel {
+    -fx-spacing: 10;
+    -fx-background-color: -dms-bg-panel-soft;
+}
+
+.uml-class-code-editor-summary {
+    -fx-text-fill: -dms-text;
+    -fx-font-size: 11px;
+}
+
+.uml-class-code-editor-field {
+    -fx-font-family: "Consolas", "Courier New", monospace;
+    -fx-font-size: 11px;
+}
+
+.uml-class-code-editor-buttons {
+    -fx-spacing: 6;
+}
+
+.uml-class-code-editor-help {
+    -fx-text-fill: -dms-text-muted;
+    -fx-font-size: 10px;
+}
+
+
+/* Tanda 7 — relaciones UML legibles en pantalla y PNG */
+.uml-class-canvas-connector {
+    -fx-stroke: #111827;
+    -fx-stroke-width: 2.1;
+}
+
+.uml-class-canvas-arrow-head {
+    -fx-fill: #111827;
+    -fx-stroke: #111827;
+    -fx-stroke-width: 1.35;
+}
+
+.uml-class-canvas-arrow-head.diagram-connector-arrow-hollow {
+    -fx-fill: #FFFFFF;
+    -fx-stroke: #111827;
+    -fx-stroke-width: 1.45;
+}
+
+.uml-class-canvas-connector-selected {
+    -fx-stroke: -dms-accent;
+    -fx-stroke-width: 2.6;
+}
+
+.uml-class-canvas-arrow-head-selected {
+    -fx-fill: -dms-accent-soft;
+    -fx-stroke: -dms-accent;
+    -fx-stroke-width: 1.7;
+}
+
+
+/* Tanda 8 — jerarquía UML más legible en runtime */
+.uml-class-canvas-connector {
+    -fx-stroke: #111827;
+    -fx-stroke-width: 2.1;
+}
+
+.uml-class-canvas-connector-uml-relation-inheritance,
+.uml-class-canvas-connector-uml-relation-implementation {
+    -fx-stroke: #0F172A;
+    -fx-stroke-width: 2.2;
+}
+
+.uml-class-canvas-connector-uml-relation-composition {
+    -fx-stroke: #111827;
+    -fx-stroke-width: 2.25;
+}
+
+.uml-class-canvas-connector-uml-relation-aggregation {
+    -fx-stroke: #1F2937;
+    -fx-stroke-width: 2.15;
+}
+
+.uml-class-canvas-arrow-head {
+    -fx-fill: #111827;
+    -fx-stroke: #111827;
+    -fx-stroke-width: 1.4;
+}
+
+.uml-class-canvas-arrow-head.diagram-connector-arrow-hollow {
+    -fx-fill: #FFFFFF;
+    -fx-stroke: #111827;
+    -fx-stroke-width: 1.5;
+}
+
+.uml-class-canvas-connector-label,
+.interactive-canvas-connector-label-uml-relation-inheritance,
+.interactive-canvas-connector-label-uml-relation-implementation,
+.interactive-canvas-connector-label-uml-relation-composition,
+.interactive-canvas-connector-label-uml-relation-aggregation,
+.interactive-canvas-connector-label-uml-relation-dependency,
+.interactive-canvas-connector-label-uml-relation-association {
+    -fx-text-fill: #111827;
+    -fx-background-color: rgba(255, 255, 255, 0.99);
+    -fx-border-color: rgba(17, 24, 39, 0.58);
+    -fx-border-width: 1.0;
+    -fx-font-weight: bold;
+}
+
+/* Tanda 11 — jerarquía UML más explícita en pantalla/PNG */
+.uml-class-canvas-connector-uml-relation-inheritance,
+.uml-class-canvas-connector-uml-relation-implementation {
+    -fx-stroke: #0B1220;
+    -fx-stroke-width: 2.8;
+}
+
+.uml-class-canvas-connector-uml-relation-composition {
+    -fx-stroke: #0B1220;
+    -fx-stroke-width: 2.9;
+}
+
+.uml-class-canvas-connector-uml-relation-aggregation {
+    -fx-stroke: #111827;
+    -fx-stroke-width: 2.7;
+}
+
+.uml-class-canvas-connector-uml-relation-dependency {
+    -fx-stroke: #1F2937;
+    -fx-stroke-width: 2.2;
+    -fx-stroke-dash-array: 8 6;
+}
+
+.uml-class-canvas-arrow-head {
+    -fx-fill: #0B1220;
+    -fx-stroke: #0B1220;
+    -fx-stroke-width: 1.8;
+}
+
+.uml-class-canvas-arrow-head.diagram-connector-arrow-hollow {
+    -fx-fill: #FFFFFF;
+    -fx-stroke: #0B1220;
+    -fx-stroke-width: 2.0;
+}
+
+.uml-class-canvas-connector-label,
+.interactive-canvas-connector-label-uml-relation-inheritance,
+.interactive-canvas-connector-label-uml-relation-implementation,
+.interactive-canvas-connector-label-uml-relation-composition,
+.interactive-canvas-connector-label-uml-relation-aggregation,
+.interactive-canvas-connector-label-uml-relation-dependency,
+.interactive-canvas-connector-label-uml-relation-association {
+    -fx-font-size: 11.5px;
+    -fx-font-weight: bold;
+    -fx-background-color: rgba(255, 255, 255, 1.0);
+    -fx-border-color: rgba(11, 18, 32, 0.72);
+    -fx-border-width: 1.15;
+    -fx-text-fill: #0B1220;
+}
+
+/* Tanda 15 — relaciones UML visibles dentro de módulos/contenedores. */
+.uml-class-canvas-module {
+    -fx-background-color: rgba(255, 255, 255, 0.16);
+    -fx-border-color: rgba(11, 18, 32, 0.86);
+    -fx-border-width: 1.5;
+}
+
+.uml-class-canvas-module-backend,
+.uml-class-canvas-module-frontend,
+.uml-class-canvas-module-shared,
+.uml-class-canvas-module-library {
+    -fx-background-color: rgba(255, 255, 255, 0.14);
+}
+
+.uml-class-canvas-node-selected,
+.uml-class-canvas-module.uml-class-canvas-node-selected,
+.canvas-node-view-selected .uml-class-canvas-module,
+.canvas-node-view-selected .uml-class-canvas-node {
+    -fx-border-color: -dms-accent;
+    -fx-border-width: 2.2;
+}
+
+.uml-class-canvas-connector-uml-relation-association,
+.uml-class-canvas-connector-uml-relation-inheritance,
+.uml-class-canvas-connector-uml-relation-implementation,
+.uml-class-canvas-connector-uml-relation-composition,
+.uml-class-canvas-connector-uml-relation-aggregation,
+.uml-class-canvas-connector-uml-relation-dependency {
+    -fx-stroke: #0B1220;
+    -fx-stroke-width: 3.0;
+}
+
+.uml-class-canvas-arrow-head {
+    -fx-fill: #0B1220;
+    -fx-stroke: #0B1220;
+    -fx-stroke-width: 2.2;
+}
+
+.uml-class-canvas-arrow-head.diagram-connector-arrow-hollow {
+    -fx-fill: #FFFFFF;
+    -fx-stroke: #0B1220;
+    -fx-stroke-width: 2.5;
+}
+
+.uml-class-canvas-connector-label,
+.interactive-canvas-connector-label-uml-relation-inheritance,
+.interactive-canvas-connector-label-uml-relation-implementation,
+.interactive-canvas-connector-label-uml-relation-composition,
+.interactive-canvas-connector-label-uml-relation-aggregation,
+.interactive-canvas-connector-label-uml-relation-dependency,
+.interactive-canvas-connector-label-uml-relation-association {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #0B1220;
+    -fx-border-width: 1.2;
+    -fx-text-fill: #0B1220;
+}
+

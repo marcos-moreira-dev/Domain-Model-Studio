@@ -1,0 +1,350 @@
+/*
+ * Domain Model Studio — Manual integrado
+ *
+ * Este archivo forma parte de la Tanda 05 de modularización CSS.
+ * Mantiene la estética desktop sobria del proyecto y conserva el orden
+ * de cascada original mediante app-light.css.
+ */
+
+/* -------------------------------------------------------------------------
+ * 16. Tanda R-8 — Manual integrado
+ * ------------------------------------------------------------------------- */
+.manual-root {
+    -fx-background-color: -dms-bg-panel;
+}
+
+.manual-header {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #ecece6);
+    -fx-border-color: -dms-border-dark;
+    -fx-border-width: 0 0 1 0;
+}
+
+.manual-eyebrow {
+    -fx-font-size: 10.5px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-help;
+}
+
+.manual-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1f1f1f;
+}
+
+.manual-subtitle {
+    -fx-font-size: 12px;
+    -fx-text-fill: #4f565c;
+}
+
+.manual-topic-list {
+    -fx-background-color: #f7f7f2;
+    -fx-border-color: -dms-border-dark;
+    -fx-border-width: 0 1 0 0;
+}
+
+.manual-topic-list .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #222222;
+    -fx-padding: 8 10 8 12;
+    -fx-border-color: transparent transparent #e0e0da transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.manual-topic-list .list-cell:hover {
+    -fx-background-color: #f1f6fc;
+}
+
+.manual-topic-list .list-cell:selected {
+    -fx-background-color: -dms-accent-soft;
+    -fx-text-fill: #1f4f85;
+    -fx-font-weight: bold;
+}
+
+
+.manual-topic-list .tree-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #222222;
+    -fx-padding: 6 8 6 10;
+    -fx-border-color: transparent transparent #e0e0da transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.manual-topic-list .tree-cell:hover {
+    -fx-background-color: #f1f6fc;
+}
+
+.manual-topic-list .tree-cell:selected {
+    -fx-background-color: -dms-accent-soft;
+    -fx-text-fill: #1f4f85;
+}
+
+.manual-topic-list .manual-tree-category {
+    -fx-font-weight: bold;
+}
+
+.manual-topic-list .manual-tree-topic {
+    -fx-font-size: 11.5px;
+}
+
+.manual-scroll,
+.manual-scroll > .viewport,
+.manual-content {
+    -fx-background-color: #fbfbfb;
+}
+
+.manual-section-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #222222;
+}
+
+.manual-section-summary {
+    -fx-font-size: 12.5px;
+    -fx-text-fill: #4d5966;
+    -fx-padding: 0 0 4 0;
+}
+
+.manual-block {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d1d1cb;
+    -fx-border-width: 1;
+    -fx-padding: 11 12 12 12;
+}
+
+.manual-block-title {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #25384d;
+}
+
+.manual-bullet {
+    -fx-font-size: 12px;
+    -fx-text-fill: #2f2f2f;
+    -fx-line-spacing: 2;
+}
+
+
+.manual-mini-diagram {
+    -fx-background-color: #f7f7f2;
+    -fx-border-color: #c9c9c1;
+    -fx-border-width: 1;
+    -fx-padding: 8 10 8 10;
+}
+
+.manual-mini-diagram-line {
+    -fx-font-family: "Consolas", "Monospaced";
+    -fx-font-size: 11.5px;
+    -fx-text-fill: #263238;
+}
+
+.manual-footer {
+    -fx-background-color: linear-gradient(to bottom, #eeeeea, #ddddd7);
+    -fx-border-color: -dms-border-dark;
+    -fx-border-width: 1 0 0 0;
+}
+
+.manual-close-button {
+    -fx-min-width: 86;
+    -fx-pref-width: 86;
+}
+
+/* -------------------------------------------------------------------------
+
+/* -------------------------------------------------------------------------
+ * Figuras didácticas de la referencia académica
+ * ------------------------------------------------------------------------- */
+.manual-figure {
+    -fx-background-color: #f9faf7;
+    -fx-border-color: #c9c9c1;
+    -fx-border-width: 1;
+    -fx-padding: 8 10 8 10;
+}
+
+.manual-figure-canvas {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #dfdfd8;
+    -fx-border-width: 1;
+}
+
+.manual-figure-caption {
+    -fx-font-size: 11.5px;
+    -fx-text-fill: #4d5966;
+    -fx-font-style: italic;
+}
+
+.manual-figure-shape {
+    -fx-fill: #f7f7f2;
+    -fx-stroke: #25384d;
+    -fx-stroke-width: 1.3;
+}
+
+.manual-figure-line {
+    -fx-stroke: #25384d;
+    -fx-stroke-width: 1.25;
+}
+
+.manual-figure-arrow-head {
+    -fx-fill: #25384d;
+    -fx-stroke: #25384d;
+}
+
+.manual-figure-text {
+    -fx-font-size: 11px;
+    -fx-fill: #263238;
+}
+
+/* -------------------------------------------------------------------------
+ * Tanda 13 — Ayuda académica estilo CHM
+ * ------------------------------------------------------------------------- */
+.manual-navigation-tabs {
+    -fx-background-color: #ecece6;
+    -fx-border-color: -dms-border-dark;
+    -fx-border-width: 0 1 0 0;
+}
+
+.manual-navigation-tabs .tab-header-area {
+    -fx-padding: 4 4 0 4;
+}
+
+.manual-navigation-tabs .tab {
+    -fx-background-color: #e8e8e0;
+    -fx-border-color: #b9b9ad;
+    -fx-border-width: 1 1 0 1;
+    -fx-padding: 4 7 4 7;
+}
+
+.manual-navigation-tabs .tab:selected {
+    -fx-background-color: #f7f7f2;
+}
+
+.manual-search-pane,
+.manual-index-pane {
+    -fx-background-color: #f7f7f2;
+}
+
+.manual-search-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #a9a99f;
+    -fx-border-width: 1;
+    -fx-font-size: 12px;
+}
+
+.manual-search-hint,
+.manual-index-title {
+    -fx-font-size: 11.5px;
+    -fx-text-fill: #4d5966;
+}
+
+.manual-index-title {
+    -fx-font-weight: bold;
+    -fx-text-fill: #25384d;
+}
+
+.manual-search-results {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #c9c9c1;
+    -fx-border-width: 1;
+}
+
+.manual-search-results .list-cell {
+    -fx-background-color: transparent;
+    -fx-padding: 7 8 7 8;
+    -fx-border-color: transparent transparent #ecece6 transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.manual-search-results .list-cell:hover {
+    -fx-background-color: #f1f6fc;
+}
+
+.manual-search-results .list-cell:selected {
+    -fx-background-color: -dms-accent-soft;
+}
+
+.manual-search-result-title {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1f1f1f;
+}
+
+.manual-search-result-category {
+    -fx-font-size: 10.5px;
+    -fx-text-fill: #5b6170;
+}
+
+.manual-topic-list .tree-cell > .tree-disclosure-node {
+    -fx-padding: 0 3 0 0;
+}
+
+.manual-book-cover {
+    -fx-fill: #6f3fa0;
+    -fx-stroke: #3b2358;
+    -fx-stroke-width: 0.8;
+}
+
+.manual-book-spine {
+    -fx-fill: #4d2b72;
+}
+
+.manual-book-page,
+.manual-book-open-page {
+    -fx-fill: #f3edf8;
+    -fx-stroke: #d8c6ea;
+    -fx-stroke-width: 0.5;
+}
+
+.manual-book-icon-open .manual-book-cover {
+    -fx-fill: #8050b0;
+}
+
+.manual-page-icon-sheet {
+    -fx-fill: #fffdf8;
+    -fx-stroke: #6f3fa0;
+    -fx-stroke-width: 0.8;
+}
+
+.manual-page-icon-fold {
+    -fx-fill: #d8c6ea;
+    -fx-stroke: #6f3fa0;
+    -fx-stroke-width: 0.5;
+}
+
+/* -------------------------------------------------------------------------
+ * Post-cierre 04 — lectura académica más cómoda
+ * ------------------------------------------------------------------------- */
+.manual-paragraph {
+    -fx-font-size: 12.5px;
+    -fx-text-fill: #1f2933;
+    -fx-line-spacing: 3;
+    -fx-padding: 0 0 4 0;
+}
+
+.manual-content {
+    -fx-spacing: 14;
+}
+
+.manual-block {
+    -fx-padding: 13 15 15 15;
+}
+
+.manual-navigation-tabs .tab .tab-label {
+    -fx-font-weight: bold;
+}
+
+/* -------------------------------------------------------------------------
+ * Guía académica — líneas semánticas de Markdown teórico
+ * ------------------------------------------------------------------------- */
+.manual-block-subtitle {
+    -fx-font-size: 12.7px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #24364a;
+    -fx-padding: 7 0 2 0;
+}
+
+.manual-example-line {
+    -fx-font-family: "Consolas", "Courier New", monospace;
+    -fx-font-size: 12px;
+    -fx-text-fill: #1f2933;
+    -fx-background-color: #f7f5ef;
+    -fx-padding: 2 5 2 5;
+}

@@ -1,0 +1,192 @@
+/* =========================================================
+   Wireframes administrativos: maqueta primitiva y ligera
+   ========================================================= */
+
+.wireframe-root,
+.wireframe-split,
+.wireframe-scroll,
+.wireframe-properties-scroll {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+
+.wireframe-header {
+    -fx-padding: 0 0 10 0;
+}
+
+.wireframe-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-accent;
+}
+
+.wireframe-subtitle,
+.wireframe-screen-module,
+.wireframe-component-detail,
+.wireframe-empty-message,
+.wireframe-panel-help,
+.wireframe-structure-item-meta {
+    -fx-text-fill: -dms-text-muted;
+}
+
+.wireframe-section,
+.wireframe-screen-list,
+.wireframe-component-table {
+    -fx-background-color: -dms-panel;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+.wireframe-section-title,
+.wireframe-panel-section-title,
+.wireframe-structure-item-title,
+.wireframe-component-title {
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-diagram-title;
+}
+
+.wireframe-diagram-center,
+.wireframe-structure-panel,
+.wireframe-properties {
+    -fx-background-color: -dms-bg-panel-soft;
+}
+
+.wireframe-canvas-pane,
+.wireframe-diagram-canvas,
+.wireframe-export-surface {
+    -fx-background-color: #ffffff;
+}
+
+.wireframe-diagram-canvas {
+    -fx-border-color: -dms-border-soft;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+.wireframe-screen-card,
+.wireframe-component,
+.wireframe-canvas-node {
+    -fx-background-color: #ffffff;
+    -fx-border-color: -dms-node-border;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+.wireframe-screen-card-selected,
+.wireframe-component-selected,
+.wireframe-canvas-node-selected {
+    -fx-border-color: -dms-node-selected-border;
+    -fx-border-width: 2;
+}
+
+.wireframe-screen-title,
+.wireframe-canvas-node-title {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-diagram-title;
+}
+
+.wireframe-canvas-node-meta,
+.wireframe-canvas-node-detail,
+.wireframe-help-text {
+    -fx-font-size: 10px;
+    -fx-text-fill: -dms-text-muted;
+}
+
+.wireframe-template-panel {
+    -fx-padding: 8 0 10 0;
+    -fx-spacing: 6;
+}
+
+.wireframe-field-label {
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-text;
+}
+
+.wireframe-screen-list .list-cell {
+    -fx-padding: 7 8 7 8;
+    -fx-background-color: transparent;
+}
+
+.wireframe-screen-list .list-cell:selected {
+    -fx-background-color: rgba(75, 127, 181, 0.16);
+}
+
+.wireframe-action-button {
+    -fx-background-color: #ffffff;
+    -fx-border-color: -dms-node-border;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-text-fill: #12385f;
+    -fx-font-weight: bold;
+    -fx-padding: 5 10 5 10;
+}
+
+.wireframe-action-button:hover {
+    -fx-background-color: -dms-accent-soft;
+    -fx-border-color: -dms-module-border;
+}
+
+.wireframe-line,
+.wireframe-canvas-line {
+    -fx-background-color: -dms-node-border-soft;
+    -fx-min-height: 2px;
+    -fx-pref-height: 2px;
+}
+
+.wireframe-small-label,
+.wireframe-canvas-small-label {
+    -fx-background-color: transparent;
+    -fx-border-color: -dms-node-border-soft;
+    -fx-min-width: 36px;
+    -fx-pref-width: 36px;
+    -fx-min-height: 8px;
+    -fx-pref-height: 8px;
+}
+
+.wireframe-figure {
+    -fx-fill: #ffffff;
+    -fx-stroke: -dms-node-border;
+    -fx-stroke-width: 1.1;
+}
+
+.wireframe-figure-wireframe-screen {
+    -fx-fill: #ffffff;
+    -fx-stroke: -dms-module-border;
+}
+
+.wireframe-figure-title {
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-fill: -dms-diagram-title;
+}
+
+.wireframe-figure-subtitle {
+    -fx-font-size: 9px;
+    -fx-fill: -dms-text-muted;
+}
+
+.wireframe-figure-line {
+    -fx-stroke: -dms-node-border-soft;
+    -fx-stroke-width: 1.0;
+}
+
+.wireframe-figure-mini-rect,
+.wireframe-figure-screen-header,
+.wireframe-figure-screen-body,
+.wireframe-figure-button-hint,
+.wireframe-figure-message-hint,
+.wireframe-figure-modal-hint {
+    -fx-fill: transparent;
+    -fx-stroke: -dms-node-border-soft;
+    -fx-stroke-width: 1.0;
+}
+
+.wireframe-figure-screen-header {
+    -fx-stroke: -dms-module-border;
+}
+
+.wireframe-figure-message-hint {
+    -fx-stroke: -dms-warning-border;
+}

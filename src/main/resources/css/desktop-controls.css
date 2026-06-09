@@ -1,0 +1,74 @@
+/*
+ * Domain Model Studio — Scrollbars y tabs de escritorio
+ *
+ * Este archivo forma parte de la Tanda 05 de modularización CSS.
+ * Mantiene la estética desktop sobria del proyecto y conserva el orden
+ * de cascada original mediante app-light.css.
+ */
+
+/* -------------------------------------------------------------------------
+ * 8. Scrollbars y detalles de escritorio
+ * ------------------------------------------------------------------------- */
+.scroll-bar:horizontal,
+.scroll-bar:vertical {
+    -fx-background-color: #eeeeee;
+    -fx-border-color: #d0d0d0;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #c2c2c2;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #a9a9a9;
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: #e6e6e6;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+/* -------------------------------------------------------------------------
+ * 9. Tabs futuros: estilo clásico si se incorporan vistas múltiples.
+ * ------------------------------------------------------------------------- */
+.tab-pane {
+    -fx-background-color: -dms-bg-panel;
+}
+
+.tab {
+    -fx-background-color: linear-gradient(to bottom, #eeeeee, #dcdcdc);
+    -fx-background-radius: 2 2 0 0;
+    -fx-border-color: #bcbcbc;
+    -fx-border-width: 1 1 0 1;
+    -fx-padding: 3 9 3 9;
+}
+
+.tab:selected {
+    -fx-background-color: #ffffff;
+}
+
+.tab .tab-label {
+    -fx-text-fill: -dms-text;
+}
+
+/* -------------------------------------------------------------------------
+
+/* Tablas CRUD/documentales: encabezado oscuro y legible. */
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to bottom, #173A5F, #07192D);
+}
+
+.table-view .column-header,
+.table-view .filler {
+    -fx-background-color: transparent;
+    -fx-border-color: #0A1F36;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}

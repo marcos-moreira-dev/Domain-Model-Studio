@@ -1,0 +1,26 @@
+/* =========================================================
+   Ayuda operativa de módulos del SideDock
+   ========================================================= */
+.module-operational-help {
+    -fx-padding: 12 12 16 12;
+    -fx-spacing: 8;
+}
+
+.module-help-title {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0b355f;
+}
+
+.module-help-section {
+    -fx-padding: 8 0 0 0;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #183a5a;
+}
+
+.module-help-text {
+    -fx-font-size: 12px;
+    -fx-text-fill: #202020;
+    -fx-line-spacing: 2px;
+}

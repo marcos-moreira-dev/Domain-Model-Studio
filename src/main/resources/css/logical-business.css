@@ -1,0 +1,24 @@
+/*
+ * Domain Model Studio — Levantamiento lógico.
+ *
+ * Hoja ensambladora del módulo. Los estilos viven en archivos pequeños para
+ * mantener trazabilidad humana y evitar montoneras de CSS.
+ *
+ * Secciones cubiertas por los imports:
+ * - Levantamiento lógico — base documental del workspace
+ * - Ficha central del resultado
+ * - Árbol del expediente en SideDock
+ * - Paneles laterales existentes del módulo
+ * - Inspectores laterales: validación, impacto/dependencias y ayuda/glosario
+ * - Orientación de artefactos compatibles desde ayuda/glosario
+ *
+ * Clases guardarraíl: logical-business-ficha, logical-business-field,
+ * logical-business-chip, logical-business-reference-list,
+ * logical-business-inspector-card, logical-business-inspector-blocking,
+ * logical-business-candidate-card, logical-business-attribute-button,
+ * logical-business-relationship-button.
+ */
+@import url("logical-business-base.css");
+@import url("logical-business-document.css");
+@import url("logical-business-side-panels.css");
+@import url("logical-business-side-panels-extra.css");

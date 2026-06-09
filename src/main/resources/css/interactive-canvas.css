@@ -1,0 +1,158 @@
+/*
+ * Domain Model Studio â€” interactive-canvas.css
+ * Base visual sobria para el lienzo comÃºn reutilizable.
+ */
+.interactive-canvas-connector-label {
+    -fx-background-color: rgba(255, 255, 255, 0.98);
+    -fx-background-radius: 0;
+    -fx-border-color: rgba(30, 41, 59, 0.30);
+    -fx-border-radius: 0;
+    -fx-border-width: 0.8;
+    -fx-padding: 2 5;
+    -fx-font-size: 11.5px;
+    -fx-font-weight: 700;
+    -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.24), 6, 0.16, 0, 1);
+    -fx-text-fill: -dms-diagram-title;
+}
+.interactive-canvas-connector-label-selected {
+    -fx-border-color: -dms-accent;
+    -fx-border-width: 1.2;
+}
+/* Tanda 63 â€” contrato fuente legacy: la clase comÃºn de selecciÃ³n de conectores
+   permanece visible aquÃ­ aunque los detalles base vivan en interactive-canvas-base-details.css. */
+.interactive-canvas-connector-selected {
+    -fx-stroke: -dms-accent;
+    -fx-stroke-width: 2.2;
+}
+.interactive-canvas-node-pressed-selection {
+    -fx-border-color: -dms-accent;
+    -fx-border-width: 2;
+}
+/* Tanda 64 â€” selecciÃ³n inmediata sobre el fondo real de la tarjeta.
+   El registro visual marca Shapes internas para que Group/Pane/StackPane respondan
+   igual sin reconstruir el canvas. */
+.canvas-node-view-selected-target {
+    -fx-fill: linear-gradient(to bottom, #ffffff, #e8f1ff);
+    -fx-stroke: -dms-node-selected-border;
+    -fx-stroke-width: 2.0;
+}
+/* Tanda 66 / Tanda 69 â€” selecciÃ³n activa legible.
+   La intenciÃ³n visual de Tanda 66 se mantiene: usar el acento del producto
+   y un halo claro, no un borde negro pesado ni reglas que ennegrezcan textos.
+   Tanda 69 refina el alcance: el feedback se aplica a bordes/fondos de tarjeta,
+   no como efecto global sobre toda la raÃ­z, porque el efecto global tambiÃ©n
+   sombrea etiquetas. */
+.interactive-canvas-node-active-selection {
+    -fx-effect: none;
+}
+.interactive-canvas-node-active-selection-target,
+.interactive-canvas-node-active-selection.diagram-node,
+.interactive-canvas-node-active-selection .diagram-node {
+    -fx-fill: linear-gradient(to bottom, #ffffff, #f3f7ff);
+    -fx-stroke: -dms-accent;
+    -fx-stroke-width: 2.2;
+    -fx-effect: dropshadow(gaussian, rgba(37, 99, 235, 0.18), 5, 0.12, 0, 1);
+}
+.interactive-canvas-node-active-selection.interactive-canvas-node,
+.interactive-canvas-node-active-selection.uml-class-canvas-node,
+.interactive-canvas-node-active-selection.module-map-diagram-node,
+.interactive-canvas-node-active-selection.screen-flow-diagram-node,
+.interactive-canvas-node-active-selection.wireframe-canvas-screen,
+.interactive-canvas-node-active-selection.wireframe-canvas-component,
+.interactive-canvas-node-active-selection.architecture-canvas-card,
+.interactive-canvas-node-active-selection .interactive-canvas-node,
+.interactive-canvas-node-active-selection .uml-class-canvas-node,
+.interactive-canvas-node-active-selection .module-map-diagram-node,
+.interactive-canvas-node-active-selection .screen-flow-diagram-node,
+.interactive-canvas-node-active-selection .wireframe-canvas-screen,
+.interactive-canvas-node-active-selection .wireframe-canvas-component,
+.interactive-canvas-node-active-selection .architecture-canvas-card {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #f7faff);
+    -fx-border-color: -dms-accent;
+    -fx-border-width: 2.0;
+}
+.interactive-canvas-node-active-selection .architecture-canvas-zone-title-handle {
+    -fx-fill: #ffffff;
+    -fx-stroke: -dms-accent;
+    -fx-stroke-width: 2.0;
+}
+/* Tanda 7 â€” etiquetas de grafo/UML mÃ¡s visibles en runtime */
+.interactive-canvas-connector-label-free-graph-edge-directed,
+.interactive-canvas-connector-label-free-graph-edge-undirected,
+.interactive-canvas-connector-label-uml-relation-inheritance,
+.interactive-canvas-connector-label-uml-relation-implementation,
+.interactive-canvas-connector-label-uml-relation-composition,
+.interactive-canvas-connector-label-uml-relation-aggregation,
+.interactive-canvas-connector-label-uml-relation-dependency {
+    -fx-background-color: rgba(255, 255, 255, 0.99);
+    -fx-border-color: rgba(15, 23, 42, 0.45);
+    -fx-text-fill: #111827;
+}
+/* Tanda 8 â€” etiquetas de relaciones siempre por encima y con contraste alto */
+.interactive-canvas-connector-label {
+    -fx-background-color: rgba(255, 255, 255, 0.99);
+    -fx-border-color: rgba(17, 24, 39, 0.52);
+    -fx-border-width: 1.0;
+    -fx-text-fill: #111827;
+    -fx-font-weight: 700;
+    -fx-opacity: 1.0;
+}
+.interactive-canvas-connector-label-free-graph-edge-directed,
+.interactive-canvas-connector-label-free-graph-edge-undirected {
+    -fx-background-color: rgba(255, 255, 255, 0.99);
+    -fx-border-color: rgba(17, 24, 39, 0.62);
+    -fx-text-fill: #111827;
+}
+/* Tanda 11 â€” los contenedores no deben tapar clases internas */
+.canvas-node-view-container-hitbox {
+    -fx-fill: transparent;
+    -fx-stroke: transparent;
+}
+/* Tanda 45 â€” selecciÃ³n visible clara en nodos del canvas comÃºn.
+   El grupo seleccionado aclara el relleno del nodo sin depender de reconstrucciones tardÃ­as. */
+.canvas-node-view-selected .diagram-node {
+    -fx-fill: linear-gradient(to bottom, #ffffff, #e8f1ff);
+    -fx-stroke: -dms-node-selected-border;
+    -fx-stroke-width: 2.0;
+}
+.canvas-node-view-selected .diagram-node-title,
+.canvas-node-view-selected .interactive-canvas-node-title {
+    -fx-text-fill: #0f2f59;
+}
+.canvas-node-view-selected .interactive-canvas-node {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #e8f1ff);
+    -fx-border-color: -dms-node-selected-border;
+    -fx-border-width: 2.0;
+}
+.canvas-visual-comment-content {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 0;
+    -fx-border-color: #64748b;
+    -fx-border-radius: 0;
+    -fx-border-width: 1.0;
+    -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.18), 5, 0.12, 0, 1);
+}
+.canvas-visual-comment-title {
+    -fx-text-fill: #0b2f5b;
+    -fx-font-size: 12.5px;
+    -fx-font-weight: 700;
+}
+.canvas-visual-comment-description {
+    -fx-background-color: #f8fafc;
+    -fx-background-radius: 0;
+    -fx-border-color: #cbd5e1;
+    -fx-border-radius: 0;
+    -fx-border-width: 0.8;
+    -fx-padding: 6 7;
+    -fx-text-fill: #334155;
+    -fx-font-size: 11.5px;
+}
+.canvas-node-view-selected .canvas-visual-comment-content,
+.canvas-visual-comment-selected .canvas-visual-comment-content {
+    -fx-border-color: -dms-node-selected-border;
+    -fx-border-width: 2.0;
+}
+.visual-comment-dialog-counter {
+    -fx-text-fill: #475569;
+    -fx-font-size: 11px;
+}

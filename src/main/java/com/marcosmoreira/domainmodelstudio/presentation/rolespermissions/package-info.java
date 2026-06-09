@@ -1,0 +1,1 @@
+package com.marcosmoreira.domainmodelstudio.presentation.rolespermissions;

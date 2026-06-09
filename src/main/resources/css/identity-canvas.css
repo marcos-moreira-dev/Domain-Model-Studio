@@ -1,0 +1,83 @@
+/*
+ * Domain Model Studio — identidad de área de trabajo y selección
+ */
+
+.canvas-scroll-pane,
+.canvas-scroll-pane > .viewport {
+    -fx-background-color: -dms-bg-workspace;
+}
+
+.diagram-canvas {
+    -fx-background-color: -dms-bg-canvas;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-effect: none;
+}
+
+.diagram-infinite-workspace {
+    -fx-background-color: linear-gradient(to bottom, #f6f8fa, #e7ebef);
+}
+
+.workspace-grid-line {
+    -fx-stroke: rgba(92, 104, 116, 0.14);
+    -fx-stroke-width: 1;
+}
+
+.workspace-grid-major-line {
+    -fx-stroke: rgba(77, 91, 106, 0.23);
+    -fx-stroke-width: 1.15;
+}
+
+.entity-placeholder,
+.chen-entity,
+.welcome-preview-entity {
+    -fx-fill: -dms-chen-entity;
+}
+
+.attribute-placeholder,
+.chen-attribute,
+.welcome-preview-attribute {
+    -fx-fill: -dms-chen-attribute;
+}
+
+.relationship-placeholder,
+.chen-relationship,
+.welcome-preview-relationship {
+    -fx-fill: -dms-chen-relationship;
+}
+
+.connector-placeholder,
+.chen-connector,
+.crowsfoot-connector,
+.crowsfoot-marker {
+    -fx-stroke: -dms-connector;
+}
+
+.chen-selected-node .chen-entity,
+.chen-selected-node .chen-attribute,
+.chen-selected-node .chen-relationship,
+.chen-selected-node .crowsfoot-entity-box,
+.chen-selected-connector-segment {
+    -fx-stroke: -dms-accent;
+}
+
+.chen-selected-node .diagram-label,
+.model-tree .tree-cell:selected {
+    -fx-text-fill: #1f4f85;
+}
+
+.model-tree,
+.tree-view,
+.tree-cell {
+    -fx-background-color: #ffffff;
+}
+
+.tree-cell:filled:selected,
+.tree-cell:filled:selected:focused {
+    -fx-background-color: -dms-accent-soft;
+    -fx-text-fill: #1f4f85;
+}
+
+.tree-cell:filled:hover {
+    -fx-background-color: #f1f6fc;
+}

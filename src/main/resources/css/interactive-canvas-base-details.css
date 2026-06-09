@@ -1,0 +1,117 @@
+/*
+ * Domain Model Studio — interactive-canvas-base-details.css
+ * Base reusable shapes, hitboxes and resize affordances of the specialized canvas.
+ */
+
+.interactive-canvas-view {
+    -fx-background-color: -dms-bg-workspace;
+}
+
+.interactive-canvas-content {
+    -fx-background-color: transparent;
+}
+
+.interactive-canvas-node {
+    -fx-background-color: -dms-module-fill;
+    -fx-background-radius: 0;
+    -fx-border-color: -dms-module-border;
+    -fx-border-radius: 0;
+    -fx-border-width: 1.2;
+    -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.10), 8, 0.15, 0, 2);
+    -fx-padding: 8 10;
+}
+
+.interactive-canvas-node-title {
+    -fx-font-size: 12px;
+    -fx-font-weight: 700;
+    -fx-text-fill: -dms-diagram-title;
+}
+
+.interactive-canvas-node-selected {
+    -fx-border-color: -dms-accent;
+    -fx-border-width: 2;
+}
+
+.interactive-canvas-connector {
+    -fx-stroke: -dms-architecture-border;
+    -fx-stroke-width: 1.6;
+    -fx-fill: transparent;
+}
+
+.interactive-canvas-connector-selected {
+    -fx-stroke: -dms-accent;
+    -fx-stroke-width: 2.2;
+}
+
+.interactive-canvas-connector-live-preview {
+    -fx-stroke: -dms-accent;
+    -fx-stroke-width: 1.8;
+    -fx-stroke-dash-array: 7 4;
+    -fx-opacity: 0.78;
+}
+
+.interactive-canvas-selection-rectangle {
+    -fx-fill: rgba(37, 99, 235, 0.10);
+    -fx-stroke: -dms-accent;
+    -fx-stroke-dash-array: 6 4;
+    -fx-stroke-width: 1.2;
+}
+
+.interactive-canvas-bend-point-handle {
+    -fx-fill: #bfdbfe;
+    -fx-stroke: -dms-accent;
+    -fx-stroke-width: 1.4;
+    -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.16), 6, 0.10, 0, 1);
+}
+
+.interactive-canvas-bend-point-handle-selected {
+    -fx-fill: #ffffff;
+    -fx-stroke-width: 2.4;
+}
+.interactive-canvas-connector-hitbox {
+    -fx-stroke: transparent;
+    -fx-stroke-width: 12;
+    -fx-fill: transparent;
+}
+
+.canvas-node-view-root {
+    -fx-background-color: transparent;
+}
+
+.canvas-node-view-hitbox {
+    -fx-fill: transparent;
+    -fx-stroke: transparent;
+}
+
+.canvas-node-view-content {
+    -fx-background-color: transparent;
+}
+
+.canvas-node-view-selected {
+    -fx-effect: dropshadow(gaussian, rgba(37, 99, 235, 0.18), 7, 0.10, 0, 0);
+}
+
+.interactive-canvas-resize-handle {
+    -fx-fill: #bfdbfe;
+    -fx-stroke: -dms-accent;
+    -fx-stroke-width: 1.4;
+    -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.18), 6, 0.12, 0, 1);
+}
+
+.interactive-canvas-resize-handle:hover {
+    -fx-fill: #ffffff;
+    -fx-stroke-width: 2.4;
+}
+
+.interactive-canvas-resize-preview {
+    -fx-fill: rgba(37, 99, 235, 0.08);
+    -fx-stroke: -dms-accent;
+    -fx-stroke-width: 1.6;
+    -fx-stroke-dash-array: 7 5;
+}
+
+.interactive-canvas-resize-preview-handle {
+    -fx-fill: -dms-accent-soft;
+    -fx-stroke: -dms-accent;
+    -fx-stroke-width: 1.5;
+}

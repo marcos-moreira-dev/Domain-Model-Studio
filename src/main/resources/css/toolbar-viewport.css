@@ -1,0 +1,93 @@
+/*
+ * Domain Model Studio — Toolbar estable e inicio simple
+ *
+ * Este archivo forma parte de la Tanda 05 de modularización CSS.
+ * Mantiene la estética desktop sobria del proyecto y conserva el orden
+ * de cascada original mediante app-light.css.
+ */
+
+.main-toolbar {
+    -fx-spacing: 7;
+    -fx-alignment: center-left;
+}
+
+.toolbar-separator {
+    -fx-padding: 0 4 0 4;
+}
+
+.toolbar-separator .line {
+    -fx-border-color: #b6b6b6;
+    -fx-border-width: 0 1 0 0;
+}
+
+.toolbar-button,
+.notation-toggle {
+    -fx-alignment: center;
+    -fx-content-display: left;
+}
+
+
+.diagram-zoom-container {
+    -fx-background-color: transparent;
+}
+
+.welcome-page {
+    -fx-background-color: linear-gradient(to bottom, #edf1f5, #d9dee4);
+    -fx-spacing: 26;
+}
+
+.welcome-simple-hero {
+    -fx-padding: 0 0 18 0;
+}
+
+.welcome-simple-main {
+    -fx-padding: 0;
+}
+
+.welcome-simple-section {
+    -fx-min-width: 260;
+    -fx-pref-width: 320;
+}
+
+.welcome-link-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: #1f5fa8;
+    -fx-font-size: 15px;
+    -fx-alignment: center-left;
+    -fx-padding: 3 0 3 0;
+    -fx-cursor: hand;
+}
+
+.welcome-link-button:hover {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: #0f3f78;
+    -fx-underline: true;
+}
+
+.welcome-simple-text {
+    -fx-text-fill: #4b5968;
+    -fx-font-size: 13px;
+    -fx-line-spacing: 2;
+}
+
+.diagram-title-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #232323;
+}
+
+/* -------------------------------------------------------------------------
+
+/* T02 — altura mínima estable para la toolbar principal desplazable. */
+.main-toolbar-scroll,
+.global-toolbar {
+    -fx-min-height: 40px;
+    -fx-pref-height: 42px;
+}
+
+.main-toolbar {
+    -fx-min-height: 36px;
+    -fx-padding: 4 8 4 8;
+}

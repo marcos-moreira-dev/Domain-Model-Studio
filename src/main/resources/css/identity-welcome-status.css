@@ -1,0 +1,67 @@
+/*
+ * Domain Model Studio — estado, bienvenida clásica y tooltips
+ */
+
+.status-bar {
+    -fx-background-color: linear-gradient(to bottom, #eeeeee, #dddddd);
+    -fx-border-color: -dms-border-dark;
+}
+
+.status-label {
+    -fx-text-fill: #333333;
+}
+
+.welcome-panel {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #f4f6f8);
+    -fx-border-color: #aeb8c4;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.14), 8, 0.12, 0, 2);
+}
+
+.welcome-eyebrow {
+    -fx-text-fill: -dms-help;
+}
+
+.welcome-title {
+    -fx-text-fill: #1f1f1f;
+}
+
+.welcome-primary-button {
+    -fx-background-color: linear-gradient(to bottom, #3b70ad, -dms-accent);
+    -fx-border-color: #1f4f85;
+}
+
+.welcome-primary-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #477fbd, -dms-accent-hover);
+}
+
+.welcome-secondary-button {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #e8eaed);
+    -fx-border-color: #aeb0aa;
+}
+
+.welcome-secondary-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, -dms-accent-soft);
+    -fx-border-color: -dms-accent-border;
+}
+
+.welcome-steps,
+.welcome-preview-box {
+    -fx-background-color: rgba(255, 255, 255, 0.82);
+    -fx-border-color: #d0d4da;
+}
+
+.welcome-step-number {
+    -fx-background-color: -dms-accent-soft;
+    -fx-border-color: #a9c7e8;
+    -fx-text-fill: #1f4f85;
+}
+
+.tooltip {
+    -fx-background-color: #fffff4;
+    -fx-border-color: #8f8f85;
+    -fx-border-width: 1;
+    -fx-text-fill: -dms-text;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-font-size: 11px;
+}

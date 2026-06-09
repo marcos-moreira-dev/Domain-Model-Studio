@@ -1,0 +1,125 @@
+.behavior-symbol-circle,
+.behavior-symbol-diamond,
+.behavior-symbol-rect,
+.behavior-canvas-symbol-circle,
+.behavior-canvas-symbol-diamond,
+.behavior-canvas-symbol-rect,
+.behavior-canvas-symbol-use-case,
+.behavior-canvas-symbol-uml-action,
+.behavior-canvas-symbol-uml-state,
+.behavior-canvas-symbol-task,
+.behavior-canvas-symbol-system-boundary,
+.behavior-canvas-symbol-operational-step,
+.behavior-canvas-symbol-operational-decision,
+.behavior-canvas-symbol-operational-document,
+.architecture-canvas-symbol-rect,
+.architecture-canvas-symbol-boundary,
+.admin-canvas-symbol-module,
+.admin-canvas-symbol-screen,
+.wireframe-canvas-symbol,
+.wireframe-component-symbol {
+    -fx-fill: #FFFFFF;
+    -fx-stroke: #1F2937;
+    -fx-stroke-width: 1.25;
+    -fx-effect: none;
+}
+
+.behavior-canvas-symbol-actor,
+.behavior-canvas-symbol-actor-line,
+.architecture-canvas-symbol-person-line,
+.architecture-canvas-symbol-server-line,
+.architecture-canvas-symbol-client-line,
+.architecture-canvas-symbol-external-line,
+.architecture-canvas-symbol-application-line,
+.architecture-canvas-symbol-api-line,
+.architecture-canvas-symbol-network-line,
+.architecture-canvas-symbol-artifact-line {
+    -fx-fill: transparent;
+    -fx-stroke: #1F2937;
+    -fx-stroke-width: 1.35;
+    -fx-effect: none;
+}
+
+.behavior-canvas-symbol-initial-state,
+.behavior-canvas-symbol-final-state-inner,
+.behavior-canvas-symbol-fork-join,
+.architecture-canvas-symbol-database-body,
+.architecture-canvas-symbol-system,
+.architecture-canvas-symbol-container,
+.architecture-canvas-symbol-server,
+.architecture-canvas-symbol-client-screen,
+.architecture-canvas-symbol-application,
+.architecture-canvas-symbol-api,
+.architecture-canvas-symbol-external-system,
+.architecture-canvas-symbol-service,
+.architecture-canvas-symbol-service-small,
+.architecture-canvas-symbol-environment,
+.architecture-canvas-symbol-environment-inner,
+.architecture-canvas-symbol-network-node,
+.architecture-canvas-symbol-artifact,
+.architecture-canvas-symbol-server-led {
+    -fx-fill: #111827;
+    -fx-stroke: #111827;
+    -fx-stroke-width: 1;
+    -fx-effect: none;
+}
+
+.behavior-canvas-symbol-final-state-outer,
+.behavior-canvas-symbol-start-event,
+.behavior-canvas-symbol-end-event,
+.architecture-canvas-symbol-database-bottom {
+    -fx-fill: transparent;
+    -fx-stroke: #111827;
+    -fx-stroke-width: 1.5;
+    -fx-effect: none;
+}
+
+.architecture-canvas-zone,
+.architecture-canvas-zone-environment,
+.architecture-canvas-zone-network,
+.module-map-root-container-group,
+.uml-class-canvas-module-wrapper {
+    -fx-fill: transparent;
+    -fx-stroke: rgba(31,41,55,0.55);
+    -fx-stroke-width: 1.1;
+    -fx-effect: none;
+}
+
+.behavior-arrow,
+.behavior-canvas-connector,
+.architecture-arrow,
+.architecture-canvas-connector,
+.module-map-canvas-connector,
+.screen-flow-connector-line,
+.free-graph-connector-line,
+.uml-class-canvas-connector,
+.sequence-message-line,
+.wireframe-canvas-line {
+    -fx-stroke: #1F2937;
+    -fx-effect: none;
+}
+
+.behavior-arrow-head,
+.behavior-canvas-arrow-head,
+.architecture-arrow-head,
+.architecture-canvas-arrow-head,
+.module-map-canvas-arrow-head,
+.screen-flow-arrow-head,
+.free-graph-connector-arrow,
+.uml-class-canvas-arrow-head,
+.sequence-message-arrow-head {
+    -fx-fill: #1F2937;
+    -fx-stroke: #1F2937;
+    -fx-effect: none;
+}
+
+.canvas-node-view-root,
+.canvas-node-view-content,
+.interactive-canvas-style-root,
+.module-map-node-visual-group,
+.screen-flow-node-visual-group,
+.free-graph-node-visual-group,
+.uml-class-canvas-module-wrapper,
+.uml-class-canvas-class-wrapper {
+    -fx-effect: none;
+}

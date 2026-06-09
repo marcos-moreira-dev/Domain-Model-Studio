@@ -1,0 +1,85 @@
+/* =========================================================
+   ClickMessageDialog — ayuda/advertencias por clic
+   ========================================================= */
+.click-message-dialog-pane {
+    -fx-background-color: #f7f7f7;
+}
+
+.click-message-content {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #f2f5f8);
+    -fx-border-color: #a9b8c8;
+    -fx-border-width: 1;
+}
+
+.click-message-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0b355f;
+}
+
+.click-message-body {
+    -fx-font-size: 13px;
+    -fx-text-fill: #1f1f1f;
+    -fx-line-spacing: 3px;
+    -fx-padding: 4 8 4 4;
+}
+
+.click-message-scroll {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.click-message-scroll > .viewport {
+    -fx-background-color: transparent;
+}
+
+.click-message-image-icon {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.20), 5, 0.2, 0, 1);
+}
+
+.click-message-icon {
+    -fx-background-color: #1f6fb2;
+    -fx-border-color: #dfefff;
+    -fx-border-width: 2;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+/* =========================================================
+   LargeTextReportDialog — reportes extensos y copiables
+   ========================================================= */
+.large-report-dialog-pane {
+    -fx-background-color: #f7f7f7;
+}
+
+.large-report-summary-scroll,
+.large-report-summary-scroll > .viewport {
+    -fx-background-color: #fbfbfb;
+}
+
+.large-report-summary-scroll {
+    -fx-border-color: #cbd5df;
+    -fx-border-width: 1;
+}
+
+.large-report-summary {
+    -fx-font-size: 12.5px;
+    -fx-text-fill: #1f1f1f;
+    -fx-line-spacing: 2px;
+    -fx-padding: 8 10 8 10;
+}
+
+.large-report-detail-label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #25384d;
+}
+
+.large-report-detail-area {
+    -fx-font-family: "Consolas", "Monospaced";
+    -fx-font-size: 11.5px;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cbd5df;
+    -fx-border-width: 1;
+}

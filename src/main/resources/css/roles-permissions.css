@@ -1,0 +1,188 @@
+/* =========================================================
+   Roles y permisos — matriz estructurada
+   ========================================================= */
+
+.roles-permissions-root {
+    -fx-background-color: -app-workspace-bg;
+}
+
+.roles-permissions-header {
+    -fx-background-color: linear-gradient(to bottom, -dms-diagram-header-top, -dms-diagram-header-bottom);
+    -fx-border-color: -dms-border-soft;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 10 14 8 14;
+}
+
+.roles-permissions-title {
+    -fx-text-fill: -dms-diagram-title;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-font-smoothing-type: gray;
+}
+
+.roles-permissions-subtitle {
+    -fx-text-fill: -dms-diagram-subtitle;
+    -fx-font-size: 12px;
+    -fx-font-smoothing-type: gray;
+}
+
+.roles-permissions-split {
+    -fx-background-color: transparent;
+    -fx-padding: 8;
+}
+
+.roles-permissions-section {
+    -fx-background-color: -dms-bg-panel-soft;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-width: 1;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-padding: 10;
+}
+
+.roles-permissions-section-title {
+    -fx-text-fill: -dms-diagram-title;
+    -fx-font-weight: bold;
+}
+
+.roles-permissions-structure-tabs {
+    -fx-background-color: transparent;
+}
+
+.roles-permissions-structure-list,
+.roles-permissions-role-list,
+.roles-permissions-permission-list,
+.roles-permissions-assignment-table {
+    -fx-background-color: #ffffff;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-width: 1;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+.roles-permissions-matrix-panel {
+    -fx-background-color: -dms-bg-panel-soft;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-width: 1;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+.roles-permissions-matrix-scroll {
+    -fx-background: #ffffff;
+    -fx-background-color: #ffffff;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-width: 1;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+.roles-permissions-matrix {
+    -fx-background-color: #ffffff;
+}
+
+.roles-permissions-matrix-cell {
+    -fx-background-color: -dms-bg-card;
+    -fx-border-color: -dms-border-soft;
+    -fx-border-width: 1;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-padding: 6;
+    -fx-font-size: 11px;
+    -fx-text-fill: -dms-text;
+}
+
+.roles-permissions-matrix-corner,
+.roles-permissions-matrix-role,
+.roles-permissions-matrix-permission {
+    -fx-background-color: -dms-diagram-header-bottom;
+    -fx-font-weight: bold;
+    -fx-text-fill: -dms-diagram-title;
+}
+
+.roles-permissions-matrix-granted {
+    -fx-background-color: #E5F4EC;
+    -fx-border-color: #7FB99B;
+    -fx-text-fill: #173D2A;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.roles-permissions-matrix-conditional {
+    -fx-background-color: #FFF4D6;
+    -fx-border-color: #D1A43C;
+    -fx-text-fill: #5B4307;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.roles-permissions-matrix-denied {
+    -fx-background-color: #F8E2E2;
+    -fx-border-color: #C58B8B;
+    -fx-text-fill: #5B1717;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.roles-permissions-matrix-not-applicable {
+    -fx-background-color: #EEF1F5;
+    -fx-border-color: #C6CED8;
+    -fx-text-fill: #566273;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.roles-permissions-matrix-empty-cell {
+    -fx-background-color: #F8FAFC;
+    -fx-text-fill: -dms-text-muted;
+}
+
+.roles-permissions-matrix-selected {
+    -fx-border-color: -dms-accent-border;
+    -fx-border-width: 2;
+}
+
+.roles-permissions-empty {
+    -fx-text-fill: -dms-text-muted;
+    -fx-font-size: 13px;
+    -fx-font-style: italic;
+}
+
+.roles-permissions-properties-tabs {
+    -fx-background-color: transparent;
+}
+
+.roles-permissions-properties-scroll {
+    -fx-background: transparent;
+    -fx-background-color: transparent;
+}
+
+.roles-permissions-field-label {
+    -fx-text-fill: -dms-text-muted;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.roles-permissions-action-button {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #e8eef5);
+    -fx-border-color: -dms-node-border;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-text-fill: -dms-diagram-title;
+    -fx-font-weight: bold;
+    -fx-padding: 5 10 5 10;
+}
+
+.roles-permissions-action-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, -dms-accent-soft);
+    -fx-border-color: -dms-accent-border;
+}
+
+/* T02 — roles/permisos vive dentro del workbench matricial común. */
+.roles-permissions-host {
+    -fx-background-color: -app-workspace-bg;
+}
+
+.roles-permissions-root {
+    -fx-background-color: -app-workspace-bg;
+}

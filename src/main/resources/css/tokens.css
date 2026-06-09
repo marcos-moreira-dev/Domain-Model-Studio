@@ -1,0 +1,82 @@
+/*
+ * Domain Model Studio — Tokens visuales base.
+ *
+ * Intención visual:
+ * - aplicación técnica de escritorio, clara y sobria;
+ * - paneles delimitados por bordes, no por tarjetas web;
+ * - botones rectos y paneles sin radius ornamental;
+ * - uso moderado de color;
+ * - buena legibilidad para documentación, capturas y demostraciones.
+ *
+ * Regla de diseño:
+ * este CSS no debe convertir la app en un dashboard web. La interfaz debe
+ * sentirse como herramienta de escritorio: menú, toolbar, paneles, inspector,
+ * área de diagrama y barra de estado bien delimitados.
+ */
+
+/* -------------------------------------------------------------------------
+ * 1. Tokens visuales base
+ * ------------------------------------------------------------------------- */
+.root {
+    -dms-font-family: "Segoe UI", Arial, sans-serif;
+
+    -dms-bg-app: #ececec;
+    -dms-bg-panel: #f7f7f7;
+    -dms-bg-panel-strong: #e2e2e2;
+    -dms-bg-panel-soft: #fafafa;
+    -dms-bg-card: #ffffff;
+    -dms-bg-workspace: #cfd3d7;
+    -dms-bg-canvas: #f5f7f9;
+    -dms-bg-export: #ffffff;
+
+    -dms-border-dark: #a8a8a8;
+    -dms-border-strong: #8f8f8f;
+    -dms-border: #c4c4c4;
+    -dms-border-soft: #d8d8d8;
+
+    -dms-text: #222222;
+    -dms-text-muted: #5c5c5c;
+    -dms-text-disabled: #8a8a8a;
+
+    -dms-accent: #2f6db3;
+    -dms-accent-hover: #3d7dc4;
+    -dms-accent-soft: #dce9f8;
+    -dms-accent-border: #7da2ce;
+    -dms-help: #6a4fb3;
+
+    -dms-warning: #b85c00;
+    -dms-warning-border: #d4882d;
+    -dms-danger: #b7352c;
+    -dms-success: #2e7d42;
+
+    /* Aliases de compatibilidad: varios editores antiguos ya usan estos nombres. */
+    -dms-surface: -dms-bg-panel-soft;
+    -dms-panel: -dms-bg-panel;
+    -dms-panel-bg: -dms-bg-panel;
+    -dms-canvas: -dms-bg-canvas;
+    -app-workspace-bg: -dms-bg-workspace;
+
+    /* Tokens comunes para diagramas sobrios. */
+    -dms-node-fill: #ffffff;
+    -dms-node-fill-soft: #f7f9fb;
+    -dms-node-fill-accent: #eaf2fb;
+    -dms-node-fill-warning: #fff7ed;
+    -dms-node-border: #aebccd;
+    -dms-node-border-soft: #d3dce7;
+    -dms-node-selected-border: -dms-accent;
+
+    -dms-chen-entity: #fff8e1;
+    -dms-chen-attribute: #eaf2ff;
+    -dms-chen-relationship: #eaf4ea;
+    -dms-connector: #4a5563;
+    -dms-label-bg: rgba(255, 255, 255, 0.92);
+
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-font-size: 12px;
+    -fx-base: -dms-bg-app;
+    -fx-background: -dms-bg-app;
+    -fx-control-inner-background: #ffffff;
+    -fx-accent: -dms-accent;
+    -fx-focus-color: -dms-accent;
+    -fx-faint-focus-color: rgba(47, 109, 179, 0.18);
+}
